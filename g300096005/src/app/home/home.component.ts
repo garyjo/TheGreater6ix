@@ -1,20 +1,20 @@
-// import { Component,OnInit } from '@angular/core';
-// import { HomeService } from './home.service';
+import { Component,OnInit } from '@angular/core';
+import { HomeService } from './home.service';
 
-// @Component({
-//   selector: 'home-page',
-//   templateUrl: './home.component.html',
-// })
-// export class HomeComponent implements OnInit{
+@Component({
+  selector: 'home-page',
+  templateUrl: './home.component.html',
+})
+export class HomeComponent implements OnInit{
 
-// public home: Array<any>;
+public home: Array<any>;
 
-//   constructor(private homeService:HomeService){
-//     this.home = [];
-//   }
+  constructor(private homeService:HomeService){
+    this.home = [];
+  }
 
-//   ngOnInit(){
-//     this.home = this.homeService.homeInit();
-//     console.log("ngOnInit");
-//   }
-// }
+  ngOnInit(){
+    this.home = this.homeService.homeInit();
+    console.log("ngOnInit");
+  }
+}
