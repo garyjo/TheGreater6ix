@@ -10,6 +10,7 @@ export class AboutUsersResolve implements Resolve<User> {
 
   resolve(route: ActivatedRouteSnapshot) {
     return this.service.getUsers().then(users => users);
+
   }
 
 }
