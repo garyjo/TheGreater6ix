@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeRouting } from './home.routing';
 import { HomeComponent } from './home.component';
 import { HomeInfoComponent } from './home-info.component';
-import { HomeService } from './home.service'
+// import { HomeService } from './home.service';
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { HomeService } from './home.service'
     HomeInfoComponent
   ],
   providers:[
-    HomeService
+    // HomeService
     ]
 })
 export class HomeModule { }

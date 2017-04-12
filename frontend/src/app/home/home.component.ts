@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { HomeService } from './home.service';
+// import { HomeService } from './home.service';
 
 @Component({
   selector: 'home-page',
@@ -9,7 +9,8 @@ export class HomeComponent implements OnInit{
 
 public home: Array<any>;
 
-  constructor(private homeService:HomeService){
+  // constructor(private homeService:HomeService){
+  constructor(){
     // this.home = [];
   }
 
