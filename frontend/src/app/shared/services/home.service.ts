@@ -9,18 +9,18 @@ export class HomeService {
 
 
   VilleInit():Array<any>{
-    let villes: Array<any> = [];
-    this.http.get("http://SomeRandomWebsite.com/thisDataBase")
+    let cities: Array<any> = [];
+    this.http.get("/api/cities")
     .map(result => result.json())
     .flatMap(result => result.results)
     .subscribe(
       result => {
-        villes.push(result);
+        cities.push(result);
       },
       error => {
         console.error(error);
       }
     );
-  return villes;
+  return cities;
   }
 }
