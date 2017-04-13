@@ -2,9 +2,9 @@ version: '2'
 
 services:
    webapp:
-     image: play-slick-example:1.0-SNAPSHOT
+     image: play-reactive-mongo-db:1.0-SNAPSHOT
      ports:
-       - "80:27017"
+       - "8080:9000"
      depends_on:
        - db
 

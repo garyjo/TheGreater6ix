@@ -63,11 +63,11 @@ class CityController @Inject()(val reactiveMongoApi: ReactiveMongoApi)(implicit 
     }
   }
 
-  def findByName(name: String) = Action.async {
+  def findByName(city: String) = Action.async {
     // let's do our query
     val futureCitiesList: Future[List[City]] = citiesFuture.flatMap {
       // find all cities with name `name`
-      _.find(Json.obj("name" -> name)).
+      _.find(Json.obj("city" -> city)).
       // perform the query and get a cursor of JsObject
       cursor[City](ReadPreference.primary).
       // Coollect the results as a list
