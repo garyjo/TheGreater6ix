@@ -17,3 +17,18 @@ J'ai cree la base backend avec la commande
 ```
 activator new backend play-reactive-mongo-db
 ```
+J'ai ajouté le proxy a l'application de front end en ajoutant un fichier nommé 'proxy.conf.json' et coller le text ci-dessous dedans
+```
+{
+  "/api/*": {
+    "target": "http://localhost:9000",
+    "secure": false,
+    "LogLevel":"debug"
+  }
+}
+
+```
+Puis, j'ai ajoute le texte suivant au package.json
+```
+"start:withProxy": "ng serve --proxy-config proxy.conf.json",
+```
