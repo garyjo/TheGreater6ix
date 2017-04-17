@@ -3,19 +3,19 @@
     "message":"the main city",
     "date": "13 Apr 2017",
     "pictureUrl":"https://goo.gl/v8x4TX",
-    "prix":15.00
+    "prix":2.69
 },
 {
     "city": "Brampton",
     "message":"The city of flowers",
     "date": "25 Apr 2017",
     "pictureUrl":"https://goo.gl/UET8BT",
-    "prix":15.00
+    "prix":2.69
 },
 {
     "city": "Mississauga",
     "message":"The mid-sized city of the future",
     "date": "24 Apr 2017",
     "pictureUrl":"https://goo.gl/SRrfzI",
-    "prix":15.00
+    "prix":2.69
 },
