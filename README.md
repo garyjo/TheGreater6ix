@@ -32,3 +32,7 @@ Puis, j'ai ajoute le texte suivant au package.json
 ```
 "start:withProxy": "ng serve --proxy-config proxy.conf.json",
 ```
+Pour lancer l'aplication avec le proxy
+```
+npm run start:withProxy
+```
