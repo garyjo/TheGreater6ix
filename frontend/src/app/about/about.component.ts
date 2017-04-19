@@ -34,7 +34,7 @@ import { User } from '../shared/models/user';
       </div>
 
     </div>
-  `
+`
 })
 export class AboutComponent implements OnInit {
   users: User[];

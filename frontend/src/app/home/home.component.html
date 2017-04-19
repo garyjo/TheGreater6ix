@@ -1,15 +1,14 @@
 
 <div class="container">
+
   <h2>{{ 'TITLE' | translate }}<hr></h2>
 
   <!--<div *ngFor="let villes of villes; let i =index">-->
-    <div class="panel-info">
+    <div *ngFor="let city of cities; let i = index" class="panel-info">
       <div class="panel-heading">
-        <img src="" alt="">
-        <span>This will contain an image and description
-          when it will be done.
-          It will also loop to show various images.
-        </span>
+        <img src="{{city.pictureUrl}}" alt="{{city.city}}">
+        <span>{{city.message}}</span>
+        <span>{{city.prix}}</span>
       </div>
     </div>
   <!--</div>-->

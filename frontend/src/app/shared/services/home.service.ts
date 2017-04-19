@@ -8,7 +8,7 @@ export class HomeService {
   constructor(private http: Http) {}
 
 
-  VilleInit():Array<any>{
+  homeInit():Array<any>{
     let cities: Array<any> = [];
     this.http.get("/api/cities")
     .map(result => result.json())
