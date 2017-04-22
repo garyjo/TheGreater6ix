@@ -1,3 +1,4 @@
+GET      /                              controllers.HomeController.index
 
 POST     /api/cities/add                controllers.CityController.create(name: String, population: Int)
 POST     /api/cities/                   controllers.CityController.createFromJson
@@ -10,3 +11,5 @@ POST     /api/persons/                  controllers.PersonController.createFromJ
 POST     /api/persons/bulk              controllers.PersonController.createBulkFromJson
 
 GET      /api/persons                   controllers.PersonController.findByName(name: String)
+
+GET     /dist/*file                     controllers.HomeController.dist(file)

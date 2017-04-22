@@ -1,5 +1,5 @@
 <header>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar">
   <div class="container-fluid">
 
     <div class="navbar-header">
@@ -14,8 +14,8 @@
     <ul class="nav navbar-nav">
       <li><a routerLink="/" routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }">{{ 'HOME' | translate }}</a></li>
-      <li><a routerLink="/about" routerLinkActive="active" >{{ 'ABOUT' | translate }}</a></li>
-      <li><a routerLink="/contact" routerLinkActive="active" >{{ 'CONTACT' | translate }}</a></li>
+      <li><a [routerLink]="['/about']" [routerLinkActive]="['active']" >{{ 'ABOUT' | translate }}</a></li>
+      <li><a routerLink="['/contact']" [routerLinkActive]="['active']" >{{ 'CONTACT' | translate }}</a></li>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">

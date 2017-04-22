@@ -14,6 +14,7 @@ import { SignupComponent } from './sign/signup.component';
 import {HttpModule, Http} from "@angular/http";
 import {TranslateModule, TranslateLoader, TranslateStaticLoader, TranslateService} from "ng2-translate";
 import { HomeInfoComponent } from './home/home-info.component';
+import {AboutModule} from "./about/about.module";
 export function createTranslateLoader(http: Http) {
   return new TranslateStaticLoader(http, './assets/i18n', '.json');
 }
@@ -24,6 +25,7 @@ export function createTranslateLoader(http: Http) {
     FormsModule,
     appRouting,
     DashboardModule,
+    AboutModule,
 
     HttpModule,
     TranslateModule.forRoot({
@@ -41,8 +43,7 @@ export function createTranslateLoader(http: Http) {
     SigninComponent,
     SignupComponent,
     ContactComponent,
-    HomeInfoComponent,
-    HomeComponent
+    HomeInfoComponent
   ],
   providers: [
     AuthGuard,
