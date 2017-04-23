@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: `./app.component.html`
 })
 export class AppComponent {
-  message = 'This is the sample message.';
-  param = {value: 'world'};
+  // message = 'This is the sample message.';
+  // param = {value: 'world'};
 }

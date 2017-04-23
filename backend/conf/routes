@@ -1,6 +1,6 @@
 GET      /                              controllers.HomeController.index
 
-POST     /api/cities/add                controllers.CityController.create(name: String, population: Int)
+#POST     /api/cities/add                controllers.CityController.create(name: String, population: Int)
 POST     /api/cities/                   controllers.CityController.createFromJson
 POST     /api/cities/bulk               controllers.CityController.createBulkFromJson
 
@@ -11,5 +11,10 @@ POST     /api/persons/                  controllers.PersonController.createFromJ
 POST     /api/persons/bulk              controllers.PersonController.createBulkFromJson
 
 GET      /api/persons                   controllers.PersonController.findByName(name: String)
+
+# Need to find a function to get MongoDB and post it ↓
+#GET      /api/cities                    controllers.CityController.GetCity
+#POST     /api/cities                    controllers.CityController.PostCity
+
 
 GET     /dist/*file                     controllers.HomeController.dist(file)

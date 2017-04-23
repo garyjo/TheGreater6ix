@@ -1,6 +1,6 @@
-webpackJsonp([3],{
+webpackJsonp([2],{
 
-/***/ 17:
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -64,7 +64,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
-var user_service_1 = __webpack_require__(17);
+var user_service_1 = __webpack_require__(27);
 var AboutUsersResolve = (function () {
     function AboutUsersResolve(service) {
         this.service = service;
@@ -128,7 +128,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
 var router_1 = __webpack_require__(15);
-var user_service_1 = __webpack_require__(17);
+var user_service_1 = __webpack_require__(27);
 var AboutUserResolve = (function () {
     function AboutUserResolve(service, router) {
         this.service = service;
@@ -256,11 +256,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
-var common_1 = __webpack_require__(19);
+var common_1 = __webpack_require__(18);
 var about_component_1 = __webpack_require__(39);
 var about_user_component_1 = __webpack_require__(38);
 var about_section_component_1 = __webpack_require__(36);
-var user_service_1 = __webpack_require__(17);
+var user_service_1 = __webpack_require__(27);
 var about_routing_1 = __webpack_require__(71);
 var about_resolve_service_1 = __webpack_require__(35);
 var about_user_resolve_service_1 = __webpack_require__(37);

@@ -22,15 +22,16 @@ import scala.concurrent.{ExecutionContext, Future}
 @Singleton
 class CityController @Inject()(val reactiveMongoApi: ReactiveMongoApi)(implicit exec: ExecutionContext) extends Controller with MongoController with ReactiveMongoComponents {
 
-  def citiesFuture: Future[JSONCollection] = database.map(_.collection[JSONCollection]("city"))
+  def citiesFuture: Future[JSONCollection] = database.map(_.collection[JSONCollection]("cities"))
 
-  def create(name: String, population: Int) = Action.async {
-    for {
-      cities <- citiesFuture
-      lastError <- cities.insert(City(name, population))
-    } yield
-      Ok("Mongo LastError: %s".format(lastError))
-  }
+//  def create(city: String, message: String) = Action.async {
+//    for {
+//      cities <- citiesFuture
+////      lastError <- cities.insert(City._(city, message))
+//      lastError <- cities.insert(City(city, message))
+//    } yield
+//      Ok("Mongo LastError: %s".format(lastError))
+//  }
 
   def createFromJson = Action.async(parse.json) { request =>
     Json.fromJson[City](request.body) match {
@@ -79,6 +80,13 @@ class CityController @Inject()(val reactiveMongoApi: ReactiveMongoApi)(implicit 
       Ok(Json.toJson(cities))
     }
   }
+//  def GetCity(city: String, message: String, date: String,
+//              pictureUrl: String, prix: Int) = Action.async(){
+//    _.list().map{ cities =>
+//      Ok(Json.toJson(cities))
+//
+//    }
+//  }
 }
 
 

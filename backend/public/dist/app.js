@@ -1,10 +1,10 @@
-webpackJsonp([1,3],{
+webpackJsonp([1,2,3],{
 
-/***/ 107:
+/***/ 106:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(90);
+        var result = __webpack_require__(92);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -12,33 +12,482 @@ webpackJsonp([1,3],{
             module.exports = result.toString();
         }
     
+
+/***/ }),
+
+/***/ 107:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var ContactComponent = (function () {
+    function ContactComponent() {
+    }
+    return ContactComponent;
+}());
+ContactComponent = __decorate([
+    core_1.Component({
+        selector: 'contact-page',
+        template: __webpack_require__(359)
+    })
+], ContactComponent);
+exports.ContactComponent = ContactComponent;
+
 
 /***/ }),
 
 /***/ 108:
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
 
-        var result = __webpack_require__(91);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var NotFoundComponent = (function () {
+    function NotFoundComponent() {
+    }
+    return NotFoundComponent;
+}());
+NotFoundComponent = __decorate([
+    core_1.Component({
+        template: "\n    <div class=\"jumbotron text-center\">\n      <h1>404 Not Found</h1>\n      <p>You may be lost. Follow the breadcrumbs back <a routerLink=\"/\">home</a>.</p>\n    </div>\n  "
+    })
+], NotFoundComponent);
+exports.NotFoundComponent = NotFoundComponent;
 
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
 
 /***/ }),
 
 /***/ 109:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var SigninComponent = (function () {
+    function SigninComponent() {
+    }
+    SigninComponent.prototype.ngOnInit = function () {
+    };
+    return SigninComponent;
+}());
+SigninComponent = __decorate([
+    core_1.Component({
+        selector: 'app-signin',
+        template: __webpack_require__(360),
+        styles: [__webpack_require__(620)]
+    }),
+    __metadata("design:paramtypes", [])
+], SigninComponent);
+exports.SigninComponent = SigninComponent;
+
+
+/***/ }),
+
+/***/ 110:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var SignupComponent = (function () {
+    function SignupComponent() {
+    }
+    SignupComponent.prototype.ngOnInit = function () {
+    };
+    return SignupComponent;
+}());
+SignupComponent = __decorate([
+    core_1.Component({
+        selector: 'app-signup',
+        template: __webpack_require__(361),
+        styles: [__webpack_require__(621)]
+    }),
+    __metadata("design:paramtypes", [])
+], SignupComponent);
+exports.SignupComponent = SignupComponent;
+
+
+/***/ }),
+
+/***/ 239:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__translate_service__ = __webpack_require__(60);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TranslateDirective; });
+
+
+
+var TranslateDirective = (function () {
+    function TranslateDirective(translateService, element) {
+        var _this = this;
+        this.translateService = translateService;
+        this.element = element;
+        // subscribe to onTranslationChange event, in case the translations of the current lang change
+        if (!this.onTranslationChangeSub) {
+            this.onTranslationChangeSub = this.translateService.onTranslationChange.subscribe(function (event) {
+                if (event.lang === _this.translateService.currentLang) {
+                    _this.checkNodes(true, event.translations);
+                }
+            });
+        }
+        // subscribe to onLangChange event, in case the language changes
+        if (!this.onLangChangeSub) {
+            this.onLangChangeSub = this.translateService.onLangChange.subscribe(function (event) {
+                _this.checkNodes(true, event.translations);
+            });
+        }
+        // subscribe to onDefaultLangChange event, in case the default language changes
+        if (!this.onDefaultLangChangeSub) {
+            this.onDefaultLangChangeSub = this.translateService.onDefaultLangChange.subscribe(function (event) {
+                _this.checkNodes(true);
+            });
+        }
+    }
+    Object.defineProperty(TranslateDirective.prototype, "translate", {
+        set: function (key) {
+            if (key) {
+                this.key = key;
+                this.checkNodes();
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    TranslateDirective.prototype.ngAfterViewChecked = function () {
+        this.checkNodes();
+    };
+    TranslateDirective.prototype.checkNodes = function (forceUpdate, translations) {
+        if (forceUpdate === void 0) { forceUpdate = false; }
+        var nodes = this.element.nativeElement.childNodes;
+        for (var i = 0; i < nodes.length; ++i) {
+            var node = nodes[i];
+            if (node.nodeType === 3) {
+                var key = void 0;
+                if (this.key) {
+                    key = this.key;
+                }
+                else {
+                    var content = node.textContent.trim();
+                    if (content.length) {
+                        // we want to use the content as a key, not the translation value
+                        if (content !== node.currentValue) {
+                            key = content;
+                            // the content was changed from the user, we'll use it as a reference if needed
+                            node.originalContent = node.textContent;
+                        }
+                        else if (node.originalContent && forceUpdate) {
+                            node.lastKey = null;
+                            // the current content is the translation, not the key, use the last real content as key
+                            key = node.originalContent.trim();
+                        }
+                    }
+                }
+                this.updateValue(key, node, translations);
+            }
+        }
+    };
+    TranslateDirective.prototype.updateValue = function (key, node, translations) {
+        var _this = this;
+        if (key) {
+            var interpolateParams = this.translateParams;
+            if (node.lastKey === key && this.lastParams === interpolateParams) {
+                return;
+            }
+            this.lastParams = interpolateParams;
+            var onTranslation = function (res) {
+                if (res !== key) {
+                    node.lastKey = key;
+                }
+                if (!node.originalContent) {
+                    node.originalContent = node.textContent;
+                }
+                node.currentValue = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util__["a" /* isDefined */])(res) ? res : (node.originalContent || key);
+                // we replace in the original content to preserve spaces that we might have trimmed
+                node.textContent = _this.key ? node.currentValue : node.originalContent.replace(key, node.currentValue);
+            };
+            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util__["a" /* isDefined */])(translations)) {
+                var res = this.translateService.getParsedResult(translations, key, interpolateParams);
+                if (typeof res.subscribe === "function") {
+                    res.subscribe(onTranslation);
+                }
+                else {
+                    onTranslation(res);
+                }
+            }
+            else {
+                this.translateService.get(key, interpolateParams).subscribe(onTranslation);
+            }
+        }
+    };
+    TranslateDirective.prototype.ngOnDestroy = function () {
+        if (this.onLangChangeSub) {
+            this.onLangChangeSub.unsubscribe();
+        }
+        if (this.onDefaultLangChangeSub) {
+            this.onDefaultLangChangeSub.unsubscribe();
+        }
+        if (this.onTranslationChangeSub) {
+            this.onTranslationChangeSub.unsubscribe();
+        }
+    };
+    TranslateDirective.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{
+                    selector: '[translate],[ng2-translate]'
+                },] },
+    ];
+    /** @nocollapse */
+    TranslateDirective.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_2__translate_service__["d" /* TranslateService */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], },
+    ]; };
+    TranslateDirective.propDecorators = {
+        'translate': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+        'translateParams': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    };
+    return TranslateDirective;
+}());
+
+
+/***/ }),
+
+/***/ 240:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__translate_service__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(61);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TranslatePipe; });
+
+
+
+var TranslatePipe = (function () {
+    function TranslatePipe(translate, _ref) {
+        this.translate = translate;
+        this._ref = _ref;
+        this.value = '';
+    }
+    TranslatePipe.prototype.updateValue = function (key, interpolateParams, translations) {
+        var _this = this;
+        var onTranslation = function (res) {
+            _this.value = res !== undefined ? res : key;
+            _this.lastKey = key;
+            _this._ref.markForCheck();
+        };
+        if (translations) {
+            var res = this.translate.getParsedResult(translations, key, interpolateParams);
+            if (typeof res.subscribe === 'function') {
+                res.subscribe(onTranslation);
+            }
+            else {
+                onTranslation(res);
+            }
+        }
+        this.translate.get(key, interpolateParams).subscribe(onTranslation);
+    };
+    TranslatePipe.prototype.transform = function (query) {
+        var _this = this;
+        var args = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            args[_i - 1] = arguments[_i];
+        }
+        if (!query || query.length === 0) {
+            return query;
+        }
+        // if we ask another time for the same key, return the last value
+        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__util__["b" /* equals */])(query, this.lastKey) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__util__["b" /* equals */])(args, this.lastParams)) {
+            return this.value;
+        }
+        var interpolateParams;
+        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__util__["a" /* isDefined */])(args[0]) && args.length) {
+            if (typeof args[0] === 'string' && args[0].length) {
+                // we accept objects written in the template such as {n:1}, {'n':1}, {n:'v'}
+                // which is why we might need to change it to real JSON objects such as {"n":1} or {"n":"v"}
+                var validArgs = args[0]
+                    .replace(/(\')?([a-zA-Z0-9_]+)(\')?(\s)?:/g, '"$2":')
+                    .replace(/:(\s)?(\')(.*?)(\')/g, ':"$3"');
+                try {
+                    interpolateParams = JSON.parse(validArgs);
+                }
+                catch (e) {
+                    throw new SyntaxError("Wrong parameter in TranslatePipe. Expected a valid Object, received: " + args[0]);
+                }
+            }
+            else if (typeof args[0] === 'object' && !Array.isArray(args[0])) {
+                interpolateParams = args[0];
+            }
+        }
+        // store the query, in case it changes
+        this.lastKey = query;
+        // store the params, in case they change
+        this.lastParams = args;
+        // set the value
+        this.updateValue(query, interpolateParams);
+        // if there is a subscription to onLangChange, clean it
+        this._dispose();
+        // subscribe to onTranslationChange event, in case the translations change
+        if (!this.onTranslationChange) {
+            this.onTranslationChange = this.translate.onTranslationChange.subscribe(function (event) {
+                if (_this.lastKey && event.lang === _this.translate.currentLang) {
+                    _this.lastKey = null;
+                    _this.updateValue(query, interpolateParams, event.translations);
+                }
+            });
+        }
+        // subscribe to onLangChange event, in case the language changes
+        if (!this.onLangChange) {
+            this.onLangChange = this.translate.onLangChange.subscribe(function (event) {
+                if (_this.lastKey) {
+                    _this.lastKey = null; // we want to make sure it doesn't return the same value until it's been updated
+                    _this.updateValue(query, interpolateParams, event.translations);
+                }
+            });
+        }
+        // subscribe to onDefaultLangChange event, in case the default language changes
+        if (!this.onDefaultLangChange) {
+            this.onDefaultLangChange = this.translate.onDefaultLangChange.subscribe(function () {
+                if (_this.lastKey) {
+                    _this.lastKey = null; // we want to make sure it doesn't return the same value until it's been updated
+                    _this.updateValue(query, interpolateParams);
+                }
+            });
+        }
+        return this.value;
+    };
+    /**
+     * Clean any existing subscription to change events
+     * @private
+     */
+    TranslatePipe.prototype._dispose = function () {
+        if (typeof this.onTranslationChange !== 'undefined') {
+            this.onTranslationChange.unsubscribe();
+            this.onTranslationChange = undefined;
+        }
+        if (typeof this.onLangChange !== 'undefined') {
+            this.onLangChange.unsubscribe();
+            this.onLangChange = undefined;
+        }
+        if (typeof this.onDefaultLangChange !== 'undefined') {
+            this.onDefaultLangChange.unsubscribe();
+            this.onDefaultLangChange = undefined;
+        }
+    };
+    TranslatePipe.prototype.ngOnDestroy = function () {
+        this._dispose();
+    };
+    TranslatePipe.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{
+                    name: 'translate',
+                    pure: false // required to update the value when the promise is resolved
+                },] },
+    ];
+    /** @nocollapse */
+    TranslatePipe.ctorParameters = function () { return [
+        { type: __WEBPACK_IMPORTED_MODULE_1__translate_service__["d" /* TranslateService */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"], },
+    ]; };
+    return TranslatePipe;
+}());
+
+
+/***/ }),
+
+/***/ 27:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var usersPromise = Promise.resolve([
+    {
+        id: 1,
+        name: 'Gary',
+        username: 'garyuppiah',
+        avatar: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVkfbHgVyXw7tVigsl2Gq9-knPZiBcmSc7Z7qQ5W600U7aoAwe'
+    }
+]);
+var UserService = (function () {
+    function UserService() {
+    }
+    // get all users
+    UserService.prototype.getUsers = function () {
+        return usersPromise;
+    };
+    // find a specific user
+    UserService.prototype.getUser = function (username) {
+        return usersPromise.then(function (users) { return users.find(function (user) { return user.username === username; }); });
+        // let user = usersPromise.then(users => {
+        //   return users.find(user => {
+        //     return user.username === username;
+        //   });
+        // });
+        // return user;
+    };
+    return UserService;
+}());
+UserService = __decorate([
+    core_1.Injectable()
+], UserService);
+exports.UserService = UserService;
+
+
+/***/ }),
+
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin__ = __webpack_require__(253);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map__);
@@ -6123,7 +6572,7 @@ ReactiveFormsModule.ctorParameters = function () { return []; };
 
 /***/ }),
 
-/***/ 110:
+/***/ 290:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6136,51 +6585,67 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
-var ContactComponent = (function () {
-    function ContactComponent() {
+var AppComponent = (function () {
+    function AppComponent() {
     }
-    return ContactComponent;
+    return AppComponent;
 }());
-ContactComponent = __decorate([
+AppComponent = __decorate([
     core_1.Component({
-        selector: 'contact-page',
-        template: __webpack_require__(368)
+        selector: 'app-root',
+        styles: [__webpack_require__(619)],
+        template: __webpack_require__(358)
     })
-], ContactComponent);
-exports.ContactComponent = ContactComponent;
+], AppComponent);
+exports.AppComponent = AppComponent;
 
 
 /***/ }),
 
-/***/ 111:
+/***/ 291:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var NotFoundComponent = (function () {
-    function NotFoundComponent() {
+var router_1 = __webpack_require__(15);
+var home_component_1 = __webpack_require__(31);
+var contact_component_1 = __webpack_require__(107);
+var not_found_component_1 = __webpack_require__(108);
+var signup_component_1 = __webpack_require__(110);
+var signin_component_1 = __webpack_require__(109);
+var appRoutes = [
+    {
+        path: 'home',
+        component: home_component_1.HomeComponent
+    },
+    {
+        path: 'about',
+        loadChildren: function() { return new Promise(function (resolve) {  Promise.resolve().then((function (require) {    resolve(__webpack_require__(54)['AboutModule']);  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);})}
+    },
+    {
+        path: 'contact',
+        component: contact_component_1.ContactComponent
+    },
+    {
+        path: 'sign',
+        component: signup_component_1.SignupComponent
+    },
+    {
+        path: 'sign',
+        component: signin_component_1.SigninComponent
+    },
+    {
+        path: '**',
+        component: not_found_component_1.NotFoundComponent
     }
-    return NotFoundComponent;
-}());
-NotFoundComponent = __decorate([
-    core_1.Component({
-        template: "\n    <div class=\"jumbotron text-center\">\n      <h1>404 Not Found</h1>\n      <p>You may be lost. Follow the breadcrumbs back <a routerLink=\"/\">home</a>.</p>\n    </div>\n  "
-    })
-], NotFoundComponent);
-exports.NotFoundComponent = NotFoundComponent;
+];
+exports.appRouting = router_1.RouterModule.forRoot(appRoutes);
 
 
 /***/ }),
 
-/***/ 112:
+/***/ 292:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6214,7 +6679,7 @@ exports.AuthGuard = AuthGuard;
 
 /***/ }),
 
-/***/ 113:
+/***/ 293:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6243,697 +6708,17 @@ exports.CanDeactivateGuard = CanDeactivateGuard;
 
 /***/ }),
 
-/***/ 17:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var usersPromise = Promise.resolve([
-    {
-        id: 1,
-        name: 'Gary',
-        username: 'garyuppiah',
-        avatar: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVkfbHgVyXw7tVigsl2Gq9-knPZiBcmSc7Z7qQ5W600U7aoAwe'
-    }
-]);
-var UserService = (function () {
-    function UserService() {
-    }
-    // get all users
-    UserService.prototype.getUsers = function () {
-        return usersPromise;
-    };
-    // find a specific user
-    UserService.prototype.getUser = function (username) {
-        return usersPromise.then(function (users) { return users.find(function (user) { return user.username === username; }); });
-        // let user = usersPromise.then(users => {
-        //   return users.find(user => {
-        //     return user.username === username;
-        //   });
-        // });
-        // return user;
-    };
-    return UserService;
-}());
-UserService = __decorate([
-    core_1.Injectable()
-], UserService);
-exports.UserService = UserService;
-
-
-/***/ }),
-
-/***/ 242:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var DashboardComponent = (function () {
-    function DashboardComponent() {
-    }
-    return DashboardComponent;
-}());
-DashboardComponent = __decorate([
-    core_1.Component({
-        template: "\n    <div class=\"jumbotron text-center\">\n      <h1>Welcome to the Dashboard</h1>\n\n      <a routerLink=\"/dashboard/users\" class=\"btn btn-lg btn-danger\">\n        Manage Users\n      </a>\n    </div>\n  "
-    })
-], DashboardComponent);
-exports.DashboardComponent = DashboardComponent;
-
-
-/***/ }),
-
-/***/ 243:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var router_1 = __webpack_require__(15);
-var user_service_1 = __webpack_require__(17);
-var DashboardUserDetailsComponent = (function () {
-    function DashboardUserDetailsComponent(service, route, router) {
-        this.service = service;
-        this.route = route;
-        this.router = router;
-    }
-    DashboardUserDetailsComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.route.params.forEach(function (params) {
-            var username = params['username'];
-            _this.service.getUser(username).then(function (user) {
-                _this.user = user;
-                _this.editName = user.name;
-            });
-        });
-    };
-    DashboardUserDetailsComponent.prototype.save = function () {
-        this.user.name = this.editName;
-        this.router.navigate(['/dashboard/users']);
-    };
-    // dont save. navigate to /dashboard/users
-    DashboardUserDetailsComponent.prototype.cancel = function () {
-        this.router.navigate(['/dashboard/users']);
-    };
-    DashboardUserDetailsComponent.prototype.canDeactivate = function () {
-        console.log('i am navigating away');
-        // if the editName !== this.user.name
-        if (this.user.name !== this.editName) {
-            return window.confirm('Discard changes?');
-        }
-        return true;
-    };
-    return DashboardUserDetailsComponent;
-}());
-DashboardUserDetailsComponent = __decorate([
-    core_1.Component({
-        template: "\n    <div class=\"jumbotron\">\n\n      <div *ngIf=\"user\">\n        <h2>{{ user.name }}</h2>\n\n        <div class=\"form-group\">\n          <input type=\"text\" [(ngModel)]=\"editName\" class=\"form-control\">\n        </div>\n\n        <div class=\"form-group text-center\">\n          <button (click)=\"cancel()\" class=\"btn btn-danger\">Cancel</button>\n          <button (click)=\"save()\" class=\"btn btn-success\">Save</button>\n        </div>\n      </div>\n\n    </div>\n  "
-    }),
-    __metadata("design:paramtypes", [user_service_1.UserService,
-        router_1.ActivatedRoute,
-        router_1.Router])
-], DashboardUserDetailsComponent);
-exports.DashboardUserDetailsComponent = DashboardUserDetailsComponent;
-
-
-/***/ }),
-
-/***/ 244:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var DashboardUsersHomeComponent = (function () {
-    function DashboardUsersHomeComponent() {
-    }
-    DashboardUsersHomeComponent.prototype.ngOnInit = function () {
-    };
-    return DashboardUsersHomeComponent;
-}());
-DashboardUsersHomeComponent = __decorate([
-    core_1.Component({
-        template: "\n    i am the dashboard users home\n  "
-    }),
-    __metadata("design:paramtypes", [])
-], DashboardUsersHomeComponent);
-exports.DashboardUsersHomeComponent = DashboardUsersHomeComponent;
-
-
-/***/ }),
-
-/***/ 245:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var user_service_1 = __webpack_require__(17);
-var DashboardUsersComponent = (function () {
-    function DashboardUsersComponent(service) {
-        this.service = service;
-    }
-    DashboardUsersComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.service.getUsers().then(function (users) { return _this.users = users; });
-    };
-    return DashboardUsersComponent;
-}());
-DashboardUsersComponent = __decorate([
-    core_1.Component({
-        template: "\n    <h2>Users Section</h2>\n    <p>Manage your users.</p>\n\n    <div class=\"row\">\n\n      <div class=\"col-sm-4\">\n\n        <div *ngIf=\"users\" class=\"list-group\">\n          <a *ngFor=\"let user of users\" \n            class=\"list-group-item\"\n            [routerLink]=\"['/dashboard/users', user.username]\">\n              {{ user.name }}\n          </a>\n        </div>\n        \n      </div>\n      <div class=\"col-sm-8\">\n\n        <router-outlet></router-outlet>\n\n      </div>\n\n    </div>\n  "
-    }),
-    __metadata("design:paramtypes", [user_service_1.UserService])
-], DashboardUsersComponent);
-exports.DashboardUsersComponent = DashboardUsersComponent;
-
-
-/***/ }),
-
-/***/ 246:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__translate_service__ = __webpack_require__(60);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TranslateDirective; });
-
-
-
-var TranslateDirective = (function () {
-    function TranslateDirective(translateService, element) {
-        var _this = this;
-        this.translateService = translateService;
-        this.element = element;
-        // subscribe to onTranslationChange event, in case the translations of the current lang change
-        if (!this.onTranslationChangeSub) {
-            this.onTranslationChangeSub = this.translateService.onTranslationChange.subscribe(function (event) {
-                if (event.lang === _this.translateService.currentLang) {
-                    _this.checkNodes(true, event.translations);
-                }
-            });
-        }
-        // subscribe to onLangChange event, in case the language changes
-        if (!this.onLangChangeSub) {
-            this.onLangChangeSub = this.translateService.onLangChange.subscribe(function (event) {
-                _this.checkNodes(true, event.translations);
-            });
-        }
-        // subscribe to onDefaultLangChange event, in case the default language changes
-        if (!this.onDefaultLangChangeSub) {
-            this.onDefaultLangChangeSub = this.translateService.onDefaultLangChange.subscribe(function (event) {
-                _this.checkNodes(true);
-            });
-        }
-    }
-    Object.defineProperty(TranslateDirective.prototype, "translate", {
-        set: function (key) {
-            if (key) {
-                this.key = key;
-                this.checkNodes();
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    TranslateDirective.prototype.ngAfterViewChecked = function () {
-        this.checkNodes();
-    };
-    TranslateDirective.prototype.checkNodes = function (forceUpdate, translations) {
-        if (forceUpdate === void 0) { forceUpdate = false; }
-        var nodes = this.element.nativeElement.childNodes;
-        for (var i = 0; i < nodes.length; ++i) {
-            var node = nodes[i];
-            if (node.nodeType === 3) {
-                var key = void 0;
-                if (this.key) {
-                    key = this.key;
-                }
-                else {
-                    var content = node.textContent.trim();
-                    if (content.length) {
-                        // we want to use the content as a key, not the translation value
-                        if (content !== node.currentValue) {
-                            key = content;
-                            // the content was changed from the user, we'll use it as a reference if needed
-                            node.originalContent = node.textContent;
-                        }
-                        else if (node.originalContent && forceUpdate) {
-                            node.lastKey = null;
-                            // the current content is the translation, not the key, use the last real content as key
-                            key = node.originalContent.trim();
-                        }
-                    }
-                }
-                this.updateValue(key, node, translations);
-            }
-        }
-    };
-    TranslateDirective.prototype.updateValue = function (key, node, translations) {
-        var _this = this;
-        if (key) {
-            var interpolateParams = this.translateParams;
-            if (node.lastKey === key && this.lastParams === interpolateParams) {
-                return;
-            }
-            this.lastParams = interpolateParams;
-            var onTranslation = function (res) {
-                if (res !== key) {
-                    node.lastKey = key;
-                }
-                if (!node.originalContent) {
-                    node.originalContent = node.textContent;
-                }
-                node.currentValue = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util__["a" /* isDefined */])(res) ? res : (node.originalContent || key);
-                // we replace in the original content to preserve spaces that we might have trimmed
-                node.textContent = _this.key ? node.currentValue : node.originalContent.replace(key, node.currentValue);
-            };
-            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util__["a" /* isDefined */])(translations)) {
-                var res = this.translateService.getParsedResult(translations, key, interpolateParams);
-                if (typeof res.subscribe === "function") {
-                    res.subscribe(onTranslation);
-                }
-                else {
-                    onTranslation(res);
-                }
-            }
-            else {
-                this.translateService.get(key, interpolateParams).subscribe(onTranslation);
-            }
-        }
-    };
-    TranslateDirective.prototype.ngOnDestroy = function () {
-        if (this.onLangChangeSub) {
-            this.onLangChangeSub.unsubscribe();
-        }
-        if (this.onDefaultLangChangeSub) {
-            this.onDefaultLangChangeSub.unsubscribe();
-        }
-        if (this.onTranslationChangeSub) {
-            this.onTranslationChangeSub.unsubscribe();
-        }
-    };
-    TranslateDirective.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{
-                    selector: '[translate],[ng2-translate]'
-                },] },
-    ];
-    /** @nocollapse */
-    TranslateDirective.ctorParameters = function () { return [
-        { type: __WEBPACK_IMPORTED_MODULE_2__translate_service__["d" /* TranslateService */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], },
-    ]; };
-    TranslateDirective.propDecorators = {
-        'translate': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-        'translateParams': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-    };
-    return TranslateDirective;
-}());
-
-
-/***/ }),
-
-/***/ 247:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__translate_service__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(61);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TranslatePipe; });
-
-
-
-var TranslatePipe = (function () {
-    function TranslatePipe(translate, _ref) {
-        this.translate = translate;
-        this._ref = _ref;
-        this.value = '';
-    }
-    TranslatePipe.prototype.updateValue = function (key, interpolateParams, translations) {
-        var _this = this;
-        var onTranslation = function (res) {
-            _this.value = res !== undefined ? res : key;
-            _this.lastKey = key;
-            _this._ref.markForCheck();
-        };
-        if (translations) {
-            var res = this.translate.getParsedResult(translations, key, interpolateParams);
-            if (typeof res.subscribe === 'function') {
-                res.subscribe(onTranslation);
-            }
-            else {
-                onTranslation(res);
-            }
-        }
-        this.translate.get(key, interpolateParams).subscribe(onTranslation);
-    };
-    TranslatePipe.prototype.transform = function (query) {
-        var _this = this;
-        var args = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            args[_i - 1] = arguments[_i];
-        }
-        if (!query || query.length === 0) {
-            return query;
-        }
-        // if we ask another time for the same key, return the last value
-        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__util__["b" /* equals */])(query, this.lastKey) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__util__["b" /* equals */])(args, this.lastParams)) {
-            return this.value;
-        }
-        var interpolateParams;
-        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__util__["a" /* isDefined */])(args[0]) && args.length) {
-            if (typeof args[0] === 'string' && args[0].length) {
-                // we accept objects written in the template such as {n:1}, {'n':1}, {n:'v'}
-                // which is why we might need to change it to real JSON objects such as {"n":1} or {"n":"v"}
-                var validArgs = args[0]
-                    .replace(/(\')?([a-zA-Z0-9_]+)(\')?(\s)?:/g, '"$2":')
-                    .replace(/:(\s)?(\')(.*?)(\')/g, ':"$3"');
-                try {
-                    interpolateParams = JSON.parse(validArgs);
-                }
-                catch (e) {
-                    throw new SyntaxError("Wrong parameter in TranslatePipe. Expected a valid Object, received: " + args[0]);
-                }
-            }
-            else if (typeof args[0] === 'object' && !Array.isArray(args[0])) {
-                interpolateParams = args[0];
-            }
-        }
-        // store the query, in case it changes
-        this.lastKey = query;
-        // store the params, in case they change
-        this.lastParams = args;
-        // set the value
-        this.updateValue(query, interpolateParams);
-        // if there is a subscription to onLangChange, clean it
-        this._dispose();
-        // subscribe to onTranslationChange event, in case the translations change
-        if (!this.onTranslationChange) {
-            this.onTranslationChange = this.translate.onTranslationChange.subscribe(function (event) {
-                if (_this.lastKey && event.lang === _this.translate.currentLang) {
-                    _this.lastKey = null;
-                    _this.updateValue(query, interpolateParams, event.translations);
-                }
-            });
-        }
-        // subscribe to onLangChange event, in case the language changes
-        if (!this.onLangChange) {
-            this.onLangChange = this.translate.onLangChange.subscribe(function (event) {
-                if (_this.lastKey) {
-                    _this.lastKey = null; // we want to make sure it doesn't return the same value until it's been updated
-                    _this.updateValue(query, interpolateParams, event.translations);
-                }
-            });
-        }
-        // subscribe to onDefaultLangChange event, in case the default language changes
-        if (!this.onDefaultLangChange) {
-            this.onDefaultLangChange = this.translate.onDefaultLangChange.subscribe(function () {
-                if (_this.lastKey) {
-                    _this.lastKey = null; // we want to make sure it doesn't return the same value until it's been updated
-                    _this.updateValue(query, interpolateParams);
-                }
-            });
-        }
-        return this.value;
-    };
-    /**
-     * Clean any existing subscription to change events
-     * @private
-     */
-    TranslatePipe.prototype._dispose = function () {
-        if (typeof this.onTranslationChange !== 'undefined') {
-            this.onTranslationChange.unsubscribe();
-            this.onTranslationChange = undefined;
-        }
-        if (typeof this.onLangChange !== 'undefined') {
-            this.onLangChange.unsubscribe();
-            this.onLangChange = undefined;
-        }
-        if (typeof this.onDefaultLangChange !== 'undefined') {
-            this.onDefaultLangChange.unsubscribe();
-            this.onDefaultLangChange = undefined;
-        }
-    };
-    TranslatePipe.prototype.ngOnDestroy = function () {
-        this._dispose();
-    };
-    TranslatePipe.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{
-                    name: 'translate',
-                    pure: false // required to update the value when the promise is resolved
-                },] },
-    ];
-    /** @nocollapse */
-    TranslatePipe.ctorParameters = function () { return [
-        { type: __WEBPACK_IMPORTED_MODULE_1__translate_service__["d" /* TranslateService */], },
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"], },
-    ]; };
-    return TranslatePipe;
-}());
-
-
-/***/ }),
-
-/***/ 296:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var AppComponent = (function () {
-    function AppComponent() {
-        this.message = 'This is the sample message.';
-        this.param = { value: 'world' };
-    }
-    return AppComponent;
-}());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'app-root',
-        styles: [__webpack_require__(628)],
-        template: __webpack_require__(367)
-    })
-], AppComponent);
-exports.AppComponent = AppComponent;
-
-
-/***/ }),
-
-/***/ 297:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var router_1 = __webpack_require__(15);
-var home_component_1 = __webpack_require__(32);
-var contact_component_1 = __webpack_require__(110);
-var not_found_component_1 = __webpack_require__(111);
-var appRoutes = [
-    {
-        path: '',
-        component: home_component_1.HomeComponent
-    },
-    {
-        path: 'about',
-        loadChildren: function() { return new Promise(function (resolve) {  Promise.resolve().then((function (require) {    resolve(__webpack_require__(54)['AboutModule']);  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);})}
-    },
-    { path: 'contact', component: contact_component_1.ContactComponent },
-    { path: '**', component: not_found_component_1.NotFoundComponent }
-];
-exports.appRouting = router_1.RouterModule.forRoot(appRoutes);
-
-
-/***/ }),
-
-/***/ 298:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var common_1 = __webpack_require__(19);
-var forms_1 = __webpack_require__(109);
-var dashboard_component_1 = __webpack_require__(242);
-var dashboard_routing_1 = __webpack_require__(366);
-var dashboard_users_component_1 = __webpack_require__(245);
-var dashboard_users_home_component_1 = __webpack_require__(244);
-var dashboard_user_details_component_1 = __webpack_require__(243);
-var user_service_1 = __webpack_require__(17);
-var DashboardModule = (function () {
-    function DashboardModule() {
-    }
-    return DashboardModule;
-}());
-DashboardModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            common_1.CommonModule,
-            forms_1.FormsModule,
-            dashboard_routing_1.dashboardRouting
-        ],
-        declarations: [
-            dashboard_component_1.DashboardComponent,
-            dashboard_users_component_1.DashboardUsersComponent,
-            dashboard_users_home_component_1.DashboardUsersHomeComponent,
-            dashboard_user_details_component_1.DashboardUserDetailsComponent
-        ],
-        providers: [
-            user_service_1.UserService
-        ]
-    })
-], DashboardModule);
-exports.DashboardModule = DashboardModule;
-
-
-/***/ }),
-
-/***/ 300:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var SigninComponent = (function () {
-    function SigninComponent() {
-    }
-    SigninComponent.prototype.ngOnInit = function () {
-    };
-    return SigninComponent;
-}());
-SigninComponent = __decorate([
-    core_1.Component({
-        selector: 'app-signin',
-        template: __webpack_require__(369),
-        styles: [__webpack_require__(629)]
-    }),
-    __metadata("design:paramtypes", [])
-], SigninComponent);
-exports.SigninComponent = SigninComponent;
-
-
-/***/ }),
-
-/***/ 301:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var SignupComponent = (function () {
-    function SignupComponent() {
-    }
-    SignupComponent.prototype.ngOnInit = function () {
-    };
-    return SignupComponent;
-}());
-SignupComponent = __decorate([
-    core_1.Component({
-        selector: 'app-signup',
-        template: __webpack_require__(370),
-        styles: [__webpack_require__(630)]
-    }),
-    __metadata("design:paramtypes", [])
-], SignupComponent);
-exports.SignupComponent = SignupComponent;
-
-
-/***/ }),
-
-/***/ 302:
+/***/ 294:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_translate_pipe__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_translate_pipe__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_translate_parser__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_translate_service__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_translate_directive__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_translate_directive__ = __webpack_require__(239);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TranslatePipe", function() { return __WEBPACK_IMPORTED_MODULE_2__src_translate_pipe__["a"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "MissingTranslationHandler", function() { return __WEBPACK_IMPORTED_MODULE_4__src_translate_service__["a"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TranslateLoader", function() { return __WEBPACK_IMPORTED_MODULE_4__src_translate_service__["b"]; });
@@ -6997,7 +6782,7 @@ var TranslateModule = (function () {
 
 /***/ }),
 
-/***/ 32:
+/***/ 31:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7013,15 +6798,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
-var home_service_1 = __webpack_require__(92);
+var home_service_1 = __webpack_require__(40);
 var HomeComponent = (function () {
     function HomeComponent(homeService) {
         this.homeService = homeService;
         // constructor(){
-        this.home = [];
+        this.cities = [];
     }
     HomeComponent.prototype.ngOnInit = function () {
-        this.home = this.homeService.homeInit();
+        this.cities = this.homeService.homeInit();
         // console.log("ngOnInit");
     };
     return HomeComponent;
@@ -7029,8 +6814,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     core_1.Component({
         selector: 'home-page',
-        styles: [__webpack_require__(108)],
-        template: __webpack_require__(96),
+        styles: [__webpack_require__(106)],
+        template: __webpack_require__(95),
     }),
     __metadata("design:paramtypes", [home_service_1.HomeService])
 ], HomeComponent);
@@ -7055,7 +6840,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
-var user_service_1 = __webpack_require__(17);
+var user_service_1 = __webpack_require__(27);
 var AboutUsersResolve = (function () {
     function AboutUsersResolve(service) {
         this.service = service;
@@ -7074,10 +6859,10 @@ exports.AboutUsersResolve = AboutUsersResolve;
 
 /***/ }),
 
-/***/ 358:
+/***/ 350:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(22)();
+exports = module.exports = __webpack_require__(30)();
 // imports
 
 
@@ -7089,10 +6874,10 @@ exports.push([module.i, ".SixTitle {\r\n  color:#4169e1;\r\n  text-shadow: 0px 0
 
 /***/ }),
 
-/***/ 359:
+/***/ 351:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(22)();
+exports = module.exports = __webpack_require__(30)();
 // imports
 
 
@@ -7101,6 +6886,35 @@ exports.push([module.i, "", ""]);
 
 // exports
 
+
+/***/ }),
+
+/***/ 352:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(30)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 358:
+/***/ (function(module, exports) {
+
+module.exports = "<header>\r\n  <nav class=\"navbar navbar\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <div class=\"navbar-header\">\r\n      <a routerLink=\"/\" routerLinkActive=\"active\"\r\n        [routerLinkActiveOptions]=\"{ exact: true }\" class=\"navbar-brand\">\r\n        <div class=\"SixTitle\">\r\n          The Greater 6ix\r\n        </div>\r\n      </a>\r\n    </div>\r\n\r\n    <ul class=\"nav navbar-nav\">\r\n      <li><a routerLink=\"/\" routerLinkActive=\"active\"\r\n            [routerLinkActiveOptions]=\"{ exact: true }\">{{ 'HOME' | translate:param }}</a></li>\r\n      <li><a routerLink=\"/about\" routerLinkActive=\"active\" >{{ 'ABOUT' | translate:param }}</a></li>\r\n      <li><a routerLink=\"/contact\" routerLinkActive=\"active\" >{{ 'CONTACT' | translate:param }}</a></li>\r\n    </ul>\r\n\r\n    <ul class=\"nav navbar-nav navbar-right\">\r\n      <li><a routerLink=\"/sign\" routerLinkActive=\"active\" >{{ 'SIGN' | translate:param }}</a></li>\r\n    </ul>\r\n\r\n  </div>\r\n  </nav>\r\n</header>\r\n\r\n<main>\r\n\r\n  <router-outlet></router-outlet>\r\n\r\n</main>\r\n"
+
+/***/ }),
+
+/***/ 359:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"jumbotron jumbotron-sm\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12 col-lg-12\">\n                <h1 class=\"h1\"><small>Contactez nous!</small></h1>\n            </div>\n        </div>\n    </div>\n</div>\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-8\">\n            <div class=\"well well-sm\">\n                <form>\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"name\">\n                                Nom</label>\n                            <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Enter name\" required=\"required\" />\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"email\">\n                                Adresse Courriel</label>\n                            <div class=\"input-group\">\n                                <span class=\"input-group-addon\"><span class=\"glyphicon glyphicon-envelope\"></span>\n                                </span>\n                                <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" required=\"required\" /></div>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"subject\">\n                                Sujet</label>\n                            <select id=\"subject\" name=\"subject\" class=\"form-control\" required=\"required\">\n                                <option value=\"na\" selected=\"\">Choisir un:</option>\n                                <option value=\"service\">Questions sur l'application</option>\n                                <option value=\"suggestions\">Suggestion d'amelioration de performance</option>\n                                <option value=\"product\">Acheter une image</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"name\">\n                                Message</label>\n                            <textarea name=\"message\" id=\"message\" class=\"form-control\" rows=\"9\" cols=\"25\" required=\"required\"\n                                placeholder=\"Message\"></textarea>\n                        </div>\n                    </div>\n                    <div class=\"col-md-12\">\n                        <button type=\"submit\" class=\"btn btn-primary pull-right\" id=\"btnContactUs\">\n                            Envoyer</button>\n                    </div>\n                </div>\n                </form>\n            </div>\n        </div>\n        <div class=\"col-md-4\">\n            <form>\n            <legend><span class=\"glyphicon glyphicon-globe\"></span> Notre Bureau</legend>\n            <address>\n                <strong>College Boreal</strong><br>\n                1 Yonge Street<br>\n                Toronto, ON M5E 1E5<br>\n                <abbr title=\"Phone\">\n                    Tel:</abbr>\n                (416) 289-5130\n            </address>\n            </form>\n        </div>\n    </div>\n</div>\n"
 
 /***/ }),
 
@@ -7133,84 +6947,16 @@ exports.AboutSectionComponent = AboutSectionComponent;
 /***/ }),
 
 /***/ 360:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(22)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 366:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var router_1 = __webpack_require__(15);
-var dashboard_component_1 = __webpack_require__(242);
-var dashboard_users_component_1 = __webpack_require__(245);
-var dashboard_users_home_component_1 = __webpack_require__(244);
-var dashboard_user_details_component_1 = __webpack_require__(243);
-var auth_guard_service_1 = __webpack_require__(112);
-var can_deactivate_guard_service_1 = __webpack_require__(113);
-exports.dashboardRoutes = [
-    {
-        path: 'dashboard',
-        children: [
-            {
-                path: '',
-                canActivate: [auth_guard_service_1.AuthGuard],
-                component: dashboard_component_1.DashboardComponent
-            },
-            {
-                path: 'users',
-                component: dashboard_users_component_1.DashboardUsersComponent,
-                canActivateChild: [auth_guard_service_1.AuthGuard],
-                children: [
-                    {
-                        path: '',
-                        component: dashboard_users_home_component_1.DashboardUsersHomeComponent
-                    },
-                    {
-                        path: ':username',
-                        component: dashboard_user_details_component_1.DashboardUserDetailsComponent,
-                        canDeactivate: [can_deactivate_guard_service_1.CanDeactivateGuard]
-                    }
-                ]
-            }
-        ]
-    }
-];
-exports.dashboardRouting = router_1.RouterModule.forChild(exports.dashboardRoutes);
-
-
-/***/ }),
-
-/***/ 367:
-/***/ (function(module, exports) {
-
-module.exports = "<header>\r\n  <nav class=\"navbar navbar\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <div class=\"navbar-header\">\r\n      <a routerLink=\"/\" routerLinkActive=\"active\"\r\n        [routerLinkActiveOptions]=\"{ exact: true }\" class=\"navbar-brand\">\r\n        <div class=\"SixTitle\">\r\n          The Greater 6ix\r\n        </div>\r\n      </a>\r\n    </div>\r\n\r\n    <ul class=\"nav navbar-nav\">\r\n      <li><a routerLink=\"/\" routerLinkActive=\"active\"\r\n            [routerLinkActiveOptions]=\"{ exact: true }\">{{ 'HOME' | translate }}</a></li>\r\n      <li><a routerLink=\"/about\" routerLinkActive=\"active\" >{{ 'ABOUT' | translate }}</a></li>\r\n      <li><a routerLink=\"/contact\" routerLinkActive=\"active\" >{{ 'CONTACT' | translate }}</a></li>\r\n    </ul>\r\n\r\n    <ul class=\"nav navbar-nav navbar-right\">\r\n      <li><a routerLink=\"/sign\" routerLinkActive=\"active\" >{{ 'SIGN' | translate }}</a></li>\r\n    </ul>\r\n\r\n  </div>\r\n  </nav>\r\n</header>\r\n\r\n<main>\r\n\r\n  <router-outlet></router-outlet>\r\n\r\n</main>\r\n"
-
-/***/ }),
-
-/***/ 368:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"jumbotron jumbotron-sm\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12 col-lg-12\">\n                <h1 class=\"h1\"><small>Contactez nous!</small></h1>\n            </div>\n        </div>\n    </div>\n</div>\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-8\">\n            <div class=\"well well-sm\">\n                <form>\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"name\">\n                                Nom</label>\n                            <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Enter name\" required=\"required\" />\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"email\">\n                                Adresse Courriel</label>\n                            <div class=\"input-group\">\n                                <span class=\"input-group-addon\"><span class=\"glyphicon glyphicon-envelope\"></span>\n                                </span>\n                                <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" required=\"required\" /></div>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"subject\">\n                                Sujet</label>\n                            <select id=\"subject\" name=\"subject\" class=\"form-control\" required=\"required\">\n                                <option value=\"na\" selected=\"\">Choisir un:</option>\n                                <option value=\"service\">Questions sur l'application</option>\n                                <option value=\"suggestions\">Suggestion d'amelioration de performance</option>\n                                <option value=\"product\">Acheter une image</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"name\">\n                                Message</label>\n                            <textarea name=\"message\" id=\"message\" class=\"form-control\" rows=\"9\" cols=\"25\" required=\"required\"\n                                placeholder=\"Message\"></textarea>\n                        </div>\n                    </div>\n                    <div class=\"col-md-12\">\n                        <button type=\"submit\" class=\"btn btn-primary pull-right\" id=\"btnContactUs\">\n                            Envoyer</button>\n                    </div>\n                </div>\n                </form>\n            </div>\n        </div>\n        <div class=\"col-md-4\">\n            <form>\n            <legend><span class=\"glyphicon glyphicon-globe\"></span> Notre Bureau</legend>\n            <address>\n                <strong>College Boreal</strong><br>\n                1 Yonge Street<br>\n                Toronto, ON M5E 1E5<br>\n                <abbr title=\"Phone\">\n                    Tel:</abbr>\n                (416) 289-5130\n            </address>\n            </form>\n        </div>\n    </div>\n</div>\n"
-
-/***/ }),
-
-/***/ 369:
 /***/ (function(module, exports) {
 
 module.exports = "<p>\n  signin works!\n</p>\n"
+
+/***/ }),
+
+/***/ 361:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  signup works!\n</p>\n"
 
 /***/ }),
 
@@ -7231,7 +6977,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
 var router_1 = __webpack_require__(15);
-var user_service_1 = __webpack_require__(17);
+var user_service_1 = __webpack_require__(27);
 var AboutUserResolve = (function () {
     function AboutUserResolve(service, router) {
         this.service = service;
@@ -7259,13 +7005,6 @@ AboutUserResolve = __decorate([
 ], AboutUserResolve);
 exports.AboutUserResolve = AboutUserResolve;
 
-
-/***/ }),
-
-/***/ 370:
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  signup works!\n</p>\n"
 
 /***/ }),
 
@@ -7369,22 +7108,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
-var HomeInfoComponent = (function () {
-    function HomeInfoComponent() {
+var http_1 = __webpack_require__(32);
+__webpack_require__(73);
+var HomeService = (function () {
+    function HomeService(http) {
+        this.http = http;
+        this.cities = [];
     }
-    HomeInfoComponent.prototype.ngOnInit = function () {
+    HomeService.prototype.homeInit = function () {
+        var cities = [];
+        this.http.get("/api/cities")
+            .map(function (result) { return result.json(); })
+            .flatMap(function (result) { return result.results; })
+            .subscribe(function (result) {
+            cities.push(result);
+        }, function (error) {
+            console.error(error);
+        });
+        return cities;
     };
-    return HomeInfoComponent;
+    return HomeService;
 }());
-HomeInfoComponent = __decorate([
-    core_1.Component({
-        selector: 'app-home-info',
-        template: __webpack_require__(95),
-        styles: [__webpack_require__(107)]
-    }),
-    __metadata("design:paramtypes", [])
-], HomeInfoComponent);
-exports.HomeInfoComponent = HomeInfoComponent;
+HomeService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], HomeService);
+exports.HomeService = HomeService;
 
 
 /***/ }),
@@ -7402,11 +7151,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
-var common_1 = __webpack_require__(19);
+var common_1 = __webpack_require__(18);
 var about_component_1 = __webpack_require__(39);
 var about_user_component_1 = __webpack_require__(38);
 var about_section_component_1 = __webpack_require__(36);
-var user_service_1 = __webpack_require__(17);
+var user_service_1 = __webpack_require__(27);
 var about_routing_1 = __webpack_require__(71);
 var about_resolve_service_1 = __webpack_require__(35);
 var about_user_resolve_service_1 = __webpack_require__(37);
@@ -7445,17 +7194,17 @@ exports.AboutModule = AboutModule;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge__ = __webpack_require__(245);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray__ = __webpack_require__(248);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take__ = __webpack_require__(247);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__translate_parser__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util__ = __webpack_require__(61);
@@ -7962,11 +7711,11 @@ function isDefined(value) {
 
 /***/ }),
 
-/***/ 628:
+/***/ 619:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(358);
+        var result = __webpack_require__(350);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -7977,11 +7726,11 @@ function isDefined(value) {
 
 /***/ }),
 
-/***/ 629:
+/***/ 620:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(359);
+        var result = __webpack_require__(351);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -7992,11 +7741,11 @@ function isDefined(value) {
 
 /***/ }),
 
-/***/ 630:
+/***/ 621:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(360);
+        var result = __webpack_require__(352);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -8007,7 +7756,7 @@ function isDefined(value) {
 
 /***/ }),
 
-/***/ 631:
+/***/ 622:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8024,21 +7773,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
 var platform_browser_1 = __webpack_require__(53);
-var forms_1 = __webpack_require__(109);
-var dashboard_module_1 = __webpack_require__(298);
-var app_routing_1 = __webpack_require__(297);
-var app_component_1 = __webpack_require__(296);
-var home_component_1 = __webpack_require__(32);
-var contact_component_1 = __webpack_require__(110);
-var not_found_component_1 = __webpack_require__(111);
-var auth_guard_service_1 = __webpack_require__(112);
-var can_deactivate_guard_service_1 = __webpack_require__(113);
-var signin_component_1 = __webpack_require__(300);
-var signup_component_1 = __webpack_require__(301);
-var http_1 = __webpack_require__(31);
-var ng2_translate_1 = __webpack_require__(302);
-var home_info_component_1 = __webpack_require__(40);
+var forms_1 = __webpack_require__(286);
+// import { DashboardModule } from './dashboard/dashboard.module';
+var app_routing_1 = __webpack_require__(291);
+var app_component_1 = __webpack_require__(290);
+var contact_component_1 = __webpack_require__(107);
+var not_found_component_1 = __webpack_require__(108);
+var auth_guard_service_1 = __webpack_require__(292);
+var can_deactivate_guard_service_1 = __webpack_require__(293);
+var signin_component_1 = __webpack_require__(109);
+var signup_component_1 = __webpack_require__(110);
+var http_1 = __webpack_require__(32);
+var ng2_translate_1 = __webpack_require__(294);
 var about_module_1 = __webpack_require__(54);
+var home_module_1 = __webpack_require__(74);
 function createTranslateLoader(http) {
     return new ng2_translate_1.TranslateStaticLoader(http, './assets/i18n', '.json');
 }
@@ -8059,7 +7807,8 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             forms_1.FormsModule,
             app_routing_1.appRouting,
-            dashboard_module_1.DashboardModule,
+            // DashboardModule,
+            home_module_1.HomeModule,
             about_module_1.AboutModule,
             http_1.HttpModule,
             ng2_translate_1.TranslateModule.forRoot({
@@ -8070,14 +7819,12 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            home_component_1.HomeComponent,
             contact_component_1.ContactComponent,
             not_found_component_1.NotFoundComponent,
             signup_component_1.SignupComponent,
             signin_component_1.SigninComponent,
             signup_component_1.SignupComponent,
             contact_component_1.ContactComponent,
-            home_info_component_1.HomeInfoComponent
         ],
         providers: [
             auth_guard_service_1.AuthGuard,
@@ -8131,37 +7878,26 @@ exports.aboutRouting = router_1.RouterModule.forChild(aboutRoutes);
 
 /***/ }),
 
-/***/ 90:
+/***/ 72:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(22)();
-// imports
+"use strict";
 
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
+Object.defineProperty(exports, "__esModule", { value: true });
+var router_1 = __webpack_require__(15);
+var home_component_1 = __webpack_require__(31);
+var HomeRoutes = [
+    {
+        path: 'home',
+        component: home_component_1.HomeComponent
+    }
+];
+exports.HomeRouting = router_1.RouterModule.forChild(HomeRoutes);
 
 
 /***/ }),
 
-/***/ 91:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(22)();
-// imports
-
-
-// module
-exports.push([module.i, "\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 92:
+/***/ 74:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8172,36 +7908,47 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
-var http_1 = __webpack_require__(31);
-__webpack_require__(72);
-var HomeService = (function () {
-    function HomeService(http) {
-        this.http = http;
+var common_1 = __webpack_require__(18);
+var home_routing_1 = __webpack_require__(72);
+var home_component_1 = __webpack_require__(31);
+var home_service_1 = __webpack_require__(40);
+var HomeModule = (function () {
+    function HomeModule() {
     }
-    HomeService.prototype.homeInit = function () {
-        var cities = [];
-        this.http.get("/api/cities")
-            .map(function (result) { return result.json(); })
-            .flatMap(function (result) { return result.results; })
-            .subscribe(function (result) {
-            cities.push(result);
-        }, function (error) {
-            console.error(error);
-        });
-        return cities;
-    };
-    return HomeService;
+    return HomeModule;
 }());
-HomeService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], HomeService);
-exports.HomeService = HomeService;
+HomeModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            common_1.CommonModule,
+            home_routing_1.HomeRouting
+        ],
+        declarations: [
+            home_component_1.HomeComponent
+        ],
+        providers: [
+            home_service_1.HomeService
+        ]
+    })
+], HomeModule);
+exports.HomeModule = HomeModule;
+
+
+/***/ }),
+
+/***/ 92:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(30)();
+// imports
+
+
+// module
+exports.push([module.i, "\r\n", ""]);
+
+// exports
 
 
 /***/ }),
@@ -8274,16 +8021,9 @@ var DefaultTranslateParser = (function (_super) {
 /***/ 95:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  home-info works!\n</p>\n"
-
-/***/ }),
-
-/***/ 96:
-/***/ (function(module, exports) {
-
-module.exports = "Cities:\r\n<div class=\"container\">\r\n\r\n  <h2>{{ 'TITLE' | translate }}<hr></h2>\r\n    <div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">\r\n      <div class=\"panel-heading\">\r\n        <img src=\"{{cities.pictureUrl}}\" alt=\"{{cities.city}}\">\r\n        <span>{{cities.message}}</span>\r\n        <span>{{cities.prix}}</span>\r\n      </div>\r\n    </div>\r\n</div>\r\n"
+module.exports = "Cities:\r\n<div class=\"container\">\r\n\r\n  <!--<h2>{{ 'TITLE' | translate:param }}<hr></h2>-->\r\n\r\n    <!--<div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">-->\r\n      <!--<div class=\"panel-heading\">-->\r\n        <!--<img src=\"{{city.pictureUrl}}\" alt=\"{{city.city}}\">-->\r\n        <!--<span>{{city.message}}</span>-->\r\n        <!--<span>{{city.prix}}</span>-->\r\n      <!--</div>-->\r\n    <!--</div>-->\r\n</div>\r\n"
 
 /***/ })
 
-},[631]);
+},[622]);
 //# sourceMappingURL=app.js.map

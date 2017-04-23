@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { DashboardModule } from './dashboard/dashboard.module';
+// import { DashboardModule } from './dashboard/dashboard.module';
 import { appRouting } from './app.routing';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
@@ -23,7 +23,7 @@ export function createTranslateLoader(http: Http) {
     BrowserModule,
     FormsModule,
     appRouting,
-    DashboardModule,
+    // DashboardModule,
     HomeModule,
     AboutModule,
 

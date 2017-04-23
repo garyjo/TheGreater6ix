@@ -1,10 +1,10 @@
-webpackJsonp([2],{
+webpackJsonp([3],{
 
-/***/ 107:
+/***/ 106:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(90);
+        var result = __webpack_require__(92);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -15,46 +15,7 @@ webpackJsonp([2],{
 
 /***/ }),
 
-/***/ 108:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(91);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ 299:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var router_1 = __webpack_require__(15);
-var home_component_1 = __webpack_require__(32);
-var home_info_component_1 = __webpack_require__(40);
-var HomeRoutes = [
-    {
-        path: 'pokemon',
-        component: home_component_1.HomeComponent
-    },
-    {
-        path: 'pokemon/:name',
-        component: home_info_component_1.HomeInfoComponent
-    }
-];
-exports.HomeRouting = router_1.RouterModule.forChild(HomeRoutes);
-
-
-/***/ }),
-
-/***/ 32:
+/***/ 31:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70,15 +31,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
-var home_service_1 = __webpack_require__(92);
+var home_service_1 = __webpack_require__(40);
 var HomeComponent = (function () {
     function HomeComponent(homeService) {
         this.homeService = homeService;
         // constructor(){
-        this.home = [];
+        this.cities = [];
     }
     HomeComponent.prototype.ngOnInit = function () {
-        this.home = this.homeService.homeInit();
+        this.cities = this.homeService.homeInit();
         // console.log("ngOnInit");
     };
     return HomeComponent;
@@ -86,8 +47,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     core_1.Component({
         selector: 'home-page',
-        styles: [__webpack_require__(108)],
-        template: __webpack_require__(96),
+        styles: [__webpack_require__(106)],
+        template: __webpack_require__(95),
     }),
     __metadata("design:paramtypes", [home_service_1.HomeService])
 ], HomeComponent);
@@ -112,118 +73,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
-var HomeInfoComponent = (function () {
-    function HomeInfoComponent() {
-    }
-    HomeInfoComponent.prototype.ngOnInit = function () {
-    };
-    return HomeInfoComponent;
-}());
-HomeInfoComponent = __decorate([
-    core_1.Component({
-        selector: 'app-home-info',
-        template: __webpack_require__(95),
-        styles: [__webpack_require__(107)]
-    }),
-    __metadata("design:paramtypes", [])
-], HomeInfoComponent);
-exports.HomeInfoComponent = HomeInfoComponent;
-
-
-/***/ }),
-
-/***/ 632:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var common_1 = __webpack_require__(19);
-var home_routing_1 = __webpack_require__(299);
-var home_component_1 = __webpack_require__(32);
-var home_info_component_1 = __webpack_require__(40);
-// import { HomeService } from './home.service';
-var HomeModule = (function () {
-    function HomeModule() {
-    }
-    return HomeModule;
-}());
-HomeModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            common_1.CommonModule,
-            home_routing_1.HomeRouting
-        ],
-        declarations: [
-            home_component_1.HomeComponent,
-            home_info_component_1.HomeInfoComponent
-        ],
-        providers: []
-    })
-], HomeModule);
-exports.HomeModule = HomeModule;
-
-
-/***/ }),
-
-/***/ 90:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(22)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 91:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(22)();
-// imports
-
-
-// module
-exports.push([module.i, "\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 92:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var http_1 = __webpack_require__(31);
-__webpack_require__(72);
+var http_1 = __webpack_require__(32);
+__webpack_require__(73);
 var HomeService = (function () {
     function HomeService(http) {
         this.http = http;
+        this.cities = [];
     }
     HomeService.prototype.homeInit = function () {
         var cities = [];
@@ -248,19 +103,87 @@ exports.HomeService = HomeService;
 
 /***/ }),
 
-/***/ 95:
-/***/ (function(module, exports) {
+/***/ 72:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<p>\n  home-info works!\n</p>\n"
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var router_1 = __webpack_require__(15);
+var home_component_1 = __webpack_require__(31);
+var HomeRoutes = [
+    {
+        path: 'home',
+        component: home_component_1.HomeComponent
+    }
+];
+exports.HomeRouting = router_1.RouterModule.forChild(HomeRoutes);
+
 
 /***/ }),
 
-/***/ 96:
+/***/ 74:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var common_1 = __webpack_require__(18);
+var home_routing_1 = __webpack_require__(72);
+var home_component_1 = __webpack_require__(31);
+var home_service_1 = __webpack_require__(40);
+var HomeModule = (function () {
+    function HomeModule() {
+    }
+    return HomeModule;
+}());
+HomeModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            common_1.CommonModule,
+            home_routing_1.HomeRouting
+        ],
+        declarations: [
+            home_component_1.HomeComponent
+        ],
+        providers: [
+            home_service_1.HomeService
+        ]
+    })
+], HomeModule);
+exports.HomeModule = HomeModule;
+
+
+/***/ }),
+
+/***/ 92:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(30)();
+// imports
+
+
+// module
+exports.push([module.i, "\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 95:
 /***/ (function(module, exports) {
 
-module.exports = "Cities:\r\n<div class=\"container\">\r\n\r\n  <h2>{{ 'TITLE' | translate }}<hr></h2>\r\n    <div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">\r\n      <div class=\"panel-heading\">\r\n        <img src=\"{{cities.pictureUrl}}\" alt=\"{{cities.city}}\">\r\n        <span>{{cities.message}}</span>\r\n        <span>{{cities.prix}}</span>\r\n      </div>\r\n    </div>\r\n</div>\r\n"
+module.exports = "Cities:\r\n<div class=\"container\">\r\n\r\n  <!--<h2>{{ 'TITLE' | translate:param }}<hr></h2>-->\r\n\r\n    <!--<div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">-->\r\n      <!--<div class=\"panel-heading\">-->\r\n        <!--<img src=\"{{city.pictureUrl}}\" alt=\"{{city.city}}\">-->\r\n        <!--<span>{{city.message}}</span>-->\r\n        <!--<span>{{city.prix}}</span>-->\r\n      <!--</div>-->\r\n    <!--</div>-->\r\n</div>\r\n"
 
 /***/ })
 
-},[632]);
+},[74]);
 //# sourceMappingURL=home.js.map
