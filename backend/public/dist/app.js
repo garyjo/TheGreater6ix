@@ -1,999 +1,48 @@
-webpackJsonp([2,4],[
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */
+webpackJsonp([1,3],{
+
+/***/ 107:
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
 
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var usersPromise = Promise.resolve([
-    {
-        id: 1,
-        name: 'Gary',
-        username: 'garyuppiah',
-        avatar: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVkfbHgVyXw7tVigsl2Gq9-knPZiBcmSc7Z7qQ5W600U7aoAwe'
-    }
-]);
-var UserService = (function () {
-    function UserService() {
-    }
-    // get all users
-    UserService.prototype.getUsers = function () {
-        return usersPromise;
-    };
-    // find a specific user
-    UserService.prototype.getUser = function (username) {
-        return usersPromise.then(function (users) { return users.find(function (user) { return user.username === username; }); });
-        // let user = usersPromise.then(users => {
-        //   return users.find(user => {
-        //     return user.username === username;
-        //   });
-        // });
-        // return user;
-    };
-    return UserService;
-}());
-UserService = __decorate([
-    core_1.Injectable()
-], UserService);
-exports.UserService = UserService;
+        var result = __webpack_require__(90);
 
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
 
 /***/ }),
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */
+
+/***/ 108:
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
 
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var home_service_1 = __webpack_require__(64);
-var HomeComponent = (function () {
-    function HomeComponent(homeService) {
-        this.homeService = homeService;
-        // constructor(){
-        this.home = [];
-    }
-    HomeComponent.prototype.ngOnInit = function () {
-        this.home = this.homeService.homeInit();
-        // console.log("ngOnInit");
-    };
-    return HomeComponent;
-}());
-HomeComponent = __decorate([
-    core_1.Component({
-        selector: 'home-page',
-        styles: [__webpack_require__(76)],
-        template: __webpack_require__(68),
-    }),
-    __metadata("design:paramtypes", [home_service_1.HomeService])
-], HomeComponent);
-exports.HomeComponent = HomeComponent;
+        var result = __webpack_require__(91);
 
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
 
 /***/ }),
-/* 23 */,
-/* 24 */,
-/* 25 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share__ = __webpack_require__(131);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(129);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge__ = __webpack_require__(130);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__translate_parser__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util__ = __webpack_require__(26);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MissingTranslationHandler; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return TranslateLoader; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return TranslateStaticLoader; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return TranslateService; });
-
-
-
-
-
-
-
-
-
-
-var MissingTranslationHandler = (function () {
-    function MissingTranslationHandler() {
-    }
-    return MissingTranslationHandler;
-}());
-var TranslateLoader = (function () {
-    function TranslateLoader() {
-    }
-    return TranslateLoader;
-}());
-var TranslateStaticLoader = (function () {
-    function TranslateStaticLoader(http, prefix, suffix) {
-        if (prefix === void 0) { prefix = "i18n"; }
-        if (suffix === void 0) { suffix = ".json"; }
-        this.http = http;
-        this.prefix = prefix;
-        this.suffix = suffix;
-    }
-    /**
-     * Gets the translations from the server
-     * @param lang
-     * @returns {any}
-     */
-    TranslateStaticLoader.prototype.getTranslation = function (lang) {
-        return this.http.get(this.prefix + "/" + lang + this.suffix)
-            .map(function (res) { return res.json(); });
-    };
-    return TranslateStaticLoader;
-}());
-var TranslateService = (function () {
-    /**
-     *
-     * @param currentLoader An instance of the loader currently used
-     * @param parser An instance of the parser currently used
-     * @param missingTranslationHandler A handler for missing translations.
-     */
-    function TranslateService(currentLoader, parser, missingTranslationHandler) {
-        this.currentLoader = currentLoader;
-        this.parser = parser;
-        this.missingTranslationHandler = missingTranslationHandler;
-        /**
-         * The lang currently used
-         */
-        this.currentLang = this.defaultLang;
-        /**
-         * An EventEmitter to listen to translation change events
-         * onTranslationChange.subscribe((params: TranslationChangeEvent) => {
-         *     // do something
-         * });
-         * @type {EventEmitter<TranslationChangeEvent>}
-         */
-        this.onTranslationChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        /**
-         * An EventEmitter to listen to lang change events
-         * onLangChange.subscribe((params: LangChangeEvent) => {
-         *     // do something
-         * });
-         * @type {EventEmitter<LangChangeEvent>}
-         */
-        this.onLangChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        /**
-         * An EventEmitter to listen to default lang change events
-         * onDefaultLangChange.subscribe((params: DefaultLangChangeEvent) => {
-         *     // do something
-         * });
-         * @type {EventEmitter<DefaultLangChangeEvent>}
-         */
-        this.onDefaultLangChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.translations = {};
-        this.langs = [];
-    }
-    /**
-     * Sets the default language to use as a fallback
-     * @param lang
-     */
-    TranslateService.prototype.setDefaultLang = function (lang) {
-        var _this = this;
-        if (lang === this.defaultLang) {
-            return;
-        }
-        var pending = this.retrieveTranslations(lang);
-        if (typeof pending !== "undefined") {
-            // on init set the defaultLang immediately
-            if (!this.defaultLang) {
-                this.defaultLang = lang;
-            }
-            pending.take(1)
-                .subscribe(function (res) {
-                _this.changeDefaultLang(lang);
-            });
-        }
-        else {
-            this.changeDefaultLang(lang);
-        }
-    };
-    /**
-     * Gets the default language used
-     * @returns string
-     */
-    TranslateService.prototype.getDefaultLang = function () {
-        return this.defaultLang;
-    };
-    /**
-     * Changes the lang currently used
-     * @param lang
-     * @returns {Observable<*>}
-     */
-    TranslateService.prototype.use = function (lang) {
-        var _this = this;
-        var pending = this.retrieveTranslations(lang);
-        if (typeof pending !== "undefined") {
-            // on init set the currentLang immediately
-            if (!this.currentLang) {
-                this.currentLang = lang;
-            }
-            pending.take(1)
-                .subscribe(function (res) {
-                _this.changeLang(lang);
-            });
-            return pending;
-        }
-        else {
-            this.changeLang(lang);
-            return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].of(this.translations[lang]);
-        }
-    };
-    /**
-     * Retrieves the given translations
-     * @param lang
-     * @returns {Observable<*>}
-     */
-    TranslateService.prototype.retrieveTranslations = function (lang) {
-        var pending;
-        // if this language is unavailable, ask for it
-        if (typeof this.translations[lang] === "undefined") {
-            pending = this.getTranslation(lang);
-        }
-        return pending;
-    };
-    /**
-     * Gets an object of translations for a given language with the current loader
-     * @param lang
-     * @returns {Observable<*>}
-     */
-    TranslateService.prototype.getTranslation = function (lang) {
-        var _this = this;
-        this.pending = this.currentLoader.getTranslation(lang).share();
-        this.pending.take(1)
-            .subscribe(function (res) {
-            _this.translations[lang] = res;
-            _this.updateLangs();
-            _this.pending = undefined;
-        }, function (err) {
-            _this.pending = undefined;
-        });
-        return this.pending;
-    };
-    /**
-     * Manually sets an object of translations for a given language
-     * @param lang
-     * @param translations
-     * @param shouldMerge
-     */
-    TranslateService.prototype.setTranslation = function (lang, translations, shouldMerge) {
-        if (shouldMerge === void 0) { shouldMerge = false; }
-        if (shouldMerge && this.translations[lang]) {
-            Object.assign(this.translations[lang], translations);
-        }
-        else {
-            this.translations[lang] = translations;
-        }
-        this.updateLangs();
-        this.onTranslationChange.emit({ lang: lang, translations: this.translations[lang] });
-    };
-    /**
-     * Returns an array of currently available langs
-     * @returns {any}
-     */
-    TranslateService.prototype.getLangs = function () {
-        return this.langs;
-    };
-    /**
-     * @param langs
-     * Add available langs
-     */
-    TranslateService.prototype.addLangs = function (langs) {
-        var _this = this;
-        langs.forEach(function (lang) {
-            if (_this.langs.indexOf(lang) === -1) {
-                _this.langs.push(lang);
-            }
-        });
-    };
-    /**
-     * Update the list of available langs
-     */
-    TranslateService.prototype.updateLangs = function () {
-        this.addLangs(Object.keys(this.translations));
-    };
-    /**
-     * Returns the parsed result of the translations
-     * @param translations
-     * @param key
-     * @param interpolateParams
-     * @returns {any}
-     */
-    TranslateService.prototype.getParsedResult = function (translations, key, interpolateParams) {
-        var res;
-        if (key instanceof Array) {
-            var result = {}, observables = false;
-            for (var _i = 0, key_1 = key; _i < key_1.length; _i++) {
-                var k = key_1[_i];
-                result[k] = this.getParsedResult(translations, k, interpolateParams);
-                if (typeof result[k].subscribe === "function") {
-                    observables = true;
-                }
-            }
-            if (observables) {
-                var mergedObs = void 0;
-                for (var _a = 0, key_2 = key; _a < key_2.length; _a++) {
-                    var k = key_2[_a];
-                    var obs = typeof result[k].subscribe === "function" ? result[k] : __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].of(result[k]);
-                    if (typeof mergedObs === "undefined") {
-                        mergedObs = obs;
-                    }
-                    else {
-                        mergedObs = mergedObs.merge(obs);
-                    }
-                }
-                return mergedObs.toArray().map(function (arr) {
-                    var obj = {};
-                    arr.forEach(function (value, index) {
-                        obj[key[index]] = value;
-                    });
-                    return obj;
-                });
-            }
-            return result;
-        }
-        if (translations) {
-            res = this.parser.interpolate(this.parser.getValue(translations, key), interpolateParams);
-        }
-        if (typeof res === "undefined" && this.defaultLang && this.defaultLang !== this.currentLang) {
-            res = this.parser.interpolate(this.parser.getValue(this.translations[this.defaultLang], key), interpolateParams);
-        }
-        if (!res && this.missingTranslationHandler) {
-            var params = { key: key, translateService: this };
-            if (typeof interpolateParams !== 'undefined') {
-                params.interpolateParams = interpolateParams;
-            }
-            res = this.missingTranslationHandler.handle(params);
-        }
-        return typeof res !== "undefined" ? res : key;
-    };
-    /**
-     * Gets the translated value of a key (or an array of keys)
-     * @param key
-     * @param interpolateParams
-     * @returns {any} the translated key, or an object of translated keys
-     */
-    TranslateService.prototype.get = function (key, interpolateParams) {
-        var _this = this;
-        if (!__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_9__util__["a" /* isDefined */])(key) || !key.length) {
-            throw new Error("Parameter \"key\" required");
-        }
-        // check if we are loading a new translation to use
-        if (this.pending) {
-            return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].create(function (observer) {
-                var onComplete = function (res) {
-                    observer.next(res);
-                    observer.complete();
-                };
-                var onError = function (err) {
-                    observer.error(err);
-                };
-                _this.pending.subscribe(function (res) {
-                    res = _this.getParsedResult(res, key, interpolateParams);
-                    if (typeof res.subscribe === "function") {
-                        res.subscribe(onComplete, onError);
-                    }
-                    else {
-                        onComplete(res);
-                    }
-                }, onError);
-            });
-        }
-        else {
-            var res = this.getParsedResult(this.translations[this.currentLang], key, interpolateParams);
-            if (typeof res.subscribe === "function") {
-                return res;
-            }
-            else {
-                return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].of(res);
-            }
-        }
-    };
-    /**
-     * Returns a translation instantly from the internal state of loaded translation.
-     * All rules regarding the current language, the preferred language of even fallback languages will be used except any promise handling.
-     * @param key
-     * @param interpolateParams
-     * @returns {string}
-     */
-    TranslateService.prototype.instant = function (key, interpolateParams) {
-        if (!__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_9__util__["a" /* isDefined */])(key) || !key.length) {
-            throw new Error("Parameter \"key\" required");
-        }
-        var res = this.getParsedResult(this.translations[this.currentLang], key, interpolateParams);
-        if (typeof res.subscribe !== "undefined") {
-            if (key instanceof Array) {
-                var obj_1 = {};
-                key.forEach(function (value, index) {
-                    obj_1[key[index]] = key[index];
-                });
-                return obj_1;
-            }
-            return key;
-        }
-        else {
-            return res;
-        }
-    };
-    /**
-     * Sets the translated value of a key
-     * @param key
-     * @param value
-     * @param lang
-     */
-    TranslateService.prototype.set = function (key, value, lang) {
-        if (lang === void 0) { lang = this.currentLang; }
-        this.translations[lang][key] = value;
-        this.updateLangs();
-        this.onTranslationChange.emit({ lang: lang, translations: this.translations[lang] });
-    };
-    /**
-     * Changes the current lang
-     * @param lang
-     */
-    TranslateService.prototype.changeLang = function (lang) {
-        this.currentLang = lang;
-        this.onLangChange.emit({ lang: lang, translations: this.translations[lang] });
-        // if there is no default lang, use the one that we just set
-        if (!this.defaultLang) {
-            this.changeDefaultLang(lang);
-        }
-    };
-    /**
-     * Changes the default lang
-     * @param lang
-     */
-    TranslateService.prototype.changeDefaultLang = function (lang) {
-        this.defaultLang = lang;
-        this.onDefaultLangChange.emit({ lang: lang, translations: this.translations[lang] });
-    };
-    /**
-     * Allows to reload the lang file from the file
-     * @param lang
-     * @returns {Observable<any>}
-     */
-    TranslateService.prototype.reloadLang = function (lang) {
-        this.resetLang(lang);
-        return this.getTranslation(lang);
-    };
-    /**
-     * Deletes inner translation
-     * @param lang
-     */
-    TranslateService.prototype.resetLang = function (lang) {
-        this.translations[lang] = undefined;
-    };
-    /**
-     * Returns the language code name from the browser, e.g. "de"
-     *
-     * @returns string
-     */
-    TranslateService.prototype.getBrowserLang = function () {
-        if (typeof window === 'undefined' || typeof window.navigator === 'undefined') {
-            return undefined;
-        }
-        var browserLang = window.navigator.languages ? window.navigator.languages[0] : null;
-        browserLang = browserLang || window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
-        if (browserLang.indexOf('-') !== -1) {
-            browserLang = browserLang.split('-')[0];
-        }
-        if (browserLang.indexOf('_') !== -1) {
-            browserLang = browserLang.split('_')[0];
-        }
-        return browserLang;
-    };
-    /**
-     * Returns the culture language code name from the browser, e.g. "de-DE"
-     *
-     * @returns string
-     */
-    TranslateService.prototype.getBrowserCultureLang = function () {
-        if (typeof window === 'undefined' || typeof window.navigator === 'undefined') {
-            return undefined;
-        }
-        var browserCultureLang = window.navigator.languages ? window.navigator.languages[0] : null;
-        browserCultureLang = browserCultureLang || window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
-        return browserCultureLang;
-    };
-    TranslateService.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-    ];
-    /** @nocollapse */
-    TranslateService.ctorParameters = function () { return [
-        { type: TranslateLoader, },
-        { type: __WEBPACK_IMPORTED_MODULE_8__translate_parser__["a" /* TranslateParser */], },
-        { type: MissingTranslationHandler, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Optional"] },] },
-    ]; };
-    return TranslateService;
-}());
-
-
-/***/ }),
-/* 26 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["b"] = equals;
-/* harmony export (immutable) */ __webpack_exports__["a"] = isDefined;
-/* tslint:disable */
-/**
- * @name equals
- *
- * @description
- * Determines if two objects or two values are equivalent.
- *
- * Two objects or values are considered equivalent if at least one of the following is true:
- *
- * * Both objects or values pass `===` comparison.
- * * Both objects or values are of the same type and all of their properties are equal by
- *   comparing them with `equals`.
- *
- * @param {*} o1 Object or value to compare.
- * @param {*} o2 Object or value to compare.
- * @returns {boolean} True if arguments are equal.
- */
-function equals(o1, o2) {
-    if (o1 === o2)
-        return true;
-    if (o1 === null || o2 === null)
-        return false;
-    if (o1 !== o1 && o2 !== o2)
-        return true; // NaN === NaN
-    var t1 = typeof o1, t2 = typeof o2, length, key, keySet;
-    if (t1 == t2 && t1 == 'object') {
-        if (Array.isArray(o1)) {
-            if (!Array.isArray(o2))
-                return false;
-            if ((length = o1.length) == o2.length) {
-                for (key = 0; key < length; key++) {
-                    if (!equals(o1[key], o2[key]))
-                        return false;
-                }
-                return true;
-            }
-        }
-        else {
-            if (Array.isArray(o2)) {
-                return false;
-            }
-            keySet = Object.create(null);
-            for (key in o1) {
-                if (!equals(o1[key], o2[key])) {
-                    return false;
-                }
-                keySet[key] = true;
-            }
-            for (key in o2) {
-                if (!(key in keySet) && typeof o2[key] !== 'undefined') {
-                    return false;
-                }
-            }
-            return true;
-        }
-    }
-    return false;
-}
-/* tslint:enable */
-function isDefined(value) {
-    return typeof value !== 'undefined' && value !== null;
-}
-
-
-/***/ }),
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var user_service_1 = __webpack_require__(10);
-var AboutUsersResolve = (function () {
-    function AboutUsersResolve(service) {
-        this.service = service;
-    }
-    AboutUsersResolve.prototype.resolve = function (route) {
-        return this.service.getUsers().then(function (users) { return users; });
-    };
-    return AboutUsersResolve;
-}());
-AboutUsersResolve = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [user_service_1.UserService])
-], AboutUsersResolve);
-exports.AboutUsersResolve = AboutUsersResolve;
-
-
-/***/ }),
-/* 31 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var AboutSectionComponent = (function () {
-    function AboutSectionComponent() {
-    }
-    return AboutSectionComponent;
-}());
-AboutSectionComponent = __decorate([
-    core_1.Component({
-        template: "\n    <h2 class=\"text-center\">About Section</h2>\n    \n    <router-outlet></router-outlet>\n  "
-    })
-], AboutSectionComponent);
-exports.AboutSectionComponent = AboutSectionComponent;
-
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var router_1 = __webpack_require__(7);
-var user_service_1 = __webpack_require__(10);
-var AboutUserResolve = (function () {
-    function AboutUserResolve(service, router) {
-        this.service = service;
-        this.router = router;
-    }
-    AboutUserResolve.prototype.resolve = function (route) {
-        var _this = this;
-        var username = route.params['username'];
-        return this.service.getUser(username).then(function (user) {
-            if (user) {
-                return user;
-            }
-            else {
-                // navigate the user back to the about page
-                _this.router.navigate(['/about']);
-                return false;
-            }
-        });
-    };
-    return AboutUserResolve;
-}());
-AboutUserResolve = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [user_service_1.UserService, router_1.Router])
-], AboutUserResolve);
-exports.AboutUserResolve = AboutUserResolve;
-
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var router_1 = __webpack_require__(7);
-var AboutUserComponent = (function () {
-    function AboutUserComponent(route, router) {
-        this.route = route;
-        this.router = router;
-    }
-    AboutUserComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.route.data.forEach(function (data) { return _this.user = data.user; });
-    };
-    AboutUserComponent.prototype.goBack = function () {
-        this.router.navigate(['/about']);
-    };
-    return AboutUserComponent;
-}());
-AboutUserComponent = __decorate([
-    core_1.Component({
-        styles: ["\n    img     {\n      max-width: 300px;\n      margin: 20px auto;\n    }\n  "],
-        template: "\n    <a (click)=\"goBack()\" class=\"btn btn-sm btn-info\">Go Back</a>\n    <div class=\"jumbotron text-center\" *ngIf=\"user\">\n      <h1>{{ user.name }} ({{ user.username }})</h1>\n\n      <img [src]=\"user.avatar\" class=\"img-responsive img-circle\">\n    </div>\n  "
-    }),
-    __metadata("design:paramtypes", [router_1.ActivatedRoute,
-        router_1.Router])
-], AboutUserComponent);
-exports.AboutUserComponent = AboutUserComponent;
-
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var router_1 = __webpack_require__(7);
-var AboutComponent = (function () {
-    function AboutComponent(route) {
-        this.route = route;
-    }
-    AboutComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.route.data.forEach(function (data) { return _this.users = data.users; });
-    };
-    return AboutComponent;
-}());
-AboutComponent = __decorate([
-    core_1.Component({
-        selector: 'about-page',
-        styles: ["\n    .profile-card   {\n      background: #f3f3f3;\n      border-radius: 4px;\n      padding: 30px;\n      text-align: center;\n    }\n    .profile-card img  {\n      max-width: 50%;\n      margin: 15px auto;\n    }\n  "],
-        template: "\n    <div class=\"row\">\n  \n      <div class=\"col-sm-4\" *ngFor=\"let user of users\">\n\n        <div class=\"profile-card\" [routerLink]=\"['/about', user.username]\">\n          <img [src]=\"user.avatar\" class=\"img-responsive img-circle\">\n\n          <h2>{{ user.name }}</h2>\n          \n          <p><a href=\"https://twitter.com/{{ user.username }}\">\n            {{ user.username }}\n          </a></p>\n        </div>\n\n      </div>\n\n    </div>\n"
-    }),
-    __metadata("design:paramtypes", [router_1.ActivatedRoute])
-], AboutComponent);
-exports.AboutComponent = AboutComponent;
-
-
-/***/ }),
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var common_1 = __webpack_require__(18);
-var about_component_1 = __webpack_require__(34);
-var about_user_component_1 = __webpack_require__(33);
-var about_section_component_1 = __webpack_require__(31);
-var user_service_1 = __webpack_require__(10);
-var about_routing_1 = __webpack_require__(48);
-var about_resolve_service_1 = __webpack_require__(30);
-var about_user_resolve_service_1 = __webpack_require__(32);
-var AboutModule = (function () {
-    function AboutModule() {
-    }
-    return AboutModule;
-}());
-AboutModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            common_1.CommonModule,
-            about_routing_1.aboutRouting
-        ],
-        declarations: [
-            about_component_1.AboutComponent,
-            about_user_component_1.AboutUserComponent,
-            about_section_component_1.AboutSectionComponent
-        ],
-        providers: [
-            user_service_1.UserService,
-            about_resolve_service_1.AboutUsersResolve,
-            about_user_resolve_service_1.AboutUserResolve
-        ]
-    })
-], AboutModule);
-exports.AboutModule = AboutModule;
-
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var HomeInfoComponent = (function () {
-    function HomeInfoComponent() {
-    }
-    HomeInfoComponent.prototype.ngOnInit = function () {
-    };
-    return HomeInfoComponent;
-}());
-HomeInfoComponent = __decorate([
-    core_1.Component({
-        selector: 'app-home-info',
-        template: __webpack_require__(67),
-        styles: [__webpack_require__(75)]
-    }),
-    __metadata("design:paramtypes", [])
-], HomeInfoComponent);
-exports.HomeInfoComponent = HomeInfoComponent;
-
-
-/***/ }),
-/* 41 */,
-/* 42 */,
-/* 43 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(26);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TranslateParser; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return DefaultTranslateParser; });
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-
-
-var TranslateParser = (function () {
-    function TranslateParser() {
-    }
-    return TranslateParser;
-}());
-var DefaultTranslateParser = (function (_super) {
-    __extends(DefaultTranslateParser, _super);
-    function DefaultTranslateParser() {
-        _super.apply(this, arguments);
-        this.templateMatcher = /{{\s?([^{}\s]*)\s?}}/g;
-    }
-    DefaultTranslateParser.prototype.interpolate = function (expr, params) {
-        var _this = this;
-        if (typeof expr !== 'string' || !params) {
-            return expr;
-        }
-        return expr.replace(this.templateMatcher, function (substring, b) {
-            var r = _this.getValue(params, b);
-            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util__["a" /* isDefined */])(r) ? r : substring;
-        });
-    };
-    DefaultTranslateParser.prototype.getValue = function (target, key) {
-        var keys = key.split('.');
-        key = '';
-        do {
-            key += keys.shift();
-            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util__["a" /* isDefined */])(target) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util__["a" /* isDefined */])(target[key]) && (typeof target[key] === 'object' || !keys.length)) {
-                target = target[key];
-                key = '';
-            }
-            else if (!keys.length) {
-                target = undefined;
-            }
-            else {
-                key += '.';
-            }
-        } while (keys.length);
-        return target;
-    };
-    DefaultTranslateParser.decorators = [
-        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-    ];
-    /** @nocollapse */
-    DefaultTranslateParser.ctorParameters = function () { return []; };
-    return DefaultTranslateParser;
-}(TranslateParser));
-
-
-/***/ }),
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin__ = __webpack_require__(260);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(53);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AbstractControlDirective", function() { return AbstractControlDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AbstractFormGroupDirective", function() { return AbstractFormGroupDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckboxControlValueAccessor", function() { return CheckboxControlValueAccessor; });
@@ -7073,45 +6122,8 @@ ReactiveFormsModule.ctorParameters = function () { return []; };
 
 
 /***/ }),
-/* 48 */
-/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var router_1 = __webpack_require__(7);
-var about_component_1 = __webpack_require__(34);
-var about_user_component_1 = __webpack_require__(33);
-var about_section_component_1 = __webpack_require__(31);
-var about_resolve_service_1 = __webpack_require__(30);
-var about_user_resolve_service_1 = __webpack_require__(32);
-var aboutRoutes = [
-    {
-        path: '',
-        component: about_section_component_1.AboutSectionComponent,
-        children: [
-            {
-                path: '',
-                component: about_component_1.AboutComponent,
-                resolve: {
-                    users: about_resolve_service_1.AboutUsersResolve
-                }
-            },
-            {
-                path: ':username',
-                component: about_user_component_1.AboutUserComponent,
-                resolve: {
-                    user: about_user_resolve_service_1.AboutUserResolve
-                }
-            }
-        ]
-    }
-];
-exports.aboutRouting = router_1.RouterModule.forChild(aboutRoutes);
-
-
-/***/ }),
-/* 49 */
+/***/ 110:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7123,7 +6135,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
+var core_1 = __webpack_require__(3);
 var ContactComponent = (function () {
     function ContactComponent() {
     }
@@ -7132,14 +6144,15 @@ var ContactComponent = (function () {
 ContactComponent = __decorate([
     core_1.Component({
         selector: 'contact-page',
-        template: __webpack_require__(123)
+        template: __webpack_require__(368)
     })
 ], ContactComponent);
 exports.ContactComponent = ContactComponent;
 
 
 /***/ }),
-/* 50 */
+
+/***/ 111:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7151,7 +6164,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
+var core_1 = __webpack_require__(3);
 var NotFoundComponent = (function () {
     function NotFoundComponent() {
     }
@@ -7166,7 +6179,8 @@ exports.NotFoundComponent = NotFoundComponent;
 
 
 /***/ }),
-/* 51 */
+
+/***/ 112:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7178,7 +6192,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
+var core_1 = __webpack_require__(3);
 var AuthGuard = (function () {
     function AuthGuard() {
     }
@@ -7199,7 +6213,8 @@ exports.AuthGuard = AuthGuard;
 
 
 /***/ }),
-/* 52 */
+
+/***/ 113:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7211,7 +6226,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
+var core_1 = __webpack_require__(3);
 var CanDeactivateGuard = (function () {
     function CanDeactivateGuard() {
     }
@@ -7227,40 +6242,8 @@ exports.CanDeactivateGuard = CanDeactivateGuard;
 
 
 /***/ }),
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(16)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(16)();
-// imports
-
-
-// module
-exports.push([module.i, "\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 60 */
+/***/ 17:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7272,7 +6255,55 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
+var core_1 = __webpack_require__(3);
+var usersPromise = Promise.resolve([
+    {
+        id: 1,
+        name: 'Gary',
+        username: 'garyuppiah',
+        avatar: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVkfbHgVyXw7tVigsl2Gq9-knPZiBcmSc7Z7qQ5W600U7aoAwe'
+    }
+]);
+var UserService = (function () {
+    function UserService() {
+    }
+    // get all users
+    UserService.prototype.getUsers = function () {
+        return usersPromise;
+    };
+    // find a specific user
+    UserService.prototype.getUser = function (username) {
+        return usersPromise.then(function (users) { return users.find(function (user) { return user.username === username; }); });
+        // let user = usersPromise.then(users => {
+        //   return users.find(user => {
+        //     return user.username === username;
+        //   });
+        // });
+        // return user;
+    };
+    return UserService;
+}());
+UserService = __decorate([
+    core_1.Injectable()
+], UserService);
+exports.UserService = UserService;
+
+
+/***/ }),
+
+/***/ 242:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
 var DashboardComponent = (function () {
     function DashboardComponent() {
     }
@@ -7287,7 +6318,8 @@ exports.DashboardComponent = DashboardComponent;
 
 
 /***/ }),
-/* 61 */
+
+/***/ 243:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7302,9 +6334,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var router_1 = __webpack_require__(7);
-var user_service_1 = __webpack_require__(10);
+var core_1 = __webpack_require__(3);
+var router_1 = __webpack_require__(15);
+var user_service_1 = __webpack_require__(17);
 var DashboardUserDetailsComponent = (function () {
     function DashboardUserDetailsComponent(service, route, router) {
         this.service = service;
@@ -7351,7 +6383,8 @@ exports.DashboardUserDetailsComponent = DashboardUserDetailsComponent;
 
 
 /***/ }),
-/* 62 */
+
+/***/ 244:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7366,7 +6399,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
+var core_1 = __webpack_require__(3);
 var DashboardUsersHomeComponent = (function () {
     function DashboardUsersHomeComponent() {
     }
@@ -7384,7 +6417,8 @@ exports.DashboardUsersHomeComponent = DashboardUsersHomeComponent;
 
 
 /***/ }),
-/* 63 */
+
+/***/ 245:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7399,8 +6433,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var user_service_1 = __webpack_require__(10);
+var core_1 = __webpack_require__(3);
+var user_service_1 = __webpack_require__(17);
 var DashboardUsersComponent = (function () {
     function DashboardUsersComponent(service) {
         this.service = service;
@@ -7421,57 +6455,14 @@ exports.DashboardUsersComponent = DashboardUsersComponent;
 
 
 /***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var http_1 = __webpack_require__(21);
-__webpack_require__(77);
-var HomeService = (function () {
-    function HomeService(http) {
-        this.http = http;
-    }
-    HomeService.prototype.homeInit = function () {
-        var cities = [];
-        this.http.get("/api/cities")
-            .map(function (result) { return result.json(); })
-            .flatMap(function (result) { return result.results; })
-            .subscribe(function (result) {
-            cities.push(result);
-        }, function (error) {
-            console.error(error);
-        });
-        return cities;
-    };
-    return HomeService;
-}());
-HomeService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], HomeService);
-exports.HomeService = HomeService;
-
-
-/***/ }),
-/* 65 */
+/***/ 246:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__translate_service__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__translate_service__ = __webpack_require__(60);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TranslateDirective; });
 
 
@@ -7608,13 +6599,14 @@ var TranslateDirective = (function () {
 
 
 /***/ }),
-/* 66 */
+
+/***/ 247:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__translate_service__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__translate_service__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(61);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TranslatePipe; });
 
 
@@ -7750,69 +6742,8 @@ var TranslatePipe = (function () {
 
 
 /***/ }),
-/* 67 */
-/***/ (function(module, exports) {
 
-module.exports = "<p>\n  home-info works!\n</p>\n"
-
-/***/ }),
-/* 68 */
-/***/ (function(module, exports) {
-
-module.exports = "\r\n<div class=\"container\">\r\n\r\n  <h2>{{ 'TITLE' | translate }}<hr></h2>\r\n    <div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">\r\n      <div class=\"panel-heading\">\r\n        <img src=\"{{city.pictureUrl}}\" alt=\"{{city.city}}\">\r\n        <span>{{city.message}}</span>\r\n        <span>{{city.prix}}</span>\r\n      </div>\r\n    </div>\r\n</div>\r\n"
-
-/***/ }),
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(58);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 76 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(59);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 77 */,
-/* 78 */,
-/* 79 */,
-/* 80 */,
-/* 81 */,
-/* 82 */,
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */,
-/* 87 */,
-/* 88 */,
-/* 89 */,
-/* 90 */,
-/* 91 */,
-/* 92 */,
-/* 93 */
+/***/ 296:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7824,7 +6755,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
+var core_1 = __webpack_require__(3);
 var AppComponent = (function () {
     function AppComponent() {
         this.message = 'This is the sample message.';
@@ -7835,24 +6766,25 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'app-root',
-        styles: [__webpack_require__(142)],
-        template: __webpack_require__(122)
+        styles: [__webpack_require__(628)],
+        template: __webpack_require__(367)
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
 
 
 /***/ }),
-/* 94 */
+
+/***/ 297:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var router_1 = __webpack_require__(7);
-var home_component_1 = __webpack_require__(22);
-var contact_component_1 = __webpack_require__(49);
-var not_found_component_1 = __webpack_require__(50);
+var router_1 = __webpack_require__(15);
+var home_component_1 = __webpack_require__(32);
+var contact_component_1 = __webpack_require__(110);
+var not_found_component_1 = __webpack_require__(111);
 var appRoutes = [
     {
         path: '',
@@ -7860,7 +6792,7 @@ var appRoutes = [
     },
     {
         path: 'about',
-        loadChildren: function() { return new Promise(function (resolve) {  Promise.resolve().then((function (require) {    resolve(__webpack_require__(39)['AboutModule']);  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);})}
+        loadChildren: function() { return new Promise(function (resolve) {  Promise.resolve().then((function (require) {    resolve(__webpack_require__(54)['AboutModule']);  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);})}
     },
     { path: 'contact', component: contact_component_1.ContactComponent },
     { path: '**', component: not_found_component_1.NotFoundComponent }
@@ -7869,7 +6801,8 @@ exports.appRouting = router_1.RouterModule.forRoot(appRoutes);
 
 
 /***/ }),
-/* 95 */
+
+/***/ 298:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7881,15 +6814,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var common_1 = __webpack_require__(18);
-var forms_1 = __webpack_require__(47);
-var dashboard_component_1 = __webpack_require__(60);
-var dashboard_routing_1 = __webpack_require__(120);
-var dashboard_users_component_1 = __webpack_require__(63);
-var dashboard_users_home_component_1 = __webpack_require__(62);
-var dashboard_user_details_component_1 = __webpack_require__(61);
-var user_service_1 = __webpack_require__(10);
+var core_1 = __webpack_require__(3);
+var common_1 = __webpack_require__(19);
+var forms_1 = __webpack_require__(109);
+var dashboard_component_1 = __webpack_require__(242);
+var dashboard_routing_1 = __webpack_require__(366);
+var dashboard_users_component_1 = __webpack_require__(245);
+var dashboard_users_home_component_1 = __webpack_require__(244);
+var dashboard_user_details_component_1 = __webpack_require__(243);
+var user_service_1 = __webpack_require__(17);
 var DashboardModule = (function () {
     function DashboardModule() {
     }
@@ -7917,7 +6850,8 @@ exports.DashboardModule = DashboardModule;
 
 
 /***/ }),
-/* 96 */
+
+/***/ 300:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7932,7 +6866,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
+var core_1 = __webpack_require__(3);
 var SigninComponent = (function () {
     function SigninComponent() {
     }
@@ -7943,8 +6877,8 @@ var SigninComponent = (function () {
 SigninComponent = __decorate([
     core_1.Component({
         selector: 'app-signin',
-        template: __webpack_require__(124),
-        styles: [__webpack_require__(143)]
+        template: __webpack_require__(369),
+        styles: [__webpack_require__(629)]
     }),
     __metadata("design:paramtypes", [])
 ], SigninComponent);
@@ -7952,7 +6886,8 @@ exports.SigninComponent = SigninComponent;
 
 
 /***/ }),
-/* 97 */
+
+/***/ 301:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7967,7 +6902,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
+var core_1 = __webpack_require__(3);
 var SignupComponent = (function () {
     function SignupComponent() {
     }
@@ -7978,8 +6913,8 @@ var SignupComponent = (function () {
 SignupComponent = __decorate([
     core_1.Component({
         selector: 'app-signup',
-        template: __webpack_require__(125),
-        styles: [__webpack_require__(144)]
+        template: __webpack_require__(370),
+        styles: [__webpack_require__(630)]
     }),
     __metadata("design:paramtypes", [])
 ], SignupComponent);
@@ -7987,17 +6922,18 @@ exports.SignupComponent = SignupComponent;
 
 
 /***/ }),
-/* 98 */
+
+/***/ 302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_translate_pipe__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_translate_parser__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_translate_service__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_translate_directive__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_translate_pipe__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_translate_parser__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_translate_service__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_translate_directive__ = __webpack_require__(246);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TranslatePipe", function() { return __WEBPACK_IMPORTED_MODULE_2__src_translate_pipe__["a"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "MissingTranslationHandler", function() { return __WEBPACK_IMPORTED_MODULE_4__src_translate_service__["a"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TranslateLoader", function() { return __WEBPACK_IMPORTED_MODULE_4__src_translate_service__["b"]; });
@@ -8060,7 +6996,8 @@ var TranslateModule = (function () {
 
 
 /***/ }),
-/* 99 */
+
+/***/ 32:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8075,23 +7012,1033 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var platform_browser_1 = __webpack_require__(38);
-var forms_1 = __webpack_require__(47);
-var dashboard_module_1 = __webpack_require__(95);
-var app_routing_1 = __webpack_require__(94);
-var app_component_1 = __webpack_require__(93);
-var home_component_1 = __webpack_require__(22);
-var contact_component_1 = __webpack_require__(49);
-var not_found_component_1 = __webpack_require__(50);
-var auth_guard_service_1 = __webpack_require__(51);
-var can_deactivate_guard_service_1 = __webpack_require__(52);
-var signin_component_1 = __webpack_require__(96);
-var signup_component_1 = __webpack_require__(97);
-var http_1 = __webpack_require__(21);
-var ng2_translate_1 = __webpack_require__(98);
+var core_1 = __webpack_require__(3);
+var home_service_1 = __webpack_require__(92);
+var HomeComponent = (function () {
+    function HomeComponent(homeService) {
+        this.homeService = homeService;
+        // constructor(){
+        this.home = [];
+    }
+    HomeComponent.prototype.ngOnInit = function () {
+        this.home = this.homeService.homeInit();
+        // console.log("ngOnInit");
+    };
+    return HomeComponent;
+}());
+HomeComponent = __decorate([
+    core_1.Component({
+        selector: 'home-page',
+        styles: [__webpack_require__(108)],
+        template: __webpack_require__(96),
+    }),
+    __metadata("design:paramtypes", [home_service_1.HomeService])
+], HomeComponent);
+exports.HomeComponent = HomeComponent;
+
+
+/***/ }),
+
+/***/ 35:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var user_service_1 = __webpack_require__(17);
+var AboutUsersResolve = (function () {
+    function AboutUsersResolve(service) {
+        this.service = service;
+    }
+    AboutUsersResolve.prototype.resolve = function (route) {
+        return this.service.getUsers().then(function (users) { return users; });
+    };
+    return AboutUsersResolve;
+}());
+AboutUsersResolve = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [user_service_1.UserService])
+], AboutUsersResolve);
+exports.AboutUsersResolve = AboutUsersResolve;
+
+
+/***/ }),
+
+/***/ 358:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(22)();
+// imports
+
+
+// module
+exports.push([module.i, ".SixTitle {\r\n  color:#4169e1;\r\n  text-shadow: 0px 0px 20px #6495ed;\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 359:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(22)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 36:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var AboutSectionComponent = (function () {
+    function AboutSectionComponent() {
+    }
+    return AboutSectionComponent;
+}());
+AboutSectionComponent = __decorate([
+    core_1.Component({
+        template: "\n    <h2 class=\"text-center\">About Section</h2>\n    \n    <router-outlet></router-outlet>\n  "
+    })
+], AboutSectionComponent);
+exports.AboutSectionComponent = AboutSectionComponent;
+
+
+/***/ }),
+
+/***/ 360:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(22)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 366:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var router_1 = __webpack_require__(15);
+var dashboard_component_1 = __webpack_require__(242);
+var dashboard_users_component_1 = __webpack_require__(245);
+var dashboard_users_home_component_1 = __webpack_require__(244);
+var dashboard_user_details_component_1 = __webpack_require__(243);
+var auth_guard_service_1 = __webpack_require__(112);
+var can_deactivate_guard_service_1 = __webpack_require__(113);
+exports.dashboardRoutes = [
+    {
+        path: 'dashboard',
+        children: [
+            {
+                path: '',
+                canActivate: [auth_guard_service_1.AuthGuard],
+                component: dashboard_component_1.DashboardComponent
+            },
+            {
+                path: 'users',
+                component: dashboard_users_component_1.DashboardUsersComponent,
+                canActivateChild: [auth_guard_service_1.AuthGuard],
+                children: [
+                    {
+                        path: '',
+                        component: dashboard_users_home_component_1.DashboardUsersHomeComponent
+                    },
+                    {
+                        path: ':username',
+                        component: dashboard_user_details_component_1.DashboardUserDetailsComponent,
+                        canDeactivate: [can_deactivate_guard_service_1.CanDeactivateGuard]
+                    }
+                ]
+            }
+        ]
+    }
+];
+exports.dashboardRouting = router_1.RouterModule.forChild(exports.dashboardRoutes);
+
+
+/***/ }),
+
+/***/ 367:
+/***/ (function(module, exports) {
+
+module.exports = "<header>\r\n  <nav class=\"navbar navbar\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <div class=\"navbar-header\">\r\n      <a routerLink=\"/\" routerLinkActive=\"active\"\r\n        [routerLinkActiveOptions]=\"{ exact: true }\" class=\"navbar-brand\">\r\n        <div class=\"SixTitle\">\r\n          The Greater 6ix\r\n        </div>\r\n      </a>\r\n    </div>\r\n\r\n    <ul class=\"nav navbar-nav\">\r\n      <li><a routerLink=\"/\" routerLinkActive=\"active\"\r\n            [routerLinkActiveOptions]=\"{ exact: true }\">{{ 'HOME' | translate }}</a></li>\r\n      <li><a routerLink=\"/about\" routerLinkActive=\"active\" >{{ 'ABOUT' | translate }}</a></li>\r\n      <li><a routerLink=\"/contact\" routerLinkActive=\"active\" >{{ 'CONTACT' | translate }}</a></li>\r\n    </ul>\r\n\r\n    <ul class=\"nav navbar-nav navbar-right\">\r\n      <li><a routerLink=\"/sign\" routerLinkActive=\"active\" >{{ 'SIGN' | translate }}</a></li>\r\n    </ul>\r\n\r\n  </div>\r\n  </nav>\r\n</header>\r\n\r\n<main>\r\n\r\n  <router-outlet></router-outlet>\r\n\r\n</main>\r\n"
+
+/***/ }),
+
+/***/ 368:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"jumbotron jumbotron-sm\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12 col-lg-12\">\n                <h1 class=\"h1\"><small>Contactez nous!</small></h1>\n            </div>\n        </div>\n    </div>\n</div>\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-8\">\n            <div class=\"well well-sm\">\n                <form>\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"name\">\n                                Nom</label>\n                            <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Enter name\" required=\"required\" />\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"email\">\n                                Adresse Courriel</label>\n                            <div class=\"input-group\">\n                                <span class=\"input-group-addon\"><span class=\"glyphicon glyphicon-envelope\"></span>\n                                </span>\n                                <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" required=\"required\" /></div>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"subject\">\n                                Sujet</label>\n                            <select id=\"subject\" name=\"subject\" class=\"form-control\" required=\"required\">\n                                <option value=\"na\" selected=\"\">Choisir un:</option>\n                                <option value=\"service\">Questions sur l'application</option>\n                                <option value=\"suggestions\">Suggestion d'amelioration de performance</option>\n                                <option value=\"product\">Acheter une image</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"name\">\n                                Message</label>\n                            <textarea name=\"message\" id=\"message\" class=\"form-control\" rows=\"9\" cols=\"25\" required=\"required\"\n                                placeholder=\"Message\"></textarea>\n                        </div>\n                    </div>\n                    <div class=\"col-md-12\">\n                        <button type=\"submit\" class=\"btn btn-primary pull-right\" id=\"btnContactUs\">\n                            Envoyer</button>\n                    </div>\n                </div>\n                </form>\n            </div>\n        </div>\n        <div class=\"col-md-4\">\n            <form>\n            <legend><span class=\"glyphicon glyphicon-globe\"></span> Notre Bureau</legend>\n            <address>\n                <strong>College Boreal</strong><br>\n                1 Yonge Street<br>\n                Toronto, ON M5E 1E5<br>\n                <abbr title=\"Phone\">\n                    Tel:</abbr>\n                (416) 289-5130\n            </address>\n            </form>\n        </div>\n    </div>\n</div>\n"
+
+/***/ }),
+
+/***/ 369:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  signin works!\n</p>\n"
+
+/***/ }),
+
+/***/ 37:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var router_1 = __webpack_require__(15);
+var user_service_1 = __webpack_require__(17);
+var AboutUserResolve = (function () {
+    function AboutUserResolve(service, router) {
+        this.service = service;
+        this.router = router;
+    }
+    AboutUserResolve.prototype.resolve = function (route) {
+        var _this = this;
+        var username = route.params['username'];
+        return this.service.getUser(username).then(function (user) {
+            if (user) {
+                return user;
+            }
+            else {
+                // navigate the user back to the about page
+                _this.router.navigate(['/about']);
+                return false;
+            }
+        });
+    };
+    return AboutUserResolve;
+}());
+AboutUserResolve = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [user_service_1.UserService, router_1.Router])
+], AboutUserResolve);
+exports.AboutUserResolve = AboutUserResolve;
+
+
+/***/ }),
+
+/***/ 370:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  signup works!\n</p>\n"
+
+/***/ }),
+
+/***/ 38:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var router_1 = __webpack_require__(15);
+var AboutUserComponent = (function () {
+    function AboutUserComponent(route, router) {
+        this.route = route;
+        this.router = router;
+    }
+    AboutUserComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.data.forEach(function (data) { return _this.user = data.user; });
+    };
+    AboutUserComponent.prototype.goBack = function () {
+        this.router.navigate(['/about']);
+    };
+    return AboutUserComponent;
+}());
+AboutUserComponent = __decorate([
+    core_1.Component({
+        styles: ["\n    img     {\n      max-width: 300px;\n      margin: 20px auto;\n    }\n  "],
+        template: "\n    <a (click)=\"goBack()\" class=\"btn btn-sm btn-info\">Go Back</a>\n    <div class=\"jumbotron text-center\" *ngIf=\"user\">\n      <h1>{{ user.name }} ({{ user.username }})</h1>\n\n      <img [src]=\"user.avatar\" class=\"img-responsive img-circle\">\n    </div>\n  "
+    }),
+    __metadata("design:paramtypes", [router_1.ActivatedRoute,
+        router_1.Router])
+], AboutUserComponent);
+exports.AboutUserComponent = AboutUserComponent;
+
+
+/***/ }),
+
+/***/ 39:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var router_1 = __webpack_require__(15);
+var AboutComponent = (function () {
+    function AboutComponent(route) {
+        this.route = route;
+    }
+    AboutComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.data.forEach(function (data) { return _this.users = data.users; });
+    };
+    return AboutComponent;
+}());
+AboutComponent = __decorate([
+    core_1.Component({
+        selector: 'about-page',
+        styles: ["\n    .profile-card   {\n      background: #f3f3f3;\n      border-radius: 4px;\n      padding: 30px;\n      text-align: center;\n    }\n    .profile-card img  {\n      max-width: 50%;\n      margin: 15px auto;\n    }\n  "],
+        template: "\n    <div class=\"row\">\n  \n      <div class=\"col-sm-4\" *ngFor=\"let user of users\">\n\n        <div class=\"profile-card\" [routerLink]=\"['/about', user.username]\">\n          <img [src]=\"user.avatar\" class=\"img-responsive img-circle\">\n\n          <h2>{{ user.name }}</h2>\n          \n          <p><a href=\"https://twitter.com/{{ user.username }}\">\n            {{ user.username }}\n          </a></p>\n        </div>\n\n      </div>\n\n    </div>\n"
+    }),
+    __metadata("design:paramtypes", [router_1.ActivatedRoute])
+], AboutComponent);
+exports.AboutComponent = AboutComponent;
+
+
+/***/ }),
+
+/***/ 40:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var HomeInfoComponent = (function () {
+    function HomeInfoComponent() {
+    }
+    HomeInfoComponent.prototype.ngOnInit = function () {
+    };
+    return HomeInfoComponent;
+}());
+HomeInfoComponent = __decorate([
+    core_1.Component({
+        selector: 'app-home-info',
+        template: __webpack_require__(95),
+        styles: [__webpack_require__(107)]
+    }),
+    __metadata("design:paramtypes", [])
+], HomeInfoComponent);
+exports.HomeInfoComponent = HomeInfoComponent;
+
+
+/***/ }),
+
+/***/ 54:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var common_1 = __webpack_require__(19);
+var about_component_1 = __webpack_require__(39);
+var about_user_component_1 = __webpack_require__(38);
+var about_section_component_1 = __webpack_require__(36);
+var user_service_1 = __webpack_require__(17);
+var about_routing_1 = __webpack_require__(71);
+var about_resolve_service_1 = __webpack_require__(35);
+var about_user_resolve_service_1 = __webpack_require__(37);
+var AboutModule = (function () {
+    function AboutModule() {
+    }
+    return AboutModule;
+}());
+AboutModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            common_1.CommonModule,
+            about_routing_1.aboutRouting
+        ],
+        declarations: [
+            about_component_1.AboutComponent,
+            about_user_component_1.AboutUserComponent,
+            about_section_component_1.AboutSectionComponent
+        ],
+        providers: [
+            user_service_1.UserService,
+            about_resolve_service_1.AboutUsersResolve,
+            about_user_resolve_service_1.AboutUserResolve
+        ]
+    })
+], AboutModule);
+exports.AboutModule = AboutModule;
+
+
+/***/ }),
+
+/***/ 60:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__translate_parser__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util__ = __webpack_require__(61);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MissingTranslationHandler; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return TranslateLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return TranslateStaticLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return TranslateService; });
+
+
+
+
+
+
+
+
+
+
+var MissingTranslationHandler = (function () {
+    function MissingTranslationHandler() {
+    }
+    return MissingTranslationHandler;
+}());
+var TranslateLoader = (function () {
+    function TranslateLoader() {
+    }
+    return TranslateLoader;
+}());
+var TranslateStaticLoader = (function () {
+    function TranslateStaticLoader(http, prefix, suffix) {
+        if (prefix === void 0) { prefix = "i18n"; }
+        if (suffix === void 0) { suffix = ".json"; }
+        this.http = http;
+        this.prefix = prefix;
+        this.suffix = suffix;
+    }
+    /**
+     * Gets the translations from the server
+     * @param lang
+     * @returns {any}
+     */
+    TranslateStaticLoader.prototype.getTranslation = function (lang) {
+        return this.http.get(this.prefix + "/" + lang + this.suffix)
+            .map(function (res) { return res.json(); });
+    };
+    return TranslateStaticLoader;
+}());
+var TranslateService = (function () {
+    /**
+     *
+     * @param currentLoader An instance of the loader currently used
+     * @param parser An instance of the parser currently used
+     * @param missingTranslationHandler A handler for missing translations.
+     */
+    function TranslateService(currentLoader, parser, missingTranslationHandler) {
+        this.currentLoader = currentLoader;
+        this.parser = parser;
+        this.missingTranslationHandler = missingTranslationHandler;
+        /**
+         * The lang currently used
+         */
+        this.currentLang = this.defaultLang;
+        /**
+         * An EventEmitter to listen to translation change events
+         * onTranslationChange.subscribe((params: TranslationChangeEvent) => {
+         *     // do something
+         * });
+         * @type {EventEmitter<TranslationChangeEvent>}
+         */
+        this.onTranslationChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        /**
+         * An EventEmitter to listen to lang change events
+         * onLangChange.subscribe((params: LangChangeEvent) => {
+         *     // do something
+         * });
+         * @type {EventEmitter<LangChangeEvent>}
+         */
+        this.onLangChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        /**
+         * An EventEmitter to listen to default lang change events
+         * onDefaultLangChange.subscribe((params: DefaultLangChangeEvent) => {
+         *     // do something
+         * });
+         * @type {EventEmitter<DefaultLangChangeEvent>}
+         */
+        this.onDefaultLangChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.translations = {};
+        this.langs = [];
+    }
+    /**
+     * Sets the default language to use as a fallback
+     * @param lang
+     */
+    TranslateService.prototype.setDefaultLang = function (lang) {
+        var _this = this;
+        if (lang === this.defaultLang) {
+            return;
+        }
+        var pending = this.retrieveTranslations(lang);
+        if (typeof pending !== "undefined") {
+            // on init set the defaultLang immediately
+            if (!this.defaultLang) {
+                this.defaultLang = lang;
+            }
+            pending.take(1)
+                .subscribe(function (res) {
+                _this.changeDefaultLang(lang);
+            });
+        }
+        else {
+            this.changeDefaultLang(lang);
+        }
+    };
+    /**
+     * Gets the default language used
+     * @returns string
+     */
+    TranslateService.prototype.getDefaultLang = function () {
+        return this.defaultLang;
+    };
+    /**
+     * Changes the lang currently used
+     * @param lang
+     * @returns {Observable<*>}
+     */
+    TranslateService.prototype.use = function (lang) {
+        var _this = this;
+        var pending = this.retrieveTranslations(lang);
+        if (typeof pending !== "undefined") {
+            // on init set the currentLang immediately
+            if (!this.currentLang) {
+                this.currentLang = lang;
+            }
+            pending.take(1)
+                .subscribe(function (res) {
+                _this.changeLang(lang);
+            });
+            return pending;
+        }
+        else {
+            this.changeLang(lang);
+            return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].of(this.translations[lang]);
+        }
+    };
+    /**
+     * Retrieves the given translations
+     * @param lang
+     * @returns {Observable<*>}
+     */
+    TranslateService.prototype.retrieveTranslations = function (lang) {
+        var pending;
+        // if this language is unavailable, ask for it
+        if (typeof this.translations[lang] === "undefined") {
+            pending = this.getTranslation(lang);
+        }
+        return pending;
+    };
+    /**
+     * Gets an object of translations for a given language with the current loader
+     * @param lang
+     * @returns {Observable<*>}
+     */
+    TranslateService.prototype.getTranslation = function (lang) {
+        var _this = this;
+        this.pending = this.currentLoader.getTranslation(lang).share();
+        this.pending.take(1)
+            .subscribe(function (res) {
+            _this.translations[lang] = res;
+            _this.updateLangs();
+            _this.pending = undefined;
+        }, function (err) {
+            _this.pending = undefined;
+        });
+        return this.pending;
+    };
+    /**
+     * Manually sets an object of translations for a given language
+     * @param lang
+     * @param translations
+     * @param shouldMerge
+     */
+    TranslateService.prototype.setTranslation = function (lang, translations, shouldMerge) {
+        if (shouldMerge === void 0) { shouldMerge = false; }
+        if (shouldMerge && this.translations[lang]) {
+            Object.assign(this.translations[lang], translations);
+        }
+        else {
+            this.translations[lang] = translations;
+        }
+        this.updateLangs();
+        this.onTranslationChange.emit({ lang: lang, translations: this.translations[lang] });
+    };
+    /**
+     * Returns an array of currently available langs
+     * @returns {any}
+     */
+    TranslateService.prototype.getLangs = function () {
+        return this.langs;
+    };
+    /**
+     * @param langs
+     * Add available langs
+     */
+    TranslateService.prototype.addLangs = function (langs) {
+        var _this = this;
+        langs.forEach(function (lang) {
+            if (_this.langs.indexOf(lang) === -1) {
+                _this.langs.push(lang);
+            }
+        });
+    };
+    /**
+     * Update the list of available langs
+     */
+    TranslateService.prototype.updateLangs = function () {
+        this.addLangs(Object.keys(this.translations));
+    };
+    /**
+     * Returns the parsed result of the translations
+     * @param translations
+     * @param key
+     * @param interpolateParams
+     * @returns {any}
+     */
+    TranslateService.prototype.getParsedResult = function (translations, key, interpolateParams) {
+        var res;
+        if (key instanceof Array) {
+            var result = {}, observables = false;
+            for (var _i = 0, key_1 = key; _i < key_1.length; _i++) {
+                var k = key_1[_i];
+                result[k] = this.getParsedResult(translations, k, interpolateParams);
+                if (typeof result[k].subscribe === "function") {
+                    observables = true;
+                }
+            }
+            if (observables) {
+                var mergedObs = void 0;
+                for (var _a = 0, key_2 = key; _a < key_2.length; _a++) {
+                    var k = key_2[_a];
+                    var obs = typeof result[k].subscribe === "function" ? result[k] : __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].of(result[k]);
+                    if (typeof mergedObs === "undefined") {
+                        mergedObs = obs;
+                    }
+                    else {
+                        mergedObs = mergedObs.merge(obs);
+                    }
+                }
+                return mergedObs.toArray().map(function (arr) {
+                    var obj = {};
+                    arr.forEach(function (value, index) {
+                        obj[key[index]] = value;
+                    });
+                    return obj;
+                });
+            }
+            return result;
+        }
+        if (translations) {
+            res = this.parser.interpolate(this.parser.getValue(translations, key), interpolateParams);
+        }
+        if (typeof res === "undefined" && this.defaultLang && this.defaultLang !== this.currentLang) {
+            res = this.parser.interpolate(this.parser.getValue(this.translations[this.defaultLang], key), interpolateParams);
+        }
+        if (!res && this.missingTranslationHandler) {
+            var params = { key: key, translateService: this };
+            if (typeof interpolateParams !== 'undefined') {
+                params.interpolateParams = interpolateParams;
+            }
+            res = this.missingTranslationHandler.handle(params);
+        }
+        return typeof res !== "undefined" ? res : key;
+    };
+    /**
+     * Gets the translated value of a key (or an array of keys)
+     * @param key
+     * @param interpolateParams
+     * @returns {any} the translated key, or an object of translated keys
+     */
+    TranslateService.prototype.get = function (key, interpolateParams) {
+        var _this = this;
+        if (!__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_9__util__["a" /* isDefined */])(key) || !key.length) {
+            throw new Error("Parameter \"key\" required");
+        }
+        // check if we are loading a new translation to use
+        if (this.pending) {
+            return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].create(function (observer) {
+                var onComplete = function (res) {
+                    observer.next(res);
+                    observer.complete();
+                };
+                var onError = function (err) {
+                    observer.error(err);
+                };
+                _this.pending.subscribe(function (res) {
+                    res = _this.getParsedResult(res, key, interpolateParams);
+                    if (typeof res.subscribe === "function") {
+                        res.subscribe(onComplete, onError);
+                    }
+                    else {
+                        onComplete(res);
+                    }
+                }, onError);
+            });
+        }
+        else {
+            var res = this.getParsedResult(this.translations[this.currentLang], key, interpolateParams);
+            if (typeof res.subscribe === "function") {
+                return res;
+            }
+            else {
+                return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].of(res);
+            }
+        }
+    };
+    /**
+     * Returns a translation instantly from the internal state of loaded translation.
+     * All rules regarding the current language, the preferred language of even fallback languages will be used except any promise handling.
+     * @param key
+     * @param interpolateParams
+     * @returns {string}
+     */
+    TranslateService.prototype.instant = function (key, interpolateParams) {
+        if (!__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_9__util__["a" /* isDefined */])(key) || !key.length) {
+            throw new Error("Parameter \"key\" required");
+        }
+        var res = this.getParsedResult(this.translations[this.currentLang], key, interpolateParams);
+        if (typeof res.subscribe !== "undefined") {
+            if (key instanceof Array) {
+                var obj_1 = {};
+                key.forEach(function (value, index) {
+                    obj_1[key[index]] = key[index];
+                });
+                return obj_1;
+            }
+            return key;
+        }
+        else {
+            return res;
+        }
+    };
+    /**
+     * Sets the translated value of a key
+     * @param key
+     * @param value
+     * @param lang
+     */
+    TranslateService.prototype.set = function (key, value, lang) {
+        if (lang === void 0) { lang = this.currentLang; }
+        this.translations[lang][key] = value;
+        this.updateLangs();
+        this.onTranslationChange.emit({ lang: lang, translations: this.translations[lang] });
+    };
+    /**
+     * Changes the current lang
+     * @param lang
+     */
+    TranslateService.prototype.changeLang = function (lang) {
+        this.currentLang = lang;
+        this.onLangChange.emit({ lang: lang, translations: this.translations[lang] });
+        // if there is no default lang, use the one that we just set
+        if (!this.defaultLang) {
+            this.changeDefaultLang(lang);
+        }
+    };
+    /**
+     * Changes the default lang
+     * @param lang
+     */
+    TranslateService.prototype.changeDefaultLang = function (lang) {
+        this.defaultLang = lang;
+        this.onDefaultLangChange.emit({ lang: lang, translations: this.translations[lang] });
+    };
+    /**
+     * Allows to reload the lang file from the file
+     * @param lang
+     * @returns {Observable<any>}
+     */
+    TranslateService.prototype.reloadLang = function (lang) {
+        this.resetLang(lang);
+        return this.getTranslation(lang);
+    };
+    /**
+     * Deletes inner translation
+     * @param lang
+     */
+    TranslateService.prototype.resetLang = function (lang) {
+        this.translations[lang] = undefined;
+    };
+    /**
+     * Returns the language code name from the browser, e.g. "de"
+     *
+     * @returns string
+     */
+    TranslateService.prototype.getBrowserLang = function () {
+        if (typeof window === 'undefined' || typeof window.navigator === 'undefined') {
+            return undefined;
+        }
+        var browserLang = window.navigator.languages ? window.navigator.languages[0] : null;
+        browserLang = browserLang || window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
+        if (browserLang.indexOf('-') !== -1) {
+            browserLang = browserLang.split('-')[0];
+        }
+        if (browserLang.indexOf('_') !== -1) {
+            browserLang = browserLang.split('_')[0];
+        }
+        return browserLang;
+    };
+    /**
+     * Returns the culture language code name from the browser, e.g. "de-DE"
+     *
+     * @returns string
+     */
+    TranslateService.prototype.getBrowserCultureLang = function () {
+        if (typeof window === 'undefined' || typeof window.navigator === 'undefined') {
+            return undefined;
+        }
+        var browserCultureLang = window.navigator.languages ? window.navigator.languages[0] : null;
+        browserCultureLang = browserCultureLang || window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
+        return browserCultureLang;
+    };
+    TranslateService.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+    ];
+    /** @nocollapse */
+    TranslateService.ctorParameters = function () { return [
+        { type: TranslateLoader, },
+        { type: __WEBPACK_IMPORTED_MODULE_8__translate_parser__["a" /* TranslateParser */], },
+        { type: MissingTranslationHandler, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Optional"] },] },
+    ]; };
+    return TranslateService;
+}());
+
+
+/***/ }),
+
+/***/ 61:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["b"] = equals;
+/* harmony export (immutable) */ __webpack_exports__["a"] = isDefined;
+/* tslint:disable */
+/**
+ * @name equals
+ *
+ * @description
+ * Determines if two objects or two values are equivalent.
+ *
+ * Two objects or values are considered equivalent if at least one of the following is true:
+ *
+ * * Both objects or values pass `===` comparison.
+ * * Both objects or values are of the same type and all of their properties are equal by
+ *   comparing them with `equals`.
+ *
+ * @param {*} o1 Object or value to compare.
+ * @param {*} o2 Object or value to compare.
+ * @returns {boolean} True if arguments are equal.
+ */
+function equals(o1, o2) {
+    if (o1 === o2)
+        return true;
+    if (o1 === null || o2 === null)
+        return false;
+    if (o1 !== o1 && o2 !== o2)
+        return true; // NaN === NaN
+    var t1 = typeof o1, t2 = typeof o2, length, key, keySet;
+    if (t1 == t2 && t1 == 'object') {
+        if (Array.isArray(o1)) {
+            if (!Array.isArray(o2))
+                return false;
+            if ((length = o1.length) == o2.length) {
+                for (key = 0; key < length; key++) {
+                    if (!equals(o1[key], o2[key]))
+                        return false;
+                }
+                return true;
+            }
+        }
+        else {
+            if (Array.isArray(o2)) {
+                return false;
+            }
+            keySet = Object.create(null);
+            for (key in o1) {
+                if (!equals(o1[key], o2[key])) {
+                    return false;
+                }
+                keySet[key] = true;
+            }
+            for (key in o2) {
+                if (!(key in keySet) && typeof o2[key] !== 'undefined') {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+    return false;
+}
+/* tslint:enable */
+function isDefined(value) {
+    return typeof value !== 'undefined' && value !== null;
+}
+
+
+/***/ }),
+
+/***/ 628:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(358);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+
+/***/ 629:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(359);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+
+/***/ 630:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(360);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+
+/***/ 631:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var platform_browser_1 = __webpack_require__(53);
+var forms_1 = __webpack_require__(109);
+var dashboard_module_1 = __webpack_require__(298);
+var app_routing_1 = __webpack_require__(297);
+var app_component_1 = __webpack_require__(296);
+var home_component_1 = __webpack_require__(32);
+var contact_component_1 = __webpack_require__(110);
+var not_found_component_1 = __webpack_require__(111);
+var auth_guard_service_1 = __webpack_require__(112);
+var can_deactivate_guard_service_1 = __webpack_require__(113);
+var signin_component_1 = __webpack_require__(300);
+var signup_component_1 = __webpack_require__(301);
+var http_1 = __webpack_require__(31);
+var ng2_translate_1 = __webpack_require__(302);
 var home_info_component_1 = __webpack_require__(40);
-var about_module_1 = __webpack_require__(39);
+var about_module_1 = __webpack_require__(54);
 function createTranslateLoader(http) {
     return new ng2_translate_1.TranslateStaticLoader(http, './assets/i18n', '.json');
 }
@@ -8144,192 +8091,199 @@ exports.AppModule = AppModule;
 
 
 /***/ }),
-/* 100 */,
-/* 101 */,
-/* 102 */,
-/* 103 */,
-/* 104 */,
-/* 105 */,
-/* 106 */,
-/* 107 */,
-/* 108 */,
-/* 109 */,
-/* 110 */,
-/* 111 */,
-/* 112 */,
-/* 113 */,
-/* 114 */,
-/* 115 */,
-/* 116 */,
-/* 117 */
-/***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(16)();
-// imports
-
-
-// module
-exports.push([module.i, ".SixTitle {\r\n  color:#4169e1;\r\n  text-shadow: 0px 0px 20px #6495ed;\r\n}\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 118 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(16)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-/* 119 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(16)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-/* 120 */
+/***/ 71:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var router_1 = __webpack_require__(7);
-var dashboard_component_1 = __webpack_require__(60);
-var dashboard_users_component_1 = __webpack_require__(63);
-var dashboard_users_home_component_1 = __webpack_require__(62);
-var dashboard_user_details_component_1 = __webpack_require__(61);
-var auth_guard_service_1 = __webpack_require__(51);
-var can_deactivate_guard_service_1 = __webpack_require__(52);
-exports.dashboardRoutes = [
+var router_1 = __webpack_require__(15);
+var about_component_1 = __webpack_require__(39);
+var about_user_component_1 = __webpack_require__(38);
+var about_section_component_1 = __webpack_require__(36);
+var about_resolve_service_1 = __webpack_require__(35);
+var about_user_resolve_service_1 = __webpack_require__(37);
+var aboutRoutes = [
     {
-        path: 'dashboard',
+        path: '',
+        component: about_section_component_1.AboutSectionComponent,
         children: [
             {
                 path: '',
-                canActivate: [auth_guard_service_1.AuthGuard],
-                component: dashboard_component_1.DashboardComponent
+                component: about_component_1.AboutComponent,
+                resolve: {
+                    users: about_resolve_service_1.AboutUsersResolve
+                }
             },
             {
-                path: 'users',
-                component: dashboard_users_component_1.DashboardUsersComponent,
-                canActivateChild: [auth_guard_service_1.AuthGuard],
-                children: [
-                    {
-                        path: '',
-                        component: dashboard_users_home_component_1.DashboardUsersHomeComponent
-                    },
-                    {
-                        path: ':username',
-                        component: dashboard_user_details_component_1.DashboardUserDetailsComponent,
-                        canDeactivate: [can_deactivate_guard_service_1.CanDeactivateGuard]
-                    }
-                ]
+                path: ':username',
+                component: about_user_component_1.AboutUserComponent,
+                resolve: {
+                    user: about_user_resolve_service_1.AboutUserResolve
+                }
             }
         ]
     }
 ];
-exports.dashboardRouting = router_1.RouterModule.forChild(exports.dashboardRoutes);
+exports.aboutRouting = router_1.RouterModule.forChild(aboutRoutes);
 
 
 /***/ }),
-/* 121 */,
-/* 122 */
-/***/ (function(module, exports) {
 
-module.exports = "<header>\r\n  <nav class=\"navbar navbar-default\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <div class=\"navbar-header\">\r\n      <a routerLink=\"/\" routerLinkActive=\"active\"\r\n        [routerLinkActiveOptions]=\"{ exact: true }\" class=\"navbar-brand\">\r\n        <div class=\"SixTitle\">\r\n          The Greater 6ix\r\n        </div>\r\n      </a>\r\n    </div>\r\n\r\n    <ul class=\"nav navbar-nav\">\r\n      <li><a routerLink=\"/\" routerLinkActive=\"active\"\r\n            [routerLinkActiveOptions]=\"{ exact: true }\">{{ 'HOME' | translate }}</a></li>\r\n      <li><a routerLink=\"/about\" routerLinkActive=\"active\" >{{ 'ABOUT' | translate }}</a></li>\r\n      <li><a routerLink=\"/contact\" routerLinkActive=\"active\" >{{ 'CONTACT' | translate }}</a></li>\r\n    </ul>\r\n\r\n    <ul class=\"nav navbar-nav navbar-right\">\r\n      <li><a routerLink=\"/sign\" routerLinkActive=\"active\" >{{ 'SIGN' | translate }}</a></li>\r\n    </ul>\r\n\r\n  </div>\r\n  </nav>\r\n</header>\r\n\r\n<main>\r\n\r\n  <router-outlet></router-outlet>\r\n\r\n</main>\r\n"
-
-/***/ }),
-/* 123 */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"jumbotron jumbotron-sm\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12 col-lg-12\">\n                <h1 class=\"h1\"><small>Contactez nous!</small></h1>\n            </div>\n        </div>\n    </div>\n</div>\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-8\">\n            <div class=\"well well-sm\">\n                <form>\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"name\">\n                                Nom</label>\n                            <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Enter name\" required=\"required\" />\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"email\">\n                                Adresse Courriel</label>\n                            <div class=\"input-group\">\n                                <span class=\"input-group-addon\"><span class=\"glyphicon glyphicon-envelope\"></span>\n                                </span>\n                                <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" required=\"required\" /></div>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"subject\">\n                                Sujet</label>\n                            <select id=\"subject\" name=\"subject\" class=\"form-control\" required=\"required\">\n                                <option value=\"na\" selected=\"\">Choisir un:</option>\n                                <option value=\"service\">Questions sur l'application</option>\n                                <option value=\"suggestions\">Suggestion d'amelioration de performance</option>\n                                <option value=\"product\">Acheter une image</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"name\">\n                                Message</label>\n                            <textarea name=\"message\" id=\"message\" class=\"form-control\" rows=\"9\" cols=\"25\" required=\"required\"\n                                placeholder=\"Message\"></textarea>\n                        </div>\n                    </div>\n                    <div class=\"col-md-12\">\n                        <button type=\"submit\" class=\"btn btn-primary pull-right\" id=\"btnContactUs\">\n                            Envoyer</button>\n                    </div>\n                </div>\n                </form>\n            </div>\n        </div>\n        <div class=\"col-md-4\">\n            <form>\n            <legend><span class=\"glyphicon glyphicon-globe\"></span> Notre Bureau</legend>\n            <address>\n                <strong>College Boreal</strong><br>\n                1 Yonge Street<br>\n                Toronto, ON M5E 1E5<br>\n                <abbr title=\"Phone\">\n                    Tel:</abbr>\n                (416) 289-5130\n            </address>\n            </form>\n        </div>\n    </div>\n</div>\n"
-
-/***/ }),
-/* 124 */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  signin works!\n</p>\n"
-
-/***/ }),
-/* 125 */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  signup works!\n</p>\n"
-
-/***/ }),
-/* 126 */,
-/* 127 */,
-/* 128 */,
-/* 129 */,
-/* 130 */,
-/* 131 */,
-/* 132 */,
-/* 133 */,
-/* 134 */,
-/* 135 */,
-/* 136 */,
-/* 137 */,
-/* 138 */,
-/* 139 */,
-/* 140 */,
-/* 141 */,
-/* 142 */
+/***/ 90:
 /***/ (function(module, exports, __webpack_require__) {
 
+exports = module.exports = __webpack_require__(22)();
+// imports
 
-        var result = __webpack_require__(117);
 
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
 
 /***/ }),
-/* 143 */
+
+/***/ 91:
 /***/ (function(module, exports, __webpack_require__) {
 
+exports = module.exports = __webpack_require__(22)();
+// imports
 
-        var result = __webpack_require__(118);
 
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
+// module
+exports.push([module.i, "\r\n", ""]);
+
+// exports
+
 
 /***/ }),
-/* 144 */
+
+/***/ 92:
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
 
-        var result = __webpack_require__(119);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(3);
+var http_1 = __webpack_require__(31);
+__webpack_require__(72);
+var HomeService = (function () {
+    function HomeService(http) {
+        this.http = http;
+    }
+    HomeService.prototype.homeInit = function () {
+        var cities = [];
+        this.http.get("/api/cities")
+            .map(function (result) { return result.json(); })
+            .flatMap(function (result) { return result.results; })
+            .subscribe(function (result) {
+            cities.push(result);
+        }, function (error) {
+            console.error(error);
+        });
+        return cities;
+    };
+    return HomeService;
+}());
+HomeService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], HomeService);
+exports.HomeService = HomeService;
 
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
+
+/***/ }),
+
+/***/ 93:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(61);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TranslateParser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return DefaultTranslateParser; });
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+
+
+var TranslateParser = (function () {
+    function TranslateParser() {
+    }
+    return TranslateParser;
+}());
+var DefaultTranslateParser = (function (_super) {
+    __extends(DefaultTranslateParser, _super);
+    function DefaultTranslateParser() {
+        _super.apply(this, arguments);
+        this.templateMatcher = /{{\s?([^{}\s]*)\s?}}/g;
+    }
+    DefaultTranslateParser.prototype.interpolate = function (expr, params) {
+        var _this = this;
+        if (typeof expr !== 'string' || !params) {
+            return expr;
         }
-    
+        return expr.replace(this.templateMatcher, function (substring, b) {
+            var r = _this.getValue(params, b);
+            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util__["a" /* isDefined */])(r) ? r : substring;
+        });
+    };
+    DefaultTranslateParser.prototype.getValue = function (target, key) {
+        var keys = key.split('.');
+        key = '';
+        do {
+            key += keys.shift();
+            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util__["a" /* isDefined */])(target) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util__["a" /* isDefined */])(target[key]) && (typeof target[key] === 'object' || !keys.length)) {
+                target = target[key];
+                key = '';
+            }
+            else if (!keys.length) {
+                target = undefined;
+            }
+            else {
+                key += '.';
+            }
+        } while (keys.length);
+        return target;
+    };
+    DefaultTranslateParser.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+    ];
+    /** @nocollapse */
+    DefaultTranslateParser.ctorParameters = function () { return []; };
+    return DefaultTranslateParser;
+}(TranslateParser));
+
+
+/***/ }),
+
+/***/ 95:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  home-info works!\n</p>\n"
+
+/***/ }),
+
+/***/ 96:
+/***/ (function(module, exports) {
+
+module.exports = "Cities:\r\n<div class=\"container\">\r\n\r\n  <h2>{{ 'TITLE' | translate }}<hr></h2>\r\n    <div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">\r\n      <div class=\"panel-heading\">\r\n        <img src=\"{{cities.pictureUrl}}\" alt=\"{{cities.city}}\">\r\n        <span>{{cities.message}}</span>\r\n        <span>{{cities.prix}}</span>\r\n      </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ })
-],[99]);
+
+},[631]);
 //# sourceMappingURL=app.js.map

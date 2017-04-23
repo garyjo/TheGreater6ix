@@ -1,6 +1,6 @@
-webpackJsonp([4],{
+webpackJsonp([3],{
 
-/***/ 10:
+/***/ 17:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12,7 +12,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
+var core_1 = __webpack_require__(3);
 var usersPromise = Promise.resolve([
     {
         id: 1,
@@ -48,7 +48,7 @@ exports.UserService = UserService;
 
 /***/ }),
 
-/***/ 30:
+/***/ 35:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63,8 +63,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var user_service_1 = __webpack_require__(10);
+var core_1 = __webpack_require__(3);
+var user_service_1 = __webpack_require__(17);
 var AboutUsersResolve = (function () {
     function AboutUsersResolve(service) {
         this.service = service;
@@ -83,7 +83,7 @@ exports.AboutUsersResolve = AboutUsersResolve;
 
 /***/ }),
 
-/***/ 31:
+/***/ 36:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -95,7 +95,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
+var core_1 = __webpack_require__(3);
 var AboutSectionComponent = (function () {
     function AboutSectionComponent() {
     }
@@ -111,7 +111,7 @@ exports.AboutSectionComponent = AboutSectionComponent;
 
 /***/ }),
 
-/***/ 32:
+/***/ 37:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -126,9 +126,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var router_1 = __webpack_require__(7);
-var user_service_1 = __webpack_require__(10);
+var core_1 = __webpack_require__(3);
+var router_1 = __webpack_require__(15);
+var user_service_1 = __webpack_require__(17);
 var AboutUserResolve = (function () {
     function AboutUserResolve(service, router) {
         this.service = service;
@@ -159,7 +159,7 @@ exports.AboutUserResolve = AboutUserResolve;
 
 /***/ }),
 
-/***/ 33:
+/***/ 38:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -174,8 +174,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var router_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
+var router_1 = __webpack_require__(15);
 var AboutUserComponent = (function () {
     function AboutUserComponent(route, router) {
         this.route = route;
@@ -203,7 +203,7 @@ exports.AboutUserComponent = AboutUserComponent;
 
 /***/ }),
 
-/***/ 34:
+/***/ 39:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -218,8 +218,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var router_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
+var router_1 = __webpack_require__(15);
 var AboutComponent = (function () {
     function AboutComponent(route) {
         this.route = route;
@@ -243,7 +243,7 @@ exports.AboutComponent = AboutComponent;
 
 /***/ }),
 
-/***/ 39:
+/***/ 54:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -255,15 +255,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var common_1 = __webpack_require__(18);
-var about_component_1 = __webpack_require__(34);
-var about_user_component_1 = __webpack_require__(33);
-var about_section_component_1 = __webpack_require__(31);
-var user_service_1 = __webpack_require__(10);
-var about_routing_1 = __webpack_require__(48);
-var about_resolve_service_1 = __webpack_require__(30);
-var about_user_resolve_service_1 = __webpack_require__(32);
+var core_1 = __webpack_require__(3);
+var common_1 = __webpack_require__(19);
+var about_component_1 = __webpack_require__(39);
+var about_user_component_1 = __webpack_require__(38);
+var about_section_component_1 = __webpack_require__(36);
+var user_service_1 = __webpack_require__(17);
+var about_routing_1 = __webpack_require__(71);
+var about_resolve_service_1 = __webpack_require__(35);
+var about_user_resolve_service_1 = __webpack_require__(37);
 var AboutModule = (function () {
     function AboutModule() {
     }
@@ -292,18 +292,18 @@ exports.AboutModule = AboutModule;
 
 /***/ }),
 
-/***/ 48:
+/***/ 71:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var router_1 = __webpack_require__(7);
-var about_component_1 = __webpack_require__(34);
-var about_user_component_1 = __webpack_require__(33);
-var about_section_component_1 = __webpack_require__(31);
-var about_resolve_service_1 = __webpack_require__(30);
-var about_user_resolve_service_1 = __webpack_require__(32);
+var router_1 = __webpack_require__(15);
+var about_component_1 = __webpack_require__(39);
+var about_user_component_1 = __webpack_require__(38);
+var about_section_component_1 = __webpack_require__(36);
+var about_resolve_service_1 = __webpack_require__(35);
+var about_user_resolve_service_1 = __webpack_require__(37);
 var aboutRoutes = [
     {
         path: '',
@@ -331,5 +331,5 @@ exports.aboutRouting = router_1.RouterModule.forChild(aboutRoutes);
 
 /***/ })
 
-},[39]);
+},[54]);
 //# sourceMappingURL=about.js.map

@@ -1,6 +1,60 @@
-webpackJsonp([3],{
+webpackJsonp([2],{
 
-/***/ 22:
+/***/ 107:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(90);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+
+/***/ 108:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(91);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+
+/***/ 299:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var router_1 = __webpack_require__(15);
+var home_component_1 = __webpack_require__(32);
+var home_info_component_1 = __webpack_require__(40);
+var HomeRoutes = [
+    {
+        path: 'pokemon',
+        component: home_component_1.HomeComponent
+    },
+    {
+        path: 'pokemon/:name',
+        component: home_info_component_1.HomeInfoComponent
+    }
+];
+exports.HomeRouting = router_1.RouterModule.forChild(HomeRoutes);
+
+
+/***/ }),
+
+/***/ 32:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15,8 +69,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var home_service_1 = __webpack_require__(64);
+var core_1 = __webpack_require__(3);
+var home_service_1 = __webpack_require__(92);
 var HomeComponent = (function () {
     function HomeComponent(homeService) {
         this.homeService = homeService;
@@ -32,36 +86,12 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     core_1.Component({
         selector: 'home-page',
-        styles: [__webpack_require__(76)],
-        template: __webpack_require__(68),
+        styles: [__webpack_require__(108)],
+        template: __webpack_require__(96),
     }),
     __metadata("design:paramtypes", [home_service_1.HomeService])
 ], HomeComponent);
 exports.HomeComponent = HomeComponent;
-
-
-/***/ }),
-
-/***/ 315:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var router_1 = __webpack_require__(7);
-var home_component_1 = __webpack_require__(22);
-var home_info_component_1 = __webpack_require__(40);
-var HomeRoutes = [
-    {
-        path: 'pokemon',
-        component: home_component_1.HomeComponent
-    },
-    {
-        path: 'pokemon/:name',
-        component: home_info_component_1.HomeInfoComponent
-    }
-];
-exports.HomeRouting = router_1.RouterModule.forChild(HomeRoutes);
 
 
 /***/ }),
@@ -81,7 +111,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
+var core_1 = __webpack_require__(3);
 var HomeInfoComponent = (function () {
     function HomeInfoComponent() {
     }
@@ -92,8 +122,8 @@ var HomeInfoComponent = (function () {
 HomeInfoComponent = __decorate([
     core_1.Component({
         selector: 'app-home-info',
-        template: __webpack_require__(67),
-        styles: [__webpack_require__(75)]
+        template: __webpack_require__(95),
+        styles: [__webpack_require__(107)]
     }),
     __metadata("design:paramtypes", [])
 ], HomeInfoComponent);
@@ -102,37 +132,7 @@ exports.HomeInfoComponent = HomeInfoComponent;
 
 /***/ }),
 
-/***/ 58:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(16)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 59:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(16)();
-// imports
-
-
-// module
-exports.push([module.i, "\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 635:
+/***/ 632:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -144,10 +144,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var common_1 = __webpack_require__(18);
-var home_routing_1 = __webpack_require__(315);
-var home_component_1 = __webpack_require__(22);
+var core_1 = __webpack_require__(3);
+var common_1 = __webpack_require__(19);
+var home_routing_1 = __webpack_require__(299);
+var home_component_1 = __webpack_require__(32);
 var home_info_component_1 = __webpack_require__(40);
 // import { HomeService } from './home.service';
 var HomeModule = (function () {
@@ -173,7 +173,37 @@ exports.HomeModule = HomeModule;
 
 /***/ }),
 
-/***/ 64:
+/***/ 90:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(22)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 91:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(22)();
+// imports
+
+
+// module
+exports.push([module.i, "\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 92:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -188,9 +218,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(2);
-var http_1 = __webpack_require__(21);
-__webpack_require__(77);
+var core_1 = __webpack_require__(3);
+var http_1 = __webpack_require__(31);
+__webpack_require__(72);
 var HomeService = (function () {
     function HomeService(http) {
         this.http = http;
@@ -218,49 +248,19 @@ exports.HomeService = HomeService;
 
 /***/ }),
 
-/***/ 67:
+/***/ 95:
 /***/ (function(module, exports) {
 
 module.exports = "<p>\n  home-info works!\n</p>\n"
 
 /***/ }),
 
-/***/ 68:
+/***/ 96:
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div class=\"container\">\r\n\r\n  <h2>{{ 'TITLE' | translate }}<hr></h2>\r\n    <div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">\r\n      <div class=\"panel-heading\">\r\n        <img src=\"{{city.pictureUrl}}\" alt=\"{{city.city}}\">\r\n        <span>{{city.message}}</span>\r\n        <span>{{city.prix}}</span>\r\n      </div>\r\n    </div>\r\n</div>\r\n"
-
-/***/ }),
-
-/***/ 75:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(58);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ 76:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(59);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
+module.exports = "Cities:\r\n<div class=\"container\">\r\n\r\n  <h2>{{ 'TITLE' | translate }}<hr></h2>\r\n    <div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">\r\n      <div class=\"panel-heading\">\r\n        <img src=\"{{cities.pictureUrl}}\" alt=\"{{cities.city}}\">\r\n        <span>{{cities.message}}</span>\r\n        <span>{{cities.prix}}</span>\r\n      </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ })
 
-},[635]);
+},[632]);
 //# sourceMappingURL=home.js.map

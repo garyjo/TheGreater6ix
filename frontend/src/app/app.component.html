@@ -13,13 +13,13 @@
 
     <ul class="nav navbar-nav">
       <li><a routerLink="/" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }">{{ 'HOME' | translate }}</a></li>
-      <li><a [routerLink]="['/about']" [routerLinkActive]="['active']" >{{ 'ABOUT' | translate }}</a></li>
-      <li><a routerLink="['/contact']" [routerLinkActive]="['active']" >{{ 'CONTACT' | translate }}</a></li>
+            [routerLinkActiveOptions]="{ exact: true }">{{ 'HOME' | translate:param }}</a></li>
+      <li><a routerLink="/about" routerLinkActive="active" >{{ 'ABOUT' | translate:param }}</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active" >{{ 'CONTACT' | translate:param }}</a></li>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="/sign" routerLinkActive="active" >{{ 'SIGN' | translate }}</a></li>
+      <li><a routerLink="/sign" routerLinkActive="active" >{{ 'SIGN' | translate:param }}</a></li>
     </ul>
 
   </div>
