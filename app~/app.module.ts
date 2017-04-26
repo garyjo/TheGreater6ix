@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { DashboardModule } from './dashboard/dashboard.module';
+// import { DashboardModule } from './dashboard/dashboard.module';
 import { appRouting } from './app.routing';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthGuard } from './shared/guards/auth-guard.service';
@@ -13,7 +12,8 @@ import { SigninComponent } from './sign/signin.component';
 import { SignupComponent } from './sign/signup.component';
 import {HttpModule, Http} from "@angular/http";
 import {TranslateModule, TranslateLoader, TranslateStaticLoader, TranslateService} from "ng2-translate";
-import { HomeInfoComponent } from './home/home-info.component';
+import {AboutModule} from "./about/about.module";
+import {HomeModule} from "./home/home.module";
 export function createTranslateLoader(http: Http) {
   return new TranslateStaticLoader(http, './assets/i18n', '.json');
 }
@@ -23,7 +23,9 @@ export function createTranslateLoader(http: Http) {
     BrowserModule,
     FormsModule,
     appRouting,
-    DashboardModule,
+    // DashboardModule,
+    HomeModule,
+    AboutModule,
 
     HttpModule,
     TranslateModule.forRoot({
@@ -34,15 +36,12 @@ export function createTranslateLoader(http: Http) {
   ],
   declarations: [
     AppComponent,
-    HomeComponent,
     ContactComponent,
     NotFoundComponent,
     SignupComponent,
     SigninComponent,
     SignupComponent,
     ContactComponent,
-    HomeInfoComponent,
-    HomeComponent
   ],
   providers: [
     AuthGuard,

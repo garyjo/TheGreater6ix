@@ -4,7 +4,7 @@ GET      /                              controllers.HomeController.index
 POST     /api/cities/                   controllers.CityController.createFromJson
 POST     /api/cities/bulk               controllers.CityController.createBulkFromJson
 
-GET      /api/cities                    controllers.CityController.findByName(name: String)
+GET      /api/cities/name               controllers.CityController.findByName(name: String)
 
 POST     /api/persons/add               controllers.PersonController.create(name: String, age: Int)
 POST     /api/persons/                  controllers.PersonController.createFromJson
@@ -12,9 +12,9 @@ POST     /api/persons/bulk              controllers.PersonController.createBulkF
 
 GET      /api/persons                   controllers.PersonController.findByName(name: String)
 
+GET      /api/cities                    controllers.PersonController.findAll()
 # Need to find a function to get MongoDB and post it ↓
-#GET      /api/cities                    controllers.CityController.GetCity
-#POST     /api/cities                    controllers.CityController.PostCity
-
+# GET      /api/cities                    controllers.CityController.GetCity
+# POST     /api/cities                    controllers.CityController.PostCity
 
 GET     /dist/*file                     controllers.HomeController.dist(file)

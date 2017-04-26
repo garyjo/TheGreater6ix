@@ -3,18 +3,35 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import {SignupComponent} from "./sign/signup.component";
+import {SigninComponent} from "./sign/signin.component";
+import {AboutComponent} from "./about/about.component";
 
 const appRoutes: Routes = [
-  { 
-    path: '', 
+  {
+    path: 'home',
     component: HomeComponent
   },
   {
     path: 'about',
-    loadChildren: 'app/about/about.module#AboutModule'
+    loadChildren: './about/about.module#AboutModule'
   },
-  { path: 'contact', component: ContactComponent },
-  { path: '**', component: NotFoundComponent }
+  {
+    path: 'contact',
+    component: ContactComponent
+  },
+  {
+    path: 'sign',
+    component: SignupComponent
+  },
+  {
+    path: 'sign',
+    component: SigninComponent
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
+  }
 ];
 
 export const appRouting: ModuleWithProviders = RouterModule.forRoot(appRoutes);

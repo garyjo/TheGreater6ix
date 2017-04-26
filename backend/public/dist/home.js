@@ -1,21 +1,6 @@
-webpackJsonp([3],{
+webpackJsonp([2],{
 
-/***/ 106:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(92);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ 31:
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30,8 +15,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var home_service_1 = __webpack_require__(40);
+var core_1 = __webpack_require__(6);
+var home_service_1 = __webpack_require__(33);
 var HomeComponent = (function () {
     function HomeComponent(homeService) {
         this.homeService = homeService;
@@ -47,8 +32,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     core_1.Component({
         selector: 'home-page',
-        styles: [__webpack_require__(106)],
-        template: __webpack_require__(95),
+        styles: [__webpack_require__(98)],
+        template: __webpack_require__(87),
     }),
     __metadata("design:paramtypes", [home_service_1.HomeService])
 ], HomeComponent);
@@ -57,7 +42,7 @@ exports.HomeComponent = HomeComponent;
 
 /***/ }),
 
-/***/ 40:
+/***/ 33:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72,9 +57,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var http_1 = __webpack_require__(32);
-__webpack_require__(73);
+var core_1 = __webpack_require__(6);
+var http_1 = __webpack_require__(29);
+__webpack_require__(65);
 var HomeService = (function () {
     function HomeService(http) {
         this.http = http;
@@ -103,14 +88,14 @@ exports.HomeService = HomeService;
 
 /***/ }),
 
-/***/ 72:
+/***/ 64:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var router_1 = __webpack_require__(15);
-var home_component_1 = __webpack_require__(31);
+var router_1 = __webpack_require__(47);
+var home_component_1 = __webpack_require__(27);
 var HomeRoutes = [
     {
         path: 'home',
@@ -122,7 +107,7 @@ exports.HomeRouting = router_1.RouterModule.forChild(HomeRoutes);
 
 /***/ }),
 
-/***/ 74:
+/***/ 66:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -134,11 +119,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var common_1 = __webpack_require__(18);
-var home_routing_1 = __webpack_require__(72);
-var home_component_1 = __webpack_require__(31);
-var home_service_1 = __webpack_require__(40);
+var core_1 = __webpack_require__(6);
+var common_1 = __webpack_require__(28);
+var home_routing_1 = __webpack_require__(64);
+var home_component_1 = __webpack_require__(27);
+var home_service_1 = __webpack_require__(33);
 var HomeModule = (function () {
     function HomeModule() {
     }
@@ -163,7 +148,7 @@ exports.HomeModule = HomeModule;
 
 /***/ }),
 
-/***/ 92:
+/***/ 84:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(30)();
@@ -178,12 +163,27 @@ exports.push([module.i, "\r\n", ""]);
 
 /***/ }),
 
-/***/ 95:
+/***/ 87:
 /***/ (function(module, exports) {
 
-module.exports = "Cities:\r\n<div class=\"container\">\r\n\r\n  <!--<h2>{{ 'TITLE' | translate:param }}<hr></h2>-->\r\n\r\n    <!--<div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">-->\r\n      <!--<div class=\"panel-heading\">-->\r\n        <!--<img src=\"{{city.pictureUrl}}\" alt=\"{{city.city}}\">-->\r\n        <!--<span>{{city.message}}</span>-->\r\n        <!--<span>{{city.prix}}</span>-->\r\n      <!--</div>-->\r\n    <!--</div>-->\r\n</div>\r\n"
+module.exports = "<h4> Cities: </h4><br>\r\n<div class=\"container\">\r\nworks?\r\n  <!--<h2>{{ 'TITLE' | translate:param }}<hr></h2>-->\r\n\r\n    <!--<div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">-->\r\n      <!--<div class=\"panel-heading\">-->\r\n        <!--<img src=\"{{city.pictureUrl}}\" alt=\"{{city.city}}\">-->\r\n        <!--<span>{{city.message}}</span>-->\r\n        <!--<span>{{city.prix}}</span>-->\r\n      <!--</div>-->\r\n    <!--</div>-->\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ 98:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(84);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
 
 /***/ })
 
-},[74]);
+},[66]);
 //# sourceMappingURL=home.js.map

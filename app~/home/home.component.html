@@ -1,27 +1,13 @@
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>-->
-
+Cities:
 <div class="container">
-  <h2>{{ 'TITLE' | translate }}<hr></h2>
-  <!--<p>The .thumbnail class can be used to display an image gallery.</p>-->
-  <!--<p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>-->
-  <!--<p>Click on the images to enlarge them.</p>-->
-    <div *ngFor="let pokemon of pokemons; let i = index">
-    <div class="panel panel-success">
-      <div class="panel-heading">
-            <img src="../../assets/pokemon/{{i+1}}.png" alt="{{pokemon.name}}">
-            <span> {{city.name}}</span>
-            <span>{{name}}</span>
-            
-      </div>
-            
-    </div>
-  </div>
-  </div>
-<!--</body>
-</html>-->
+
+  <!--<h2>{{ 'TITLE' | translate:param }}<hr></h2>-->
+
+    <!--<div *ngFor="let city of cities; let i = index" class="panel-info">-->
+      <!--<div class="panel-heading">-->
+        <!--<img src="{{city.pictureUrl}}" alt="{{city.city}}">-->
+        <!--<span>{{city.message}}</span>-->
+        <!--<span>{{city.prix}}</span>-->
+      <!--</div>-->
+    <!--</div>-->
+</div>

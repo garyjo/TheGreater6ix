@@ -1,21 +1,6 @@
-webpackJsonp([1,2,3],{
+webpackJsonp([1,2],{
 
-/***/ 106:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(92);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ 107:
+/***/ 100:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27,36 +12,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var ContactComponent = (function () {
-    function ContactComponent() {
-    }
-    return ContactComponent;
-}());
-ContactComponent = __decorate([
-    core_1.Component({
-        selector: 'contact-page',
-        template: __webpack_require__(359)
-    })
-], ContactComponent);
-exports.ContactComponent = ContactComponent;
-
-
-/***/ }),
-
-/***/ 108:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
+var core_1 = __webpack_require__(6);
 var NotFoundComponent = (function () {
     function NotFoundComponent() {
     }
@@ -64,7 +20,7 @@ var NotFoundComponent = (function () {
 }());
 NotFoundComponent = __decorate([
     core_1.Component({
-        template: "\n    <div class=\"jumbotron text-center\">\n      <h1>404 Not Found</h1>\n      <p>You may be lost. Follow the breadcrumbs back <a routerLink=\"/\">home</a>.</p>\n    </div>\n  "
+        template: "\n    <div class=\"jumbotron text-center\">\n      <h1>404 : PAGE NOT FOUND</h1>\n      <p>You seem lost child. why don't you come <a routerLink=\"/\">home</a>.</p>\n    </div>\n  "
     })
 ], NotFoundComponent);
 exports.NotFoundComponent = NotFoundComponent;
@@ -72,7 +28,7 @@ exports.NotFoundComponent = NotFoundComponent;
 
 /***/ }),
 
-/***/ 109:
+/***/ 101:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -87,7 +43,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
+var core_1 = __webpack_require__(6);
 var SigninComponent = (function () {
     function SigninComponent() {
     }
@@ -98,8 +54,8 @@ var SigninComponent = (function () {
 SigninComponent = __decorate([
     core_1.Component({
         selector: 'app-signin',
-        template: __webpack_require__(360),
-        styles: [__webpack_require__(620)]
+        template: __webpack_require__(350),
+        styles: [__webpack_require__(609)]
     }),
     __metadata("design:paramtypes", [])
 ], SigninComponent);
@@ -108,49 +64,13 @@ exports.SigninComponent = SigninComponent;
 
 /***/ }),
 
-/***/ 110:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var SignupComponent = (function () {
-    function SignupComponent() {
-    }
-    SignupComponent.prototype.ngOnInit = function () {
-    };
-    return SignupComponent;
-}());
-SignupComponent = __decorate([
-    core_1.Component({
-        selector: 'app-signup',
-        template: __webpack_require__(361),
-        styles: [__webpack_require__(621)]
-    }),
-    __metadata("design:paramtypes", [])
-], SignupComponent);
-exports.SignupComponent = SignupComponent;
-
-
-/***/ }),
-
-/***/ 239:
+/***/ 230:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__translate_service__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__translate_service__ = __webpack_require__(53);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TranslateDirective; });
 
 
@@ -288,13 +208,13 @@ var TranslateDirective = (function () {
 
 /***/ }),
 
-/***/ 240:
+/***/ 231:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__translate_service__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__translate_service__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(54);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TranslatePipe; });
 
 
@@ -442,56 +362,50 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var usersPromise = Promise.resolve([
-    {
-        id: 1,
-        name: 'Gary',
-        username: 'garyuppiah',
-        avatar: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVkfbHgVyXw7tVigsl2Gq9-knPZiBcmSc7Z7qQ5W600U7aoAwe'
+var core_1 = __webpack_require__(6);
+var home_service_1 = __webpack_require__(33);
+var HomeComponent = (function () {
+    function HomeComponent(homeService) {
+        this.homeService = homeService;
+        // constructor(){
+        this.cities = [];
     }
-]);
-var UserService = (function () {
-    function UserService() {
-    }
-    // get all users
-    UserService.prototype.getUsers = function () {
-        return usersPromise;
+    HomeComponent.prototype.ngOnInit = function () {
+        this.cities = this.homeService.homeInit();
+        // console.log("ngOnInit");
     };
-    // find a specific user
-    UserService.prototype.getUser = function (username) {
-        return usersPromise.then(function (users) { return users.find(function (user) { return user.username === username; }); });
-        // let user = usersPromise.then(users => {
-        //   return users.find(user => {
-        //     return user.username === username;
-        //   });
-        // });
-        // return user;
-    };
-    return UserService;
+    return HomeComponent;
 }());
-UserService = __decorate([
-    core_1.Injectable()
-], UserService);
-exports.UserService = UserService;
+HomeComponent = __decorate([
+    core_1.Component({
+        selector: 'home-page',
+        styles: [__webpack_require__(98)],
+        template: __webpack_require__(87),
+    }),
+    __metadata("design:paramtypes", [home_service_1.HomeService])
+], HomeComponent);
+exports.HomeComponent = HomeComponent;
 
 
 /***/ }),
 
-/***/ 286:
+/***/ 277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(46);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AbstractControlDirective", function() { return AbstractControlDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AbstractFormGroupDirective", function() { return AbstractFormGroupDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckboxControlValueAccessor", function() { return CheckboxControlValueAccessor; });
@@ -6572,7 +6486,7 @@ ReactiveFormsModule.ctorParameters = function () { return []; };
 
 /***/ }),
 
-/***/ 290:
+/***/ 281:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6584,7 +6498,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
+var core_1 = __webpack_require__(6);
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -6593,8 +6507,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'app-root',
-        styles: [__webpack_require__(619)],
-        template: __webpack_require__(358)
+        styles: [__webpack_require__(608)],
+        template: __webpack_require__(348)
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
@@ -6602,34 +6516,25 @@ exports.AppComponent = AppComponent;
 
 /***/ }),
 
-/***/ 291:
+/***/ 282:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var router_1 = __webpack_require__(15);
-var home_component_1 = __webpack_require__(31);
-var contact_component_1 = __webpack_require__(107);
-var not_found_component_1 = __webpack_require__(108);
-var signup_component_1 = __webpack_require__(110);
-var signin_component_1 = __webpack_require__(109);
+var router_1 = __webpack_require__(47);
+var home_component_1 = __webpack_require__(27);
+var contact_component_1 = __webpack_require__(99);
+var not_found_component_1 = __webpack_require__(100);
+var signin_component_1 = __webpack_require__(101);
 var appRoutes = [
     {
-        path: 'home',
+        path: '',
         component: home_component_1.HomeComponent
-    },
-    {
-        path: 'about',
-        loadChildren: function() { return new Promise(function (resolve) {  Promise.resolve().then((function (require) {    resolve(__webpack_require__(54)['AboutModule']);  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);})}
     },
     {
         path: 'contact',
         component: contact_component_1.ContactComponent
-    },
-    {
-        path: 'sign',
-        component: signup_component_1.SignupComponent
     },
     {
         path: 'sign',
@@ -6645,7 +6550,7 @@ exports.appRouting = router_1.RouterModule.forRoot(appRoutes);
 
 /***/ }),
 
-/***/ 292:
+/***/ 283:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6657,7 +6562,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
+var core_1 = __webpack_require__(6);
 var AuthGuard = (function () {
     function AuthGuard() {
     }
@@ -6679,7 +6584,7 @@ exports.AuthGuard = AuthGuard;
 
 /***/ }),
 
-/***/ 293:
+/***/ 284:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6691,7 +6596,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
+var core_1 = __webpack_require__(6);
 var CanDeactivateGuard = (function () {
     function CanDeactivateGuard() {
     }
@@ -6708,17 +6613,17 @@ exports.CanDeactivateGuard = CanDeactivateGuard;
 
 /***/ }),
 
-/***/ 294:
+/***/ 285:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_translate_pipe__ = __webpack_require__(240);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_translate_parser__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_translate_service__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_translate_directive__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_translate_pipe__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_translate_parser__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_translate_service__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_translate_directive__ = __webpack_require__(230);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TranslatePipe", function() { return __WEBPACK_IMPORTED_MODULE_2__src_translate_pipe__["a"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "MissingTranslationHandler", function() { return __WEBPACK_IMPORTED_MODULE_4__src_translate_service__["a"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TranslateLoader", function() { return __WEBPACK_IMPORTED_MODULE_4__src_translate_service__["b"]; });
@@ -6782,7 +6687,7 @@ var TranslateModule = (function () {
 
 /***/ }),
 
-/***/ 31:
+/***/ 33:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6797,319 +6702,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var home_service_1 = __webpack_require__(40);
-var HomeComponent = (function () {
-    function HomeComponent(homeService) {
-        this.homeService = homeService;
-        // constructor(){
-        this.cities = [];
-    }
-    HomeComponent.prototype.ngOnInit = function () {
-        this.cities = this.homeService.homeInit();
-        // console.log("ngOnInit");
-    };
-    return HomeComponent;
-}());
-HomeComponent = __decorate([
-    core_1.Component({
-        selector: 'home-page',
-        styles: [__webpack_require__(106)],
-        template: __webpack_require__(95),
-    }),
-    __metadata("design:paramtypes", [home_service_1.HomeService])
-], HomeComponent);
-exports.HomeComponent = HomeComponent;
-
-
-/***/ }),
-
-/***/ 35:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var user_service_1 = __webpack_require__(27);
-var AboutUsersResolve = (function () {
-    function AboutUsersResolve(service) {
-        this.service = service;
-    }
-    AboutUsersResolve.prototype.resolve = function (route) {
-        return this.service.getUsers().then(function (users) { return users; });
-    };
-    return AboutUsersResolve;
-}());
-AboutUsersResolve = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [user_service_1.UserService])
-], AboutUsersResolve);
-exports.AboutUsersResolve = AboutUsersResolve;
-
-
-/***/ }),
-
-/***/ 350:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(30)();
-// imports
-
-
-// module
-exports.push([module.i, ".SixTitle {\r\n  color:#4169e1;\r\n  text-shadow: 0px 0px 20px #6495ed;\r\n}\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 351:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(30)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 352:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(30)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 358:
-/***/ (function(module, exports) {
-
-module.exports = "<header>\r\n  <nav class=\"navbar navbar\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <div class=\"navbar-header\">\r\n      <a routerLink=\"/\" routerLinkActive=\"active\"\r\n        [routerLinkActiveOptions]=\"{ exact: true }\" class=\"navbar-brand\">\r\n        <div class=\"SixTitle\">\r\n          The Greater 6ix\r\n        </div>\r\n      </a>\r\n    </div>\r\n\r\n    <ul class=\"nav navbar-nav\">\r\n      <li><a routerLink=\"/\" routerLinkActive=\"active\"\r\n            [routerLinkActiveOptions]=\"{ exact: true }\">{{ 'HOME' | translate:param }}</a></li>\r\n      <li><a routerLink=\"/about\" routerLinkActive=\"active\" >{{ 'ABOUT' | translate:param }}</a></li>\r\n      <li><a routerLink=\"/contact\" routerLinkActive=\"active\" >{{ 'CONTACT' | translate:param }}</a></li>\r\n    </ul>\r\n\r\n    <ul class=\"nav navbar-nav navbar-right\">\r\n      <li><a routerLink=\"/sign\" routerLinkActive=\"active\" >{{ 'SIGN' | translate:param }}</a></li>\r\n    </ul>\r\n\r\n  </div>\r\n  </nav>\r\n</header>\r\n\r\n<main>\r\n\r\n  <router-outlet></router-outlet>\r\n\r\n</main>\r\n"
-
-/***/ }),
-
-/***/ 359:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"jumbotron jumbotron-sm\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12 col-lg-12\">\n                <h1 class=\"h1\"><small>Contactez nous!</small></h1>\n            </div>\n        </div>\n    </div>\n</div>\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-8\">\n            <div class=\"well well-sm\">\n                <form>\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"name\">\n                                Nom</label>\n                            <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Enter name\" required=\"required\" />\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"email\">\n                                Adresse Courriel</label>\n                            <div class=\"input-group\">\n                                <span class=\"input-group-addon\"><span class=\"glyphicon glyphicon-envelope\"></span>\n                                </span>\n                                <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" required=\"required\" /></div>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"subject\">\n                                Sujet</label>\n                            <select id=\"subject\" name=\"subject\" class=\"form-control\" required=\"required\">\n                                <option value=\"na\" selected=\"\">Choisir un:</option>\n                                <option value=\"service\">Questions sur l'application</option>\n                                <option value=\"suggestions\">Suggestion d'amelioration de performance</option>\n                                <option value=\"product\">Acheter une image</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"name\">\n                                Message</label>\n                            <textarea name=\"message\" id=\"message\" class=\"form-control\" rows=\"9\" cols=\"25\" required=\"required\"\n                                placeholder=\"Message\"></textarea>\n                        </div>\n                    </div>\n                    <div class=\"col-md-12\">\n                        <button type=\"submit\" class=\"btn btn-primary pull-right\" id=\"btnContactUs\">\n                            Envoyer</button>\n                    </div>\n                </div>\n                </form>\n            </div>\n        </div>\n        <div class=\"col-md-4\">\n            <form>\n            <legend><span class=\"glyphicon glyphicon-globe\"></span> Notre Bureau</legend>\n            <address>\n                <strong>College Boreal</strong><br>\n                1 Yonge Street<br>\n                Toronto, ON M5E 1E5<br>\n                <abbr title=\"Phone\">\n                    Tel:</abbr>\n                (416) 289-5130\n            </address>\n            </form>\n        </div>\n    </div>\n</div>\n"
-
-/***/ }),
-
-/***/ 36:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var AboutSectionComponent = (function () {
-    function AboutSectionComponent() {
-    }
-    return AboutSectionComponent;
-}());
-AboutSectionComponent = __decorate([
-    core_1.Component({
-        template: "\n    <h2 class=\"text-center\">About Section</h2>\n    \n    <router-outlet></router-outlet>\n  "
-    })
-], AboutSectionComponent);
-exports.AboutSectionComponent = AboutSectionComponent;
-
-
-/***/ }),
-
-/***/ 360:
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  signin works!\n</p>\n"
-
-/***/ }),
-
-/***/ 361:
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  signup works!\n</p>\n"
-
-/***/ }),
-
-/***/ 37:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var router_1 = __webpack_require__(15);
-var user_service_1 = __webpack_require__(27);
-var AboutUserResolve = (function () {
-    function AboutUserResolve(service, router) {
-        this.service = service;
-        this.router = router;
-    }
-    AboutUserResolve.prototype.resolve = function (route) {
-        var _this = this;
-        var username = route.params['username'];
-        return this.service.getUser(username).then(function (user) {
-            if (user) {
-                return user;
-            }
-            else {
-                // navigate the user back to the about page
-                _this.router.navigate(['/about']);
-                return false;
-            }
-        });
-    };
-    return AboutUserResolve;
-}());
-AboutUserResolve = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [user_service_1.UserService, router_1.Router])
-], AboutUserResolve);
-exports.AboutUserResolve = AboutUserResolve;
-
-
-/***/ }),
-
-/***/ 38:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var router_1 = __webpack_require__(15);
-var AboutUserComponent = (function () {
-    function AboutUserComponent(route, router) {
-        this.route = route;
-        this.router = router;
-    }
-    AboutUserComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.route.data.forEach(function (data) { return _this.user = data.user; });
-    };
-    AboutUserComponent.prototype.goBack = function () {
-        this.router.navigate(['/about']);
-    };
-    return AboutUserComponent;
-}());
-AboutUserComponent = __decorate([
-    core_1.Component({
-        styles: ["\n    img     {\n      max-width: 300px;\n      margin: 20px auto;\n    }\n  "],
-        template: "\n    <a (click)=\"goBack()\" class=\"btn btn-sm btn-info\">Go Back</a>\n    <div class=\"jumbotron text-center\" *ngIf=\"user\">\n      <h1>{{ user.name }} ({{ user.username }})</h1>\n\n      <img [src]=\"user.avatar\" class=\"img-responsive img-circle\">\n    </div>\n  "
-    }),
-    __metadata("design:paramtypes", [router_1.ActivatedRoute,
-        router_1.Router])
-], AboutUserComponent);
-exports.AboutUserComponent = AboutUserComponent;
-
-
-/***/ }),
-
-/***/ 39:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var router_1 = __webpack_require__(15);
-var AboutComponent = (function () {
-    function AboutComponent(route) {
-        this.route = route;
-    }
-    AboutComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.route.data.forEach(function (data) { return _this.users = data.users; });
-    };
-    return AboutComponent;
-}());
-AboutComponent = __decorate([
-    core_1.Component({
-        selector: 'about-page',
-        styles: ["\n    .profile-card   {\n      background: #f3f3f3;\n      border-radius: 4px;\n      padding: 30px;\n      text-align: center;\n    }\n    .profile-card img  {\n      max-width: 50%;\n      margin: 15px auto;\n    }\n  "],
-        template: "\n    <div class=\"row\">\n  \n      <div class=\"col-sm-4\" *ngFor=\"let user of users\">\n\n        <div class=\"profile-card\" [routerLink]=\"['/about', user.username]\">\n          <img [src]=\"user.avatar\" class=\"img-responsive img-circle\">\n\n          <h2>{{ user.name }}</h2>\n          \n          <p><a href=\"https://twitter.com/{{ user.username }}\">\n            {{ user.username }}\n          </a></p>\n        </div>\n\n      </div>\n\n    </div>\n"
-    }),
-    __metadata("design:paramtypes", [router_1.ActivatedRoute])
-], AboutComponent);
-exports.AboutComponent = AboutComponent;
-
-
-/***/ }),
-
-/***/ 40:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var http_1 = __webpack_require__(32);
-__webpack_require__(73);
+var core_1 = __webpack_require__(6);
+var http_1 = __webpack_require__(29);
+__webpack_require__(65);
 var HomeService = (function () {
     function HomeService(http) {
         this.http = http;
@@ -7138,76 +6733,78 @@ exports.HomeService = HomeService;
 
 /***/ }),
 
-/***/ 54:
+/***/ 341:
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+exports = module.exports = __webpack_require__(30)();
+// imports
 
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var common_1 = __webpack_require__(18);
-var about_component_1 = __webpack_require__(39);
-var about_user_component_1 = __webpack_require__(38);
-var about_section_component_1 = __webpack_require__(36);
-var user_service_1 = __webpack_require__(27);
-var about_routing_1 = __webpack_require__(71);
-var about_resolve_service_1 = __webpack_require__(35);
-var about_user_resolve_service_1 = __webpack_require__(37);
-var AboutModule = (function () {
-    function AboutModule() {
-    }
-    return AboutModule;
-}());
-AboutModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            common_1.CommonModule,
-            about_routing_1.aboutRouting
-        ],
-        declarations: [
-            about_component_1.AboutComponent,
-            about_user_component_1.AboutUserComponent,
-            about_section_component_1.AboutSectionComponent
-        ],
-        providers: [
-            user_service_1.UserService,
-            about_resolve_service_1.AboutUsersResolve,
-            about_user_resolve_service_1.AboutUserResolve
-        ]
-    })
-], AboutModule);
-exports.AboutModule = AboutModule;
+
+// module
+exports.push([module.i, ".SixTitle {\r\n  color:#4169e1;\r\n  text-shadow: 0px 0px 20px #6495ed;\r\n}\r\n", ""]);
+
+// exports
 
 
 /***/ }),
 
-/***/ 60:
+/***/ 342:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(30)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 348:
+/***/ (function(module, exports) {
+
+module.exports = "<header>\r\n  <nav class=\"navbar navbar\">\r\n  <div class=\"container-fluid\">\r\n\r\n    <div class=\"navbar-header\">\r\n      <a routerLink=\"/\" routerLinkActive=\"active\"\r\n        [routerLinkActiveOptions]=\"{ exact: true }\" class=\"navbar-brand\">\r\n        <div class=\"SixTitle\">\r\n          The Greater 6ix\r\n        </div>\r\n      </a>\r\n    </div>\r\n\r\n    <ul class=\"nav navbar-nav\">\r\n      <li><a routerLink=\"/home\" routerLinkActive=\"active\"\r\n            [routerLinkActiveOptions]=\"{ exact: true }\">{{ 'HOME' | translate:param }}</a></li>\r\n      <li><a routerLink=\"/contact\" routerLinkActive=\"active\" >{{ 'CONTACT' | translate:param }}</a></li>\r\n    </ul>\r\n\r\n    <ul class=\"nav navbar-nav navbar-right\">\r\n      <li><a routerLink=\"/sign\" routerLinkActive=\"active\" >{{ 'SIGN' | translate:param }}</a></li>\r\n    </ul>\r\n\r\n  </div>\r\n  </nav>\r\n</header>\r\n\r\n<main>\r\n\r\n  <router-outlet></router-outlet>\r\n\r\n</main>\r\n"
+
+/***/ }),
+
+/***/ 349:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"jumbotron jumbotron-sm\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-sm-12 col-lg-12\">\n                <h1 class=\"h1\"><small>Contactez nous!</small></h1>\n            </div>\n        </div>\n    </div>\n</div>\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-md-8\">\n            <div class=\"well well-sm\">\n                <form>\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"name\">\n                                Nom</label>\n                            <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Enter name\" required=\"required\" />\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"email\">\n                                Adresse Courriel</label>\n                            <div class=\"input-group\">\n                                <span class=\"input-group-addon\"><span class=\"glyphicon glyphicon-envelope\"></span>\n                                </span>\n                                <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" required=\"required\" /></div>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"subject\">\n                                Sujet</label>\n                            <select id=\"subject\" name=\"subject\" class=\"form-control\" required=\"required\">\n                                <option value=\"na\" selected=\"\">Choisir un:</option>\n                                <option value=\"service\">Questions sur l'application</option>\n                                <option value=\"suggestions\">Suggestion d'amelioration de performance</option>\n                                <option value=\"product\">Acheter une image</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"name\">\n                                Message</label>\n                            <textarea name=\"message\" id=\"message\" class=\"form-control\" rows=\"9\" cols=\"25\" required=\"required\"\n                                placeholder=\"Message\"></textarea>\n                        </div>\n                    </div>\n                    <div class=\"col-md-12\">\n                        <button type=\"submit\" class=\"btn btn-primary pull-right\" id=\"btnContactUs\">\n                            Envoyer</button>\n                    </div>\n                </div>\n                </form>\n            </div>\n        </div>\n        <div class=\"col-md-4\">\n            <form>\n            <legend><span class=\"glyphicon glyphicon-globe\"></span> Notre Bureau</legend>\n            <address>\n                <strong>College Boreal</strong><br>\n                1 Yonge Street<br>\n                Toronto, ON M5E 1E5<br>\n                <abbr title=\"Phone\">\n                    Tel:</abbr>\n                (416) 289-5130\n            </address>\n            </form>\n        </div>\n    </div>\n</div>\n"
+
+/***/ }),
+
+/***/ 350:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n\n  <div class=\"form-group\">\n    <div><h3>Name</h3></div>\n    <input type=\"text\" [(ngModel)]=\"_name\" class=\"form-control\">\n  </div>\n\n  <div class=\"form-group\">\n    <div><h3> Age </h3></div>\n    <input type=\"number\" [(ngModel)]=\"_age\" class=\"form-control\">\n  </div>\n\n  <div class=\"form-group text-center\">\n    <button (click)=\"formFill()\" class=\"btn btn-info\">Save</button>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ 53:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__ = __webpack_require__(234);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share__ = __webpack_require__(237);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_share__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(235);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge__ = __webpack_require__(236);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_merge__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_toArray__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take__ = __webpack_require__(238);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_take__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__translate_parser__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__translate_parser__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util__ = __webpack_require__(54);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MissingTranslationHandler; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return TranslateLoader; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return TranslateStaticLoader; });
@@ -7639,7 +7236,7 @@ var TranslateService = (function () {
 
 /***/ }),
 
-/***/ 61:
+/***/ 54:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7711,11 +7308,11 @@ function isDefined(value) {
 
 /***/ }),
 
-/***/ 619:
+/***/ 608:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(350);
+        var result = __webpack_require__(341);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -7726,11 +7323,11 @@ function isDefined(value) {
 
 /***/ }),
 
-/***/ 620:
+/***/ 609:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(351);
+        var result = __webpack_require__(342);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -7741,22 +7338,7 @@ function isDefined(value) {
 
 /***/ }),
 
-/***/ 621:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(352);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ 622:
+/***/ 610:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7771,22 +7353,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var platform_browser_1 = __webpack_require__(53);
-var forms_1 = __webpack_require__(286);
-// import { DashboardModule } from './dashboard/dashboard.module';
-var app_routing_1 = __webpack_require__(291);
-var app_component_1 = __webpack_require__(290);
-var contact_component_1 = __webpack_require__(107);
-var not_found_component_1 = __webpack_require__(108);
-var auth_guard_service_1 = __webpack_require__(292);
-var can_deactivate_guard_service_1 = __webpack_require__(293);
-var signin_component_1 = __webpack_require__(109);
-var signup_component_1 = __webpack_require__(110);
-var http_1 = __webpack_require__(32);
-var ng2_translate_1 = __webpack_require__(294);
-var about_module_1 = __webpack_require__(54);
-var home_module_1 = __webpack_require__(74);
+var core_1 = __webpack_require__(6);
+var platform_browser_1 = __webpack_require__(46);
+var forms_1 = __webpack_require__(277);
+var app_routing_1 = __webpack_require__(282);
+var app_component_1 = __webpack_require__(281);
+var contact_component_1 = __webpack_require__(99);
+var not_found_component_1 = __webpack_require__(100);
+var auth_guard_service_1 = __webpack_require__(283);
+var can_deactivate_guard_service_1 = __webpack_require__(284);
+var signin_component_1 = __webpack_require__(101);
+var http_1 = __webpack_require__(29);
+var ng2_translate_1 = __webpack_require__(285);
+var home_module_1 = __webpack_require__(66);
 function createTranslateLoader(http) {
     return new ng2_translate_1.TranslateStaticLoader(http, './assets/i18n', '.json');
 }
@@ -7807,9 +7386,7 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             forms_1.FormsModule,
             app_routing_1.appRouting,
-            // DashboardModule,
             home_module_1.HomeModule,
-            about_module_1.AboutModule,
             http_1.HttpModule,
             ng2_translate_1.TranslateModule.forRoot({
                 provide: ng2_translate_1.TranslateLoader,
@@ -7821,9 +7398,7 @@ AppModule = __decorate([
             app_component_1.AppComponent,
             contact_component_1.ContactComponent,
             not_found_component_1.NotFoundComponent,
-            signup_component_1.SignupComponent,
             signin_component_1.SigninComponent,
-            signup_component_1.SignupComponent,
             contact_component_1.ContactComponent,
         ],
         providers: [
@@ -7839,53 +7414,14 @@ exports.AppModule = AppModule;
 
 /***/ }),
 
-/***/ 71:
+/***/ 64:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var router_1 = __webpack_require__(15);
-var about_component_1 = __webpack_require__(39);
-var about_user_component_1 = __webpack_require__(38);
-var about_section_component_1 = __webpack_require__(36);
-var about_resolve_service_1 = __webpack_require__(35);
-var about_user_resolve_service_1 = __webpack_require__(37);
-var aboutRoutes = [
-    {
-        path: '',
-        component: about_section_component_1.AboutSectionComponent,
-        children: [
-            {
-                path: '',
-                component: about_component_1.AboutComponent,
-                resolve: {
-                    users: about_resolve_service_1.AboutUsersResolve
-                }
-            },
-            {
-                path: ':username',
-                component: about_user_component_1.AboutUserComponent,
-                resolve: {
-                    user: about_user_resolve_service_1.AboutUserResolve
-                }
-            }
-        ]
-    }
-];
-exports.aboutRouting = router_1.RouterModule.forChild(aboutRoutes);
-
-
-/***/ }),
-
-/***/ 72:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var router_1 = __webpack_require__(15);
-var home_component_1 = __webpack_require__(31);
+var router_1 = __webpack_require__(47);
+var home_component_1 = __webpack_require__(27);
 var HomeRoutes = [
     {
         path: 'home',
@@ -7897,7 +7433,7 @@ exports.HomeRouting = router_1.RouterModule.forChild(HomeRoutes);
 
 /***/ }),
 
-/***/ 74:
+/***/ 66:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7909,11 +7445,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(3);
-var common_1 = __webpack_require__(18);
-var home_routing_1 = __webpack_require__(72);
-var home_component_1 = __webpack_require__(31);
-var home_service_1 = __webpack_require__(40);
+var core_1 = __webpack_require__(6);
+var common_1 = __webpack_require__(28);
+var home_routing_1 = __webpack_require__(64);
+var home_component_1 = __webpack_require__(27);
+var home_service_1 = __webpack_require__(33);
 var HomeModule = (function () {
     function HomeModule() {
     }
@@ -7938,7 +7474,7 @@ exports.HomeModule = HomeModule;
 
 /***/ }),
 
-/***/ 92:
+/***/ 84:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(30)();
@@ -7953,12 +7489,12 @@ exports.push([module.i, "\r\n", ""]);
 
 /***/ }),
 
-/***/ 93:
+/***/ 85:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(54);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TranslateParser; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return DefaultTranslateParser; });
 var __extends = (this && this.__extends) || function (d, b) {
@@ -8018,12 +7554,56 @@ var DefaultTranslateParser = (function (_super) {
 
 /***/ }),
 
-/***/ 95:
+/***/ 87:
 /***/ (function(module, exports) {
 
-module.exports = "Cities:\r\n<div class=\"container\">\r\n\r\n  <!--<h2>{{ 'TITLE' | translate:param }}<hr></h2>-->\r\n\r\n    <!--<div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">-->\r\n      <!--<div class=\"panel-heading\">-->\r\n        <!--<img src=\"{{city.pictureUrl}}\" alt=\"{{city.city}}\">-->\r\n        <!--<span>{{city.message}}</span>-->\r\n        <!--<span>{{city.prix}}</span>-->\r\n      <!--</div>-->\r\n    <!--</div>-->\r\n</div>\r\n"
+module.exports = "<h4> Cities: </h4><br>\r\n<div class=\"container\">\r\nworks?\r\n  <!--<h2>{{ 'TITLE' | translate:param }}<hr></h2>-->\r\n\r\n    <!--<div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">-->\r\n      <!--<div class=\"panel-heading\">-->\r\n        <!--<img src=\"{{city.pictureUrl}}\" alt=\"{{city.city}}\">-->\r\n        <!--<span>{{city.message}}</span>-->\r\n        <!--<span>{{city.prix}}</span>-->\r\n      <!--</div>-->\r\n    <!--</div>-->\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ 98:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(84);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+
+/***/ 99:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(6);
+var ContactComponent = (function () {
+    function ContactComponent() {
+    }
+    return ContactComponent;
+}());
+ContactComponent = __decorate([
+    core_1.Component({
+        selector: 'contact-page',
+        template: __webpack_require__(349)
+    })
+], ContactComponent);
+exports.ContactComponent = ContactComponent;
+
 
 /***/ })
 
-},[622]);
+},[610]);
 //# sourceMappingURL=app.js.map

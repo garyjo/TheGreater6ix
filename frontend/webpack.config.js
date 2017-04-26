@@ -40,7 +40,6 @@ module.exports = {
   entry: {
     'app'       : './src/app/app.module.ts',
     'home'        : './src/app/home/home.module.ts',
-    'about'       : './src/app/about/about.module.ts',
     'polyfills' : './src/polyfills.ts',
     'vendor'    : './src/vendor.ts'
   },

@@ -1,20 +1,23 @@
 import { Component,OnInit } from '@angular/core';
-import { HomeService } from './home.service';
+import { HomeService } from '../shared/services/home.service';
+import { City } from "../shared/interfaces/city";
 
 @Component({
   selector: 'home-page',
+  styleUrls:['home.component.css'],
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit{
 
-public home: Array<any>;
+public cities: City[];
 
   constructor(private homeService:HomeService){
-    // this.home = [];
+  // constructor(){
+    this.cities = [];
   }
 
   ngOnInit(){
-    // this.home = this.homeService.homeInit();
+    this.cities = this.homeService.homeInit();
     // console.log("ngOnInit");
   }
 }

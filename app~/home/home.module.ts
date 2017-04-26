@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeRouting } from './home.routing';
 import { HomeComponent } from './home.component';
-import { HomeInfoComponent } from './home-info.component';
-import { HomeService } from './home.service'
+import { HomeService } from '../shared/services/home.service';
 
 @NgModule({
   imports: [
@@ -11,11 +10,10 @@ import { HomeService } from './home.service'
     HomeRouting
   ],
   declarations: [
-    HomeComponent,
-    HomeInfoComponent
+    HomeComponent
   ],
   providers:[
     HomeService
     ]
 })
-export class HomeModule { }
+export class HomeModule {}

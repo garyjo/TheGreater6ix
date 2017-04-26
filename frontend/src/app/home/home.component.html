@@ -1,13 +1,32 @@
-Cities:
-<div class="container">
 
-  <!--<h2>{{ 'TITLE' | translate:param }}<hr></h2>-->
-
-    <!--<div *ngFor="let city of cities; let i = index" class="panel-info">-->
-      <!--<div class="panel-heading">-->
-        <!--<img src="{{city.pictureUrl}}" alt="{{city.city}}">-->
-        <!--<span>{{city.message}}</span>-->
-        <!--<span>{{city.prix}}</span>-->
-      <!--</div>-->
-    <!--</div>-->
+<div class="jumbotron jumbotron-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-lg-12">
+        <h1 class="h1"><small class="Title"> Cities: </small></h1>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="container">
+  <!--<div  *ngFor="let city of cities; let i = index" class="panel-info">-->
+    <div class="gallery">
+      <a target="_blank" href="img_fjords.jpg">
+        <img src="img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  <!--</div>-->
+</div>
+
+
+<!--<h2>{{ 'TITLE' | translate:param }}<hr></h2>-->
+
+<!--<div *ngFor="let city of cities; let i = index" class="panel-info">-->
+<!--<div class="panel-heading">-->
+<!--<img src="{{city.pictureUrl}}" alt="{{city.city}}">-->
+<!--<span>{{city.message}}</span>-->
+<!--<span>{{city.prix}}</span>-->
+<!--</div>-->
+<!--</div>-->
