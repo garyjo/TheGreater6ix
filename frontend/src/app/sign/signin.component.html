@@ -21,7 +21,7 @@
             <div class="col-md-12">
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input name="first_name" placeholder="Username" class="form-control" type="text">
+                <input name="first_name" placeholder="Username" [(ngModel)]="_name" class="form-control" type="text">
               </div>
             </div>
           </div>
@@ -32,7 +32,7 @@
             <div class="col-md-12">
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                <input name="email" placeholder="Password" class="form-control" type="text">
+                <input name="email" placeholder="Password" [(ngModel)]="_name" class="form-control" type="text">
               </div>
             </div>
           </div>
@@ -51,19 +51,23 @@
   </div>
 </div>
 
+
+
 <!-- SEPARATE THESE TWO SECTIONS -->
-<div class="container">
-  <div class="form-group">
-    <div><h3>Name</h3></div>
-    <input type="text" [(ngModel)]="_name" class="form-control">
-  </div>
 
-  <div class="form-group">
-    <div><h3> Password </h3></div>
-    <input type="number" [(ngModel)]="_age" class="form-control">
-  </div>
 
-  <div class="form-group text-center">
-    <button (click)="formFill()" class="btn btn-info">Validate</button>
-  </div>
-</div>
+<!--<div class="container">-->
+  <!--<div class="form-group">-->
+    <!--<div><h3>Name</h3></div>-->
+    <!--<input type="text" [(ngModel)]="_name" class="form-control">-->
+  <!--</div>-->
+
+  <!--<div class="form-group">-->
+    <!--<div><h3> Password </h3></div>-->
+    <!--<input type="number" [(ngModel)]="_age" class="form-control">-->
+  <!--</div>-->
+
+  <!--<div class="form-group text-center">-->
+    <!--<button (click)="formFill()" class="btn btn-info">Validate</button>-->
+  <!--</div>-->
+<!--</div>-->
