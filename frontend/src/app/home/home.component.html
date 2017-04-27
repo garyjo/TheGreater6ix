@@ -10,9 +10,9 @@
 <div class="container">
   <div  *ngFor="let city of cities" class="panel-info">
     <div class="gallery">
-      <a target="_blank" href="img_fjords.jpg">
-        <img src="img_fjords.jpg" alt="{{city.pictureUrl}}" width="300" height="200">
-      </a>
+      <!--<a target="_blank" href="img_fjords.jpg">-->
+        <img src="{{city.pictureUrl}}" alt="{{city:name}}" width="300" height="200">
+      <!--</a>-->
       <div class="desc">{{city.message}}</div>
       <div class="desc">$ {{city.prix}}</div>
     </div>

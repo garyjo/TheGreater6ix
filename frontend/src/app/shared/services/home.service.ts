@@ -11,7 +11,8 @@ export class HomeService {
     this.cities=[];
   }
 
-  homeInit():Array<any>{
+  // homeInit():Array<any>{
+  homeInit(){
     this.http.get("/api/cities")
     .map(result => result.json())
     .subscribe(

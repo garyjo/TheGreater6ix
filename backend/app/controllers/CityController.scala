@@ -97,7 +97,6 @@ class CityController @Inject()(val reactiveMongoApi: ReactiveMongoApi)(implicit 
       Ok(Json.toJson(cities))
     }
   }
-
 }
 
 

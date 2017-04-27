@@ -2,7 +2,7 @@ package models
 
 import play.api.libs.json.Json
 
-case class City(city: String, message: String,
+case class City(name: String, message: String,
                 date: String, pictureUrl: String, prix: Double)
 
 object City {
