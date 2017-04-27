@@ -1,23 +1,22 @@
-
-<div class="jumbotron jumbotron-sm">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-lg-12">
-        <h1 class="h1"><small class="Title"> Cities: </small></h1>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="jumbotron">
+      <h2 class="blue" style="color:#2196F3;">Liste des villes </h2>
+      <h5 class="blue">Les belles villes du Greater Toronto Area</h5>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <!--<div  *ngFor="let city of cities; let i = index" class="panel-info">-->
+  <div  *ngFor="let city of cities" class="panel-info">
     <div class="gallery">
       <a target="_blank" href="img_fjords.jpg">
-        <img src="img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+        <img src="img_fjords.jpg" alt="{{city.pictureUrl}}" width="300" height="200">
       </a>
-      <div class="desc">Add a description of the image here</div>
+      <div class="desc">{{city.message}}</div>
+      <div class="desc">$ {{city.prix}}</div>
     </div>
-  <!--</div>-->
+  </div>
 </div>
 
 

@@ -156,7 +156,7 @@ exports = module.exports = __webpack_require__(30)();
 
 
 // module
-exports.push([module.i, "\r\n", ""]);
+exports.push([module.i, "\r\ndiv.gallery {\r\n  margin: 5px;\r\n  border: 1px solid #ccc;\r\n  float: left;\r\n  width: 180px;\r\n}\r\n\r\ndiv.gallery:hover {\r\n  border: 1px solid #777;\r\n}\r\n\r\ndiv.gallery img {\r\n  width: 100%;\r\n  height: auto;\r\n}\r\n\r\ndiv.desc {\r\n  padding: 15px;\r\n  text-align: center;\r\n}\r\nh4.Title{\r\n  color:#4169e1;\r\n  text-shadow: 0px 0px 20px #6495ed;\r\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -166,7 +166,7 @@ exports.push([module.i, "\r\n", ""]);
 /***/ 87:
 /***/ (function(module, exports) {
 
-module.exports = "<h4> Cities: </h4><br>\r\n<div class=\"container\">\r\nworks?\r\n  <!--<h2>{{ 'TITLE' | translate:param }}<hr></h2>-->\r\n\r\n    <!--<div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">-->\r\n      <!--<div class=\"panel-heading\">-->\r\n        <!--<img src=\"{{city.pictureUrl}}\" alt=\"{{city.city}}\">-->\r\n        <!--<span>{{city.message}}</span>-->\r\n        <!--<span>{{city.prix}}</span>-->\r\n      <!--</div>-->\r\n    <!--</div>-->\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"jumbotron\">\r\n      <h2 class=\"blue\" style=\"color:#2196F3;\">Liste des villes </h2>\r\n      <h5 class=\"blue\">Les belles villes du Greater Toronto Area</h5>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"container\">\r\n  <!--<div  *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">-->\r\n    <div class=\"gallery\">\r\n      <a target=\"_blank\" href=\"img_fjords.jpg\">\r\n        <img src=\"img_fjords.jpg\" alt=\"Trolltunga Norway\" width=\"300\" height=\"200\">\r\n      </a>\r\n      <div class=\"desc\">Descriptoion de l'image</div>\r\n    </div>\r\n  <!--</div>-->\r\n</div>\r\n\r\n\r\n<!--<h2>{{ 'TITLE' | translate:param }}<hr></h2>-->\r\n\r\n<!--<div *ngFor=\"let city of cities; let i = index\" class=\"panel-info\">-->\r\n<!--<div class=\"panel-heading\">-->\r\n<!--<img src=\"{{city.pictureUrl}}\" alt=\"{{city.city}}\">-->\r\n<!--<span>{{city.message}}</span>-->\r\n<!--<span>{{city.prix}}</span>-->\r\n<!--</div>-->\r\n<!--</div>-->\r\n"
 
 /***/ }),
 

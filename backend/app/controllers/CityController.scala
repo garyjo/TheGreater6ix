@@ -80,13 +80,24 @@ class CityController @Inject()(val reactiveMongoApi: ReactiveMongoApi)(implicit 
       Ok(Json.toJson(cities))
     }
   }
-//  def GetCity(city: String, message: String, date: String,
-//              pictureUrl: String, prix: Int) = Action.async(){
-//    _.list().map{ cities =>
-//      Ok(Json.toJson(cities))
-//
-//    }
-//  }
+
+  def findAll() = Action.async {
+    // let's do our query
+    val futureCitiesList: Future[List[City]] = citiesFuture.flatMap {
+      // find all cities with name `name`
+      _.find(Json.obj()).
+        // perform the query and get a cursor of JsObject
+        cursor[City](ReadPreference.primary).
+        // Coollect the results as a list
+        collect[List]()
+    }
+
+    // everything's ok! Let's reply with a JsValue
+    futureCitiesList.map { cities =>
+      Ok(Json.toJson(cities))
+    }
+  }
+
 }
 
 

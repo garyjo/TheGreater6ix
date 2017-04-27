@@ -12,18 +12,17 @@ export class HomeService {
   }
 
   homeInit():Array<any>{
-    let cities: Array<any> = [];
     this.http.get("/api/cities")
     .map(result => result.json())
-    .flatMap(result => result.results)
     .subscribe(
       result => {
-        cities.push(result);
+        console.log(result)
+        this.cities.push(result);
       },
       error => {
         console.error(error);
       }
     );
-  return cities;
+  return this.cities;
   }
 }

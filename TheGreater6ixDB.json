@@ -1,4 +1,5 @@
 {
+	"_id":1,
     "city": "Toronto",
     "message":"the main city",
     "date": "13 Apr 2017",
@@ -6,6 +7,7 @@
     "prix":2.69
 },
 {
+	"_id":2,
     "city": "Brampton",
     "message":"The city of flowers",
     "date": "25 Apr 2017",
@@ -13,9 +15,10 @@
     "prix":2.69
 },
 {
+	"_id":3,
     "city": "Mississauga",
     "message":"The mid-sized city of the future",
     "date": "24 Apr 2017",
     "pictureUrl":"https://goo.gl/SRrfzI",
     "prix":2.69
-},
+}

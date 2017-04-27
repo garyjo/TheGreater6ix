@@ -1,3 +1,56 @@
+
+<div class="container-fluid">
+  <div class="row-fluid" >
+
+
+    <div class="col-md-offset-4 col-md-4" id="box">
+      <h2 class="Title">Login</h2>
+
+      <hr>
+
+
+      <form class="form-horizontal" action=" " method="" id="contact_form">
+        <fieldset>
+          <!-- Form Name -->
+
+
+          <!-- Text input-->
+
+          <div class="form-group">
+
+            <div class="col-md-12">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="first_name" placeholder="Username" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+
+            <div class="col-md-12">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input name="email" placeholder="Password" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-md btn-danger pull-right">Login </button>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+
 <!-- SEPARATE THESE TWO SECTIONS -->
 <div class="container">
   <div class="form-group">
@@ -6,11 +59,11 @@
   </div>
 
   <div class="form-group">
-    <div><h3> Age </h3></div>
+    <div><h3> Password </h3></div>
     <input type="number" [(ngModel)]="_age" class="form-control">
   </div>
 
   <div class="form-group text-center">
-    <button (click)="formFill()" class="btn btn-info">Save</button>
+    <button (click)="formFill()" class="btn btn-info">Validate</button>
   </div>
 </div>
