@@ -17,7 +17,7 @@ export class HomeService {
     .map(result => result.json())
     .subscribe(
       result => {
-        console.log(result)
+        // console.log(result)
         this.cities.push(result);
       },
       error => {

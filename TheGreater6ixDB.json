@@ -1,10 +1,10 @@
 [{
 	"_id":1,
     "name": "Toronto",
-    "message":"the main city",
+    "message":"The main city",
     "date": "13 Apr 2017",
     "pictureUrl":"https://goo.gl/v8x4TX",
-    "prix":2.69
+    "prix":3.69
 },
 {
 	"_id":2,
@@ -12,13 +12,37 @@
     "message":"The city of flowers",
     "date": "25 Apr 2017",
     "pictureUrl":"https://goo.gl/UET8BT",
-    "prix":2.69
+    "prix":2.66
 },
 {
 	"_id":3,
     "name": "Mississauga",
-    "message":"The mid-sized city of the future",
+    "message":"The city of the future",
     "date": "24 Apr 2017",
     "pictureUrl":"https://goo.gl/SRrfzI",
-    "prix":2.69
+    "prix":2.34
+},
+{
+	"_id":4,
+    "name": "Ajax",
+    "message":"Fun and wonder",
+    "date": "26 Apr 2017",
+    "pictureUrl":"https://goo.gl/IXam9r",
+    "prix":1.89
+},
+{
+	"_id":5,
+    "name": "Pickering",
+    "message":"British colonists of 1770",
+    "date": "27 Apr 2017",
+    "pictureUrl":"https://goo.gl/DZFSyr",
+    "prix":2.35
+},
+{
+	"_id":6,
+    "name": "Oakville",
+    "message":"Best weather in Canada",
+    "date": "29 Apr 2017",
+    "pictureUrl":"https://goo.gl/H7seO1",
+    "prix":3.20
 }]

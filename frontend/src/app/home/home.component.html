@@ -7,25 +7,53 @@
   </div>
 </div>
 
-<div class="container">
-  <div  *ngFor="let city of cities[0]" class="panel-info">
-    <div class="gallery">
-      <!--<a target="_blank" href="img_fjords.jpg">-->
-        <img src="{{city.pictureUrl}}" width="400" height="350">
-      <!--</a>-->
-      <div class="desc">{{city.message}}</div>
-      <div class="desc">$ {{city.prix}}</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4" *ngFor="let city of cities[0]">
+        <div class="panel-footer">
+            <div class="panel-body"><img src="{{city.pictureUrl}}" class="img-responsive" id="myImg" style="width:100%" alt="{{city.name}}"></div>
+            <div class="panel-footer"><p> Lieu: <u>{{city.name}}</u> <br> Date:{{city.date}} <br> {{city.message}}</div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
 </div>
 
+<script>
+  // Get the modal
+  var modal = document.getElementById('myModal');
 
-<!--<h2>{{ 'TITLE' | translate:param }}<hr></h2>-->
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById('myImg');
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
 
-<!--<div *ngFor="let city of cities; let i = index" class="panel-info">-->
-<!--<div class="panel-heading">-->
-<!--<img src="{{city.pictureUrl}}" alt="{{city.city}}">-->
-<!--<span>{{city.message}}</span>-->
-<!--<span>{{city.prix}}</span>-->
-<!--</div>-->
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+</script>
+
+<!--<div class="container">-->
+  <!--<div class="row">-->
+    <!--<div class="col-sm-4" *ngFor="let city of cities[0]">-->
+      <!--<div class="panel-footer">-->
+        <!--<div class="panel-body"><img src="{{city.pictureUrl}}" class="img-responsive" style="width:100%" alt="Image"></div>-->
+        <!--<div class="panel-footer"><p> Lieu: <u>{{city.name}}</u>   <br> {{city.message}} <br> Date:{{city.date}}</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
 <!--</div>-->
